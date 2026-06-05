@@ -1005,6 +1005,13 @@ button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .drag-handle:hover{opacity:.65;color:var(--gold)}
 .cb.dragging{opacity:.4;border-style:dashed}
 .cb.drag-over{border-color:var(--gold);border-style:solid;box-shadow:0 0 0 2px var(--gold-dim)}
+
+/* ── ADD TOAST ───────────────────────────────────────────────── */
+.add-toast{position:fixed;bottom:80px;left:50%;transform:translateX(-50%) translateY(20px);
+  background:var(--green);color:#fff;font-family:'Cinzel','Palatino Linotype',Palatino,serif;
+  font-size:13px;padding:8px 20px;border-radius:20px;opacity:0;pointer-events:none;
+  transition:opacity .2s,transform .2s;z-index:9999;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.3)}
+.add-toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
 <body>
@@ -2156,7 +2163,8 @@ function addFromStatBlock(slug) {
   for (let i = cbs.length - count; i < cbs.length; i++) {
     cbs[i].initiative = groupInit;
   }
-  closeSBPanel();
+  // Keep panel open so DM can keep adding monsters
+  showAddToast(count === 1 ? m.name + ' added' : count + '× ' + m.name + ' added');
   render();
   save();
 }
@@ -2189,7 +2197,8 @@ function quickAddMonster(slug) {
   for (let i = cbs.length - count; i < cbs.length; i++) {
     cbs[i].initiative = groupInit2;
   }
-  closeSBPanel();
+  // Keep panel open so DM can keep adding monsters
+  showAddToast(count === 1 ? m.name + ' added' : count + '× ' + m.name + ' added');
   render();
   save();
 }
@@ -3441,10 +3450,10 @@ function updateHeader() {
   s.innerHTML=`
     <div class="hpill">Round <span>${round}</span></div>
     <div class="hpill">Alive <span>${alive}/${total}</span></div>
-    <div class="hpill">Players <span>${players}</span></div>
-    <div class="hpill">Monsters <span>${monsters}</span></div>
-    ${allies>0?`<div class="hpill">Allies <span>${allies}</span></div>`:''}
-    ${others>0?`<div class="hpill" style="border-color:var(--teal);color:#40c0c0">Other <span>${others}</span></div>`:''}`;
+    <div class="hpill" style="border-color:var(--blue);color:var(--blue2)">Players <span style="color:var(--blue2)">${players}</span></div>
+    <div class="hpill" style="border-color:var(--red);color:var(--red2)">Monsters <span style="color:var(--red2)">${monsters}</span></div>
+    ${allies>0?`<div class="hpill" style="border-color:var(--purple);color:var(--purple2)">Allies <span style="color:var(--purple2)">${allies}</span></div>`:''}
+    ${others>0?`<div class="hpill" style="border-color:var(--teal);color:#40c0c0">Other <span style="color:#40c0c0">${others}</span></div>`:''}`;
 }
 
 function toggleForm() {
@@ -3597,23 +3606,32 @@ function saveToLibraryNamed(name) {
 function loadFromLibrary(i) {
   const libs = getLibrary();
   if (!libs[i]) return;
-  const loadFn = () => { loadEncounterConfirmed(i); };
-  if (cbs.length) { mtzConfirm('Load Encounter', 'Load "'+libs[i].name+'"? Current encounter will be replaced.', loadFn, {confirmText:'Load'}); } else { loadFn(); } return;
-  const d = libs[i].data;
-  cbs=d.cbs||[]; round=d.round||1; active=d.active!=null?d.active:-1; uid=d.uid||cbs.length;
-  closeModal('libModal'); render(); save();
+  const loadFn = () => {
+    const d = libs[i].data;
+    cbs = d.cbs||[]; round = d.round||1; active = d.active!=null?d.active:-1; uid = d.uid||cbs.length;
+    cbs.forEach(c => ensureCbDefaults(c));
+    closeModal('libModal'); render(); save();
+  };
+  if (cbs.length) {
+    mtzConfirm('Load Encounter', 'Load "'+libs[i].name+'"? Current encounter will be replaced.', loadFn, {confirmText:'Load'});
+  } else {
+    loadFn();
+  }
 }
 
 function deleteFromLibrary(i) {
-  mtzConfirm('Delete Encounter', 'Delete this saved encounter? This cannot be undone.', () => deleteEncounterConfirmed(idx), {confirmText:'Delete', danger:true}); return;
+  mtzConfirm('Delete Encounter', 'Delete this saved encounter? This cannot be undone.', () => deleteEncounterConfirmed(i), {confirmText:'Delete', danger:true});
 }
+
 function deleteEncounterConfirmed(idx) {
-  const libs = getLibrary(); libs.splice(i,1); saveLibrary(libs); renderLibrary();
+  const libs = getLibrary(); libs.splice(idx, 1); saveLibrary(libs); renderLibrary();
 }
 
 function exportLibraryItem(i) {
   const libs = getLibrary(); if (!libs[i]) return;
-  const blob = new Blob([JSON.stringify(libs[i].data,null,2)],{type:'application/json'});
+  // Export in a format the importer understands
+  const exportData = { name: libs[i].name, savedAt: libs[i].savedAt, state: libs[i].data };
+  const blob = new Blob([JSON.stringify(exportData, null, 2)], {type:'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = libs[i].name.replace(/[^a-z0-9]/gi,'_')+'.json';
@@ -4749,14 +4767,19 @@ function parseStatBlock(raw) {
   if (/Initiative\s*[+\-]?\d|Creature Type/i.test(fullText)) r._format = '2024 Monster Manual';
   else if (/Armor Class|Hit Points|Challenge/i.test(fullText)) r._format = '2014 SRD';
 
-  // Name + type line
+  // Name + type line — handle both "Name\nSize type, alignment" and "Name Size type, alignment"
   r.name = lines[0] || null;
-  if (lines[1]) {
-    const SIZES = ['Tiny','Small','Medium','Large','Huge','Gargantuan'];
+  const SIZES = ['Tiny','Small','Medium','Large','Huge','Gargantuan'];
+  function parseSizeLine(line, isNameLine) {
     for (const sz of SIZES) {
-      if (lines[1].toLowerCase().includes(sz.toLowerCase())) {
+      if (line.toLowerCase().includes(sz.toLowerCase())) {
+        if (isNameLine) {
+          // Name and size on same line — split at size word
+          const idx = line.toLowerCase().indexOf(sz.toLowerCase());
+          r.name = line.slice(0, idx).trim() || r.name;
+        }
         r.size = sz;
-        const rest = lines[1].slice(lines[1].toLowerCase().indexOf(sz.toLowerCase()) + sz.length).trim();
+        const rest = line.slice(line.toLowerCase().indexOf(sz.toLowerCase()) + sz.length).trim();
         const ci = rest.lastIndexOf(',');
         if (ci > 0) {
           r.alignment = rest.slice(ci + 1).trim();
@@ -4765,26 +4788,42 @@ function parseStatBlock(raw) {
           if (sm) { r.type = sm[1].trim(); r.subtype = sm[2].trim(); }
           else r.type = ts;
         } else { r.type = rest.split('(')[0].trim(); }
-        break;
+        return true;
       }
     }
+    return false;
+  }
+  // Try line 0 first (name+size on same line), then line 1 (separate lines)
+  if (!parseSizeLine(lines[0], true) && lines[1]) {
+    parseSizeLine(lines[1], false);
   }
 
   // Keyword fields
+  // kw matches up to next pipe separator (keyword boundary) or end
   const kw = (re) => { const m = fullText.match(re); return m ? m[1].trim() : null; };
+  // kwB matches up to next known keyword boundary — used for fields that share a line
+  const kwB = (re) => {
+    const m = fullText.match(re);
+    if (!m) return null;
+    // Trim at next keyword that could follow on same line
+    let v = m[1];
+    const nextKw = v.match(/\s+(?:Damage|Senses|Languages|Challenge|Skills|Saving Throws|Condition|Speed|Armor|Hit Points)\s/i);
+    if (nextKw) v = v.slice(0, nextKw.index);
+    return v.trim();
+  };
   const acM = fullText.match(/Armor Class\s+(\d+)(?:\s*\(([^)]+)\))?/i);
   if (acM) { r.armor_class = parseInt(acM[1]); r.armor_desc = acM[2]||null; }
   const hpM = fullText.match(/Hit Points\s+(\d+)(?:\s*\(([^)]+)\))?/i);
   if (hpM) { r.hit_points = parseInt(hpM[1]); r.hit_dice = hpM[2]||null; }
   r.speed          = kw(/Speed\s+(.+?)(?:\n|$)/i);
   r.saving_throws  = kw(/Saving Throws\s+(.+?)(?:\n|$)/i);
-  r.skills         = kw(/Skills\s+(.+?)(?:\n|$)/i);
-  r.damage_vulnerabilities = kw(/Damage Vulnerabilities?\s+(.+?)(?:\n|$)/i);
-  r.damage_resistances     = kw(/Damage Resistances?\s+(.+?)(?:\n|$)/i);
-  r.damage_immunities      = kw(/Damage Immunities?\s+(.+?)(?:\n|$)/i);
-  r.condition_immunities   = kw(/Condition Immunities?\s+(.+?)(?:\n|$)/i);
-  r.senses         = kw(/Senses\s+(.+?)(?:\n|$)/i);
-  const langRaw    = kw(/Languages?\s+(.+?)(?:\n|$)/i);
+  r.skills         = kwB(/Skills\s+(.+)/i);
+  r.damage_vulnerabilities = kwB(/Damage Vulnerabilities?\s+(.+)/i);
+  r.damage_resistances     = kwB(/Damage Resistances?\s+(.+)/i);
+  r.damage_immunities      = kwB(/Damage Immunities?\s+(.+)/i);
+  r.condition_immunities   = kwB(/Condition Immunities?\s+(.+)/i);
+  r.senses         = kwB(/Senses\s+(.+)/i);
+  const langRaw    = kwB(/Languages?\s+(.+)/i);
   r.languages      = (langRaw === '--' || langRaw === '—') ? null : langRaw;
   const crM = fullText.match(/Challenge\s+([\d/]+)\s*(?:\((\d[\d,]*)\s*XP\))?/i)
            || fullText.match(/\bCR\s+([\d/]+)\s*(?:\((\d[\d,]*)\s*XP\))?/i);
@@ -4840,6 +4879,8 @@ function parseStatBlock(raw) {
     }
     if (secHit) continue;
     if (SKIP_RE.test(line) || ABILITY_NAME_RE.test(line) || SCORE_LINE_RE.test(line)) continue;
+    // Skip the size/type line when name+size were on line 0
+    if (r.size && line.includes(r.size) && line === r.name + ' ' + r.size) continue;
     if (line === r.name) continue;
     if (r.size && line.includes(r.size) && lines.indexOf(line) <= 2) continue;
 
@@ -5096,7 +5137,7 @@ function mtzModalClose(confirmed) {
   if (_mtzMode === 'input') {
     if (confirmed && inp.value.trim() !== '') _mtzCallback(inp.value.trim());
   } else if (_mtzMode === 'confirm') {
-    if (confirmed) _mtzCallback();
+    if (confirmed) _mtzCallback(true);
   } else {
     _mtzCallback();
   }
@@ -5328,20 +5369,34 @@ function importEncounter() {
     reader.onload = ev => {
       try {
         const data = JSON.parse(ev.target.result);
-        // Single encounter or library export?
-        if (data.encounters) {
+        // Handle three formats:
+        // 1. Full library export: {encounters:[{name, state:{cbs,round,active,uid}},...]}
+        // 2. Single encounter (new format): {name, state:{cbs,round,active,uid}}
+        // 3. Single encounter (old format): {cbs, round, active, uid} — raw data
+        if (data.encounters && Array.isArray(data.encounters)) {
           // Full library export
           const libs = getLibrary();
-          data.encounters.forEach(enc => { if (enc.name && enc.state) libs.push(enc); });
+          let count = 0;
+          data.encounters.forEach(enc => {
+            if (enc.name && enc.state) { libs.push({name:enc.name, savedAt:enc.savedAt||Date.now(), data:enc.state}); count++; }
+          });
           setLibrary(libs);
-          mtzAlert('Import Complete', data.encounters.length + ' encounters imported to library.');
+          mtzAlert('Import Complete', count + ' encounter' + (count===1?'':'s') + ' imported to library.');
           renderLibrary();
-        } else if (data.state) {
-          // Single encounter
+        } else if (data.state && data.state.cbs) {
+          // Single encounter — new format
           const libs = getLibrary();
-          libs.push({name: data.name || 'Imported', state: data.state, savedAt: new Date().toISOString()});
+          libs.unshift({name: data.name || 'Imported', savedAt: data.savedAt||Date.now(), data: data.state});
           setLibrary(libs);
           mtzAlert('Import Complete', '"' + (data.name||'Encounter') + '" added to library.');
+          renderLibrary();
+        } else if (data.cbs && Array.isArray(data.cbs)) {
+          // Single encounter — old raw format
+          const libs = getLibrary();
+          const name = 'Imported ' + new Date().toLocaleDateString();
+          libs.unshift({name, savedAt: Date.now(), data: {cbs:data.cbs, round:data.round||1, active:data.active!=null?data.active:-1, uid:data.uid||data.cbs.length}});
+          setLibrary(libs);
+          mtzAlert('Import Complete', '"' + name + '" added to library.');
           renderLibrary();
         } else {
           mtzAlert('Invalid File', 'This does not appear to be a valid encounter export.');
@@ -5996,6 +6051,16 @@ function cbDrop(event) {
 }
 
 
+function showAddToast(msg) {
+  const t = document.getElementById('addToast');
+  if (!t) return;
+  t.textContent = '✓ ' + msg;
+  t.classList.add('show');
+  clearTimeout(t._tid);
+  t._tid = setTimeout(() => t.classList.remove('show'), 1800);
+}
+
+
 </script>
 
 <!-- ── ENCOUNTER LIBRARY MODAL ──────────────────────────────── -->
@@ -6302,5 +6367,6 @@ function cbDrop(event) {
   </div>
 </div>
 
+<div class="add-toast" id="addToast"></div>
 </body>
 </html>
