@@ -1619,6 +1619,16 @@ A bright streak flashes from your pointing finger..."
       <div class="help-info-row"><span class="help-info-label">Fonts</span><span class="help-info-val">Cinzel and Crimson Pro via Google Fonts.</span></div>
     </div>
 
+    <!-- Privacy & Data -->
+    <div class="help-section">
+      <h3>Privacy &amp; Data</h3>
+      <div class="help-info-row"><span class="help-info-label">Cookies</span><span class="help-info-val">This tracker uses <strong>no cookies</strong> of any kind. No cookie consent is required. <em style="color:var(--text3)">(Mitz &amp; Simz, however, are always happy for treats. 🐾🐈‍⬛)</em></span></div>
+      <div class="help-info-row"><span class="help-info-label">Data collected</span><span class="help-info-val">None. No personal data is collected, stored, transmitted, or processed. No accounts, no analytics, no tracking, no advertising.</span></div>
+      <div class="help-info-row"><span class="help-info-label">Where data lives</span><span class="help-info-val">Everything you enter — encounter names, combatant names, custom monsters, party configs — is stored exclusively in your own browser's local storage and never leaves your device.</span></div>
+      <div class="help-info-row"><span class="help-info-label">External connection</span><span class="help-info-val">The only outbound request is to <a href="https://open5e.com" target="_blank" style="color:var(--gold)">Open5e</a> on first load to download the monster and spell database. No user data is included in that request.</span></div>
+      <div class="help-info-row"><span class="help-info-label">GDPR</span><span class="help-info-val">As no personal data is collected or processed, this tracker is inherently GDPR compliant. There is nothing to request, delete, or export under data subject rights — no data about you is held anywhere other than your own device.</span></div>
+    </div>
+
     <!-- Support -->
     <div class="help-section">
       <div class="help-support">
@@ -4131,10 +4141,13 @@ render();
 setTimeout(() => {
   loadDB()
     .then(() => {
-      try { loadCustomMonstersIntoDB(); } catch(e) { console.warn('Custom monster load error:', e); }
+      // DB loaded OK — inject custom monsters without affecting DB status
+      setTimeout(() => {
+        try { loadCustomMonstersIntoDB(); } catch(e) { console.warn('Custom monster load error:', e); }
+      }, 0);
     })
     .catch(e => {
-      // Only fires if loadDB() itself rejected — not custom monster errors (those are caught above)
+      // Only fires if loadDB() itself rejected
       console.error('DB load error:', e);
       setDBStatus('err','Failed — click ↺ Refresh DB');
     });
@@ -4817,6 +4830,7 @@ function saveCustomMonster() {
   saveCustomMonsters(customs);
   const di = monsterDB.findIndex(x=>x.slug===m.slug);
   if(di>=0) monsterDB[di]=m; else monsterDB.push(m);
+  loadCustomMonstersIntoDB(); // refresh DB status count
   closeModal('cmModal');
 }
 
@@ -4828,6 +4842,7 @@ function saveAndAddCustomMonster() {
   saveCustomMonsters(customs);
   const di = monsterDB.findIndex(x=>x.slug===m.slug);
   if(di>=0) monsterDB[di]=m; else monsterDB.push(m);
+  loadCustomMonstersIntoDB(); // refresh DB status count
   const _sc1 = detectSpellcasting(m);
   cbs.push({id:++uid,name:m.name,type:'monster',initiative:0,
     ac:m.armor_class||10,maxHP:m.hit_points||10,currentHP:m.hit_points||10,tempHP:0,
@@ -4869,19 +4884,13 @@ function loadCustomMonstersIntoDB() {
     if(!monsterDB.find(x=>x.slug===m.slug)) monsterDB.push(m);
     else { const i = monsterDB.findIndex(x=>x.slug===m.slug); monsterDB[i]=m; }
   });
-  // Refresh status to reflect custom monsters in the total count
-  // Only update if DB loaded successfully (dbReady) and there are customs to show
-  const dbDot = document.getElementById('dbDot');
-  const isOk = dbDot && dbDot.classList.contains('ok');
-  if (dbReady && isOk) {
+  // Refresh status count — only if DB is ready (avoids overwriting loading/error states)
+  if (dbReady) {
     const official = monsterDB.filter(m => !m._custom).length;
     const spellCount = Object.keys(spellDB).length;
     const spellText = spellCount > 0 ? ` · ${spellCount.toLocaleString()} spells` : '';
-    if (customs.length > 0) {
-      setDBStatus('ok', `${official.toLocaleString()} monsters + ${customs.length} custom${spellText}`);
-    } else {
-      setDBStatus('ok', `${official.toLocaleString()} monsters${spellText}`);
-    }
+    const customText = customs.length > 0 ? ` + ${customs.length} custom` : '';
+    setDBStatus('ok', `${official.toLocaleString()} monsters${customText}${spellText}`);
   }
 }
 
