@@ -4317,13 +4317,15 @@ render();
 // Fire DB load in background — never blocks UI
 setTimeout(() => {
   loadDB()
-    .then(() => {
-      try { loadCustomMonstersIntoDB(); } catch(e) { console.warn('Custom monster load error:', e); }
-    })
     .catch(e => {
-      // Only fires if loadDB() itself rejected — not custom monster errors (those are caught above)
+      // Only fires if loadDB() itself rejected
       console.error('DB load error:', e);
       setDBStatus('err','Failed — click ↺ Refresh DB');
+    })
+    .then(() => {
+      // Runs after DB loads (or after catch handles error)
+      // setTimeout fully decouples from the promise chain — no error here can affect DB status
+      setTimeout(() => { try { loadCustomMonstersIntoDB(); } catch(e) { console.warn('Custom monsters:', e); } }, 0);
     });
 }, 0);
 
@@ -5061,10 +5063,8 @@ function loadCustomMonstersIntoDB() {
     else { const i = monsterDB.findIndex(x=>x.slug===m.slug); monsterDB[i]=m; }
   });
   // Refresh status to reflect custom monsters in the total count
-  // Only update if DB loaded successfully (dbReady) and there are customs to show
-  const dbDot = document.getElementById('dbDot');
-  const isOk = dbDot && dbDot.classList.contains('ok');
-  if (dbReady && isOk) {
+  // Only update if DB loaded successfully — use dbReady flag as source of truth
+  if (dbReady) {
     const official = monsterDB.filter(m => !m._custom).length;
     const spellCount = Object.keys(spellDB).length;
     const spellText = spellCount > 0 ? ` · ${spellCount.toLocaleString()} spells` : '';
