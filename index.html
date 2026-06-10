@@ -1961,11 +1961,14 @@ async function forceRefreshDBConfirmed() {
   const btn = document.getElementById('refreshBtn');
   if (btn) { btn.disabled = true; btn.textContent = '↺ Loading…'; }
   loadDB()
-    .then(() => { try { loadCustomMonstersIntoDB(); } catch(e){} })
-      .then(() => { try { loadCustomSpellsIntoDB(); } catch(e){} })
-      .then(() => { try { checkParserPayload(); } catch(e){} })
-      .then(() => { try { showWelcomeIfNeeded(); } catch(e){} })
-    .catch(e => { console.error('Refresh DB error:', e); setDBStatus('err','Failed — check connection'); })
+    .catch(e => { console.error('DB load error:', e); setDBStatus('err','Failed — check connection'); })
+    .then(() => {
+      // Post-load setup — each in its own try/catch so no error can affect DB status
+      setTimeout(() => { try { loadCustomMonstersIntoDB(); } catch(e) { console.warn('Custom monsters:', e); } }, 0);
+      setTimeout(() => { try { loadCustomSpellsIntoDB();   } catch(e) { console.warn('Custom spells:', e);   } }, 0);
+      setTimeout(() => { try { checkParserPayload();       } catch(e) { console.warn('Parser payload:', e);  } }, 0);
+      setTimeout(() => { try { showWelcomeIfNeeded();      } catch(e) { console.warn('Welcome:', e);         } }, 0);
+    })
     .finally(() => { if (btn) { btn.disabled = false; btn.textContent = '↺ Refresh DB'; } });
 }
 
@@ -8133,7 +8136,7 @@ function closeGuidePanel() {
     <p>Enter a number in the damage field. Press <b>Enter</b> or click <b>DMG</b>. Press <b>H</b> or click <b>HEAL</b>. Temp HP absorbed first. Mistakes? <b>Ctrl+Z</b>.</p>
     <h2>Conditions</h2>
     <p>Click Conditions on any card. Click a condition to apply/remove. Set optional duration for auto-expiry. Tags pulse amber at 1 round remaining.</p>
-    <p><b>Clear All:</b> a ✕ Clear All button in the condition picker removes all conditions from the combatant in one click (undo-safe).</p>
+    <p><b>25 conditions available</b> (alphabetical): Blinded, Burning, Charmed, Deafened, Exhausted, Frightened, Grappled, Hasted, Incapacitated, Invisible, Marked, Paralyzed, Petrified, Poisoned, Prone, Restrained, Silenced, Slowed, Stunned, Unconscious — plus Hiding, Raging, Dodging, Advantage, and Disadvantage at the bottom of the picker.</p>
     <h2>Death Saves</h2>
     <p><b>Pip shapes:</b> empty = ○ circle · success filled = ♥ green heart · failure filled = ☠ red skull. Dead cards keep all 3 skulls visible.</p>
     <table><tr><th>Roll</th><th>Action</th><th>Result</th></tr>
@@ -8154,6 +8157,7 @@ function closeGuidePanel() {
     <tr><td>⚡ Reaction</td><td>Click to mark used (fades). Auto-resets next turn.</td></tr>
     <tr><td>★ LEG pips</td><td>Click to mark legendary action used. Resets on monster turn.</td></tr>
     <tr><td>Recharge tag</td><td>Click to expend. Flashes red at turn start as roll reminder.</td></tr>
+    <tr><td>⏱ Ready</td><td>Shows trigger text (up to 64 chars). Auto-clears at start of that combatant's next turn. Click to clear early.</td></tr>
     <tr><td>◆ Spell slots</td><td>Click to expend slot at that level. Any level — DM chooses.</td></tr>
     <tr><td>◆ Innate spells</td><td>Click pip per use. At-will spells labelled only.</td></tr>
     <tr><td>● X/Day</td><td>Amber pips. Click to expend, click again to restore.</td></tr>
@@ -8227,8 +8231,11 @@ function closeGuidePanel() {
     <h2>How do I apply AoE damage to multiple targets?</h2>
     <p>Tick checkboxes → bulk bar appears → enter damage → <b>DMG All</b> (full) or <b>½ DMG</b> (half, for saves). Fireball example: select all targets, DMG All, then select only those who saved, ½ DMG.</p>
 
+    <h2>How do I set HP for a monster?</h2>
+    <p>Click <b>HP ▾</b> on any card to open the HP mode popup: <b>Average HP</b>, <b>Maximum HP</b>, <b>Roll Dice</b>, or <b>Set Value</b> (enter any number). The Monster DB also offers these modes before adding. In the bulk action bar, Set Max HP opens the same popup — dice modes available when at least one selected combatant has a stat block.</p>
+
     <h2>I made a mistake — how do I fix it?</h2>
-    <p>Ctrl+Z or ↩ Undo. Restores full state — HP, conditions, active turn, round — up to 20 steps back.</p>
+    <p>Ctrl+Z / Cmd+Z or ↩ Undo. Restores full state — HP, conditions, active turn, round — up to 20 steps back. Correctly restores used spell slots, recharge states, and legendary actions.</p>
 
     <h2>How do I track a transformed or polymorphed combatant?</h2>
     <p>Click ⇄ on the card. Monster DB opens in transform mode — search the new form, click ⇄ Transform. HP and AC swap. Click ↩ Revert to restore original stats.</p>
@@ -8243,7 +8250,7 @@ function closeGuidePanel() {
     <p>Click 👤 on the player card. They are skipped in turn order but still count toward XP difficulty. Click 👤 again to restore.</p>
 
     <h2>How do I get a log of the encounter?</h2>
-    <p>Click 📜 Log. All meaningful events are captured automatically — damage, conditions, reactions, spell slots, group drops, per-turn entries, timer expiry, and undo diffs. Add DM notes at the bottom. ⬇ Export for a .txt session summary.</p>
+    <p>Click 📜 Log. All meaningful events are captured automatically — damage, conditions, reactions, spell slots, group drops, per-turn entries, timer expiry, undo diffs, HP changes, initiative changes, AC changes, notes, death save tracking, and legendary action use. Add DM notes at the bottom. ⬇ Export for a .txt session summary. The log resets on new encounter or when loading a saved encounter.</p>
 
     <h2>How do I save and resume mid-dungeon?</h2>
     <p>More → Quick Save. Next session: Encounters → load the save. Everything resumes exactly — HP, conditions, round, active turn.</p>
@@ -8252,7 +8259,7 @@ function closeGuidePanel() {
     <p><b>Party Config:</b> saves the player roster at full HP — use to start each session fresh. <b>Encounter save:</b> saves complete combat state including current HP and conditions — use to pause mid-fight or continue next session.</p>
 
     <h2>How do I tell if my encounter is too deadly?</h2>
-    <p>⚔ XP Calc shows the difficulty rating (Easy/Medium/Hard/Deadly) in real time as monsters die. Toggle between 2014 and 2024 rules at the top.</p>
+    <p>⚔ XP Calc shows the difficulty rating (Easy/Medium/Hard/Deadly) in real time as monsters die. Dead monsters remain in the XP total with a strikethrough — the full encounter XP is always shown. Toggle between 2014 and 2024 rules at the top.</p>
 
     <h2>How do I back up my custom monsters and spells?</h2>
     <p>Custom Monsters: + Custom Monster → ⬇ Export. Custom Spells: ✦ Add Spell → ⬇ Export Spells. Re-import on any device with the matching Import buttons.</p>
