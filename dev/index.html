@@ -71,6 +71,16 @@ button{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif
 .btn-next:hover{background:var(--gold);color:var(--bg)}
 .btn-icon{background:transparent;border:1px solid var(--border);color:var(--text3);padding:4px 9px;font-family:inherit;font-size:15px}
 .btn-icon:hover{border-color:var(--red);color:var(--red2)}
+/* Light mode: the gold-filled buttons (.btn-primary/.btn-next, active .init-b) had
+   dark --gold2 text on a dark --gold-dim fill — unreadable. In light mode --gold-dim
+   ≈ --gold, so hover feedback can't come from the fill brightening; instead use light
+   text at idle and darken the fill on hover. */
+html[data-theme="light"] .btn-primary,
+html[data-theme="light"] .btn-next,
+html[data-theme="light"] .cb.active .init-b,
+html[data-theme="light"] .cb.active .init-b:hover{color:var(--bg)}
+html[data-theme="light"] .btn-primary:hover,
+html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)}
 
 /* LAYOUT */
 .app{display:flex;flex-direction:column;height:calc(100vh - 50px)}
@@ -1733,6 +1743,12 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
         <a href="https://mitznsimz.com" target="_blank" rel="noopener noreferrer" class="help-support-btn" style="background:transparent;border-color:var(--gold);color:var(--gold)">🛡 Visit MitzNSimz.com</a>
         <a href="https://ko-fi.com/mitznsimz" target="_blank" rel="noopener noreferrer" class="help-support-btn">☕ Support on Ko-fi</a>
       </div>
+    </div>
+
+    <div class="help-section" style="border-top:1px solid var(--border);margin-top:4px;padding-top:18px">
+      <p style="text-align:center;font-family:'Cinzel','Palatino Linotype',Palatino,serif;color:var(--gold);font-size:15px;margin:0 0 8px"><b>Thank you for using the MitzNSimz Encounter Tracker.</b></p>
+      <p style="text-align:center;color:var(--text3);font-size:13px;margin:0 0 6px">We hope it brings a little more adventure and a little less bookkeeping to your table.</p>
+      <p style="text-align:center;font-family:'Cinzel','Palatino Linotype',Palatino,serif;color:var(--gold);font-size:13px;margin:0">— Pete &amp; Mitz &amp; Simz 🐾🐈‍⬛🎲</p>
     </div>
 
   </div>
