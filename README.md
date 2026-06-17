@@ -1,123 +1,68 @@
-# ⚔ MitzNSimz D&D Encounter Tracker
+# MitzNSimz Encounter Tracker
 
-A lightweight, offline-ready D&D 5e encounter tracker for Dungeon Masters. Single HTML file — no installation required.
+A fast, offline‑friendly combat tracker for **Dungeons & Dragons 5th Edition** — built for Dungeon Masters who run their games at the table with physical minis and just want the bookkeeping handled.
 
-**[▶ Open the Tracker](https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/)**
+**▶ Use it here: https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/index.html**
 
-> Built for the table. Tested at the table.
-
----
-
-## Why This Tracker Exists
-
-Running combat in D&D 5e requires a DM to simultaneously track initiative, HP, conditions, concentration, legendary actions, spell slots, ability recharges, and round flow — all while narrating the scene and keeping players engaged.
-
-The MitzNSimz Encounter Tracker handles the bookkeeping so the DM can focus on the story.
-
-**Core principles:**
-- 🔒 **Offline First** — works completely without internet after first load
-- 🚫 **No Accounts** — nothing to sign up for
-- 💸 **No Subscriptions** — free to use, forever
-- 🏠 **Local Data** — your encounters stay on your device
-- 🎲 **Physical Dice** — the tracker records outcomes, not replaces rolling
+No install, no account, no setup. It runs entirely in your browser, works on desktop, tablet and phone, and keeps everything on your own device.
 
 ---
 
-## Features
+## What it does
 
-### Combat Management
-- Initiative tracking with auto-sort and drag-to-reorder for tiebreaking
-- HP bars colour-coded (green → amber → red), Bloodied badge at ≤50%
-- Damage, healing, Temp HP with one-click AoE half-damage (½ DMG)
-- Full undo — 20-step history restoring HP, conditions, active turn, and round
+- **Initiative & turn tracking** — add players and monsters, sort by initiative, and step through turns. Round counter, current‑turn highlight, and an optional turn timer.
+- **HP, damage & healing** — apply damage or healing in a click, with quick maths, temporary HP, bloodied indicators and death/unconscious handling.
+- **Conditions with rule reminders** — apply any of the 5e conditions to a combatant. Tap the ⓘ on a condition for a short, plain‑language reminder of what it does, with **2014 / 2024** edition pills for the conditions whose rules changed between editions. Add your own custom “Other” marker for anything the list doesn’t cover.
+- **Monster database (Open5e)** — search thousands of monsters with full stat blocks, cached offline after first load. Filter by ruleset (2014 / 2024) and by **source book** (e.g. SRD only, or specific bestiaries) with a multi‑select Sources filter.
+- **Spell reference** — full spell stat blocks, including 2014 / 2024 versions where they differ, viewable inline.
+- **Custom content** — create your own monsters and spells, or paste a stat block (D&D Beyond, PDF, Homebrewery, plain text or **Tetra‑cube** Markdown / `.monster` JSON) and let the parser do the work.
+- **Random encounter generator** — build encounters by difficulty, type and environment, with its own independent source‑book filter so you can roll only from the books you own.
+- **Parties** — save your regular party once (levels, AC, HP and portraits), then drop them into any encounter at full health. Update a saved party in place, and export / import parties between devices.
+- **XP & difficulty** — live Easy / Medium / Hard / Deadly readout that updates as monsters fall, for both the 2014 and 2024 rulesets.
+- **Encounter library** — quick‑save an encounter mid‑session and resume later exactly where you left off — HP, conditions, round and all.
+- **Backup & transfer** — everything you create (encounters, parties, monster groups, custom monsters and custom spells) can be exported to a JSON file and re‑imported on another device.
+- **Appearance** — Day / Night themes, six accent colours, a high‑legibility font option, and respect for your device’s reduce‑motion and text‑size settings.
 
-### Death Saves (Full 5e Rules)
-- Auto pips at 0 HP — Nat 1 (2 failures), Nat 20 (instant recovery)
-- 3 successes → Stable + Unconscious auto-applied
-- 3 failures → ✦ Revive button
-- Optional death saves for boss monsters (☠ DS toggle)
+## Designed for the table
 
-### Conditions & Status Strip
-- 18 standard conditions + Advantage/Disadvantage, all colour-coded
-- Duration countdown with auto-remove and amber pulse warning
-- Concentration auto-check popup on any damage
-- Per-card status strip: reaction ⚡, legendary pips ●●●, recharge tags, ready action
+This is a **tracker**, not a virtual tabletop. There’s deliberately no map or grid — it’s built to sit alongside your physical tiles and miniatures and handle the fiddly parts of combat, fast, on whatever screen you have to hand.
 
-### Spell & Ability Tracking (Auto-Detected)
-- Spell slots per level (purple pips) — click to expend any level
-- Innate spellcasting — per-spell use pips, at-will spells labelled
-- X/Day abilities — amber pips for limited-use abilities
-- ↺ Reset Uses — restores all uses in one click
+## Privacy & offline use
 
-### Monsters & Stat Blocks
-- ~3,200 monsters + ~1,400 spells from Open5e, cached offline
-- Inline expandable stat blocks — multiple open simultaneously
-- Wild Shape / Transform — Monster DB UX, stat block visible while transformed
-- **⚗ Parse Block** — paste any stat block (D&D Beyond, PDF, plain text) to import instantly
-- **⚗ Parse Spell** — paste any spell stat block to import into your custom library
+Everything lives in your browser (via `localStorage` and `IndexedDB`). The monster and spell database downloads once on first load and then works fully offline. Nothing you create is uploaded anywhere — there’s no account and no server. Player portraits, for example, are shrunk to a small thumbnail and stored only on your device; the original image is never kept or sent.
 
-### Encounter Planning
-- XP calculator with 2014 and 2024 ruleset toggle
-- Random encounter generator — difficulty, type, environment
-- Party configurations — save player rosters, add to encounter in one click
-- Encounter library — save/load full combat state for mid-session continuity
-- Combat log — all events auto-logged, DM notes, export as .txt
+> Because all data is local, it can be lost if you clear your browser storage, uninstall the browser, or change devices. Use the **Export** options now and then to keep a backup.
 
-### Environmental & Special Events
-- **Other combatant type** — for lair actions, avalanches, traps, ritual timers, reinforcements
-- Teal card styling, excluded from XP and Alive counts
+## How it’s built
 
-### Data & Backup
-- All data stored locally — no cloud, no account required
-- Export/Import: encounters, custom monsters, and custom spells as JSON
-- Auto-save on every change — resume exactly where you left off
+- A single, self‑contained `index.html` — vanilla HTML, CSS and JavaScript with **no build step and no framework**.
+- State persisted locally in `localStorage` and `IndexedDB`.
+- Monster and spell data from the **[Open5e](https://open5e.com) v2 API**, cached on first load.
+- Designed to be hosted as a static page (it runs from GitHub Pages).
 
----
+## Data & attribution
 
-## How to Use
+Monster and spell data are provided by **[Open5e](https://open5e.com)**, an open‑source project serving the D&D 5e SRD and other open‑licensed tabletop content. That data remains subject to its original licensing and attribution requirements, including the Open Game License and Creative Commons terms as applicable. This project is an independent tool and is not affiliated with, endorsed or sponsored by Wizards of the Coast or Open5e.
 
-**Online:** [mitznsimz-cpu.github.io/DnD-Encounter-Tracker](https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/)
+## Feedback & bugs
 
-**Offline:** Download `index.html`, open in any modern browser. First open requires internet to download the monster database (~30-60 seconds). Fully offline thereafter.
+Found a bug or have an idea? Please open an issue:
+**https://github.com/mitznsimz-cpu/DnD-Encounter-Tracker/issues**
 
-> **Tip:** For best offline performance, serve via a local HTTP server:
-> ```
-> python3 -m http.server 8080
-> ```
-> Then open `http://localhost:8080`
+Including your device, browser and the steps to reproduce is a big help.
+
+## Acknowledgements
+
+With thanks to the beta testers whose detailed reports and ideas have shaped this tool: Andi, Nigel, Adam, Sharron, [@Porky_Plays](https://instagram.com/Porky_Plays), [@chaosmistressuk](https://instagram.com/chaosmistressuk) and [@spookiigourd](https://instagram.com/spookiigourd).
+
+## License
+
+© 2026 MitzNSimz.
+
+This software is released under the **[PolyForm Noncommercial License 1.0.0](https://github.com/mitznsimz-cpu/DnD-Encounter-Tracker/blob/main/LICENSE)**. In short, you’re free to use, share and modify it for any **non‑commercial** purpose — personal use, hobby games, study, and use by charitable, educational or other noncommercial organisations — provided the license and copyright notice travel with it. See the license for the exact terms, which govern.
+
+**Commercial use** (anything with an anticipated commercial application) is **not** granted by this license. If you’d like to use the tracker commercially, please get in touch via [MitzNSimz.com](https://mitznsimz.com) to discuss a separate arrangement.
 
 ---
 
-## Keyboard Shortcuts
-
-| Key | Action |
-|-----|--------|
-| `N` | Next Turn |
-| `Esc` | Close any open panel |
-| `Enter` | Apply damage (when damage field focused) |
-| `H` | Apply as healing (when damage field focused) |
-| `Ctrl+Z` | Undo last action (up to 20 steps) |
-
----
-
-## Backing Up Your Data
-
-All data is stored locally in your browser. Export regularly to avoid data loss:
-
-- **Encounters:** 📚 Encounters → Export All
-- **Custom Monsters:** ＋ Custom Monster → ⬇ Export
-- **Custom Spells:** ✦ Add Spell → ⬇ Export Spells
-
-Re-import on any device using the matching Import buttons.
-
----
-
-## About
-
-Created by **[MitzNSimz](https://mitznsimz.com)** — Miniatures and tools for Dungeon Masters.
-
-☕ [Support on Ko-fi](https://ko-fi.com/mitznsimz)
-
----
-
-*Built for the table. Tested at the table.*
+<p align="center">⚔ Made by <a href="https://mitznsimz.com">MitzNSimz</a> — miniatures and tools for Dungeon Masters · ☕ <a href="https://ko-fi.com/mitznsimz">Support on Ko‑fi</a></p>
