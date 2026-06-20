@@ -1602,7 +1602,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <!-- Damage cluster -->
       <div class="bulk-cluster">
         <span class="bulk-cluster-label">Damage</span>
-        <input class="bulk-input" type="number" id="bulkAmt" placeholder="amt" min="0" aria-label="Bulk damage/heal amount">
+        <input class="bulk-input" type="number" inputmode="numeric" id="bulkAmt" placeholder="amt" min="0" aria-label="Bulk damage/heal amount">
         <button class="bulk-btn" data-action="bulkDmg" data-heal="false">DMG All</button>
         <button class="bulk-btn" data-action="bulkDmg" data-heal="true">Heal All</button>
         <button class="bulk-btn" data-action="bulkHalfDmg" title="Apply half damage (rounded down) — use for AoE saves">½ DMG</button>
@@ -1655,12 +1655,12 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     <div class="add-form" id="addForm">
       <h3>Add Combatant</h3>
       <div class="form-row">
-        <div class="fg fg-name"><label>Name</label><input id="fName" placeholder="Goblin Chief…" autocomplete="off" aria-label="Combatant name"></div>
+        <div class="fg fg-name"><label>Name</label><input id="fName" placeholder="Goblin Chief…" enterkeyhint="done" autocomplete="off" aria-label="Combatant name"></div>
         <div class="fg"><label>Type</label><select id="fType" aria-label="Combatant type"><option value="monster">Monster</option><option value="player">Player</option><option value="npc">Ally</option><option value="other">Other</option></select></div>
-        <div class="fg fg-n"><label>Initiative</label><input type="number" id="fInit" placeholder="12" min="0" max="30" aria-label="Initiative"></div>
-        <div class="fg fg-n"><label>AC</label><input type="number" id="fAC" placeholder="15" min="1" max="30" aria-label="Armour Class"></div>
-        <div class="fg fg-n"><label>Max HP</label><input type="number" id="fHP" placeholder="45" min="1" aria-label="Max hit points"></div>
-        <div class="fg fg-n"><label>Count</label><input type="number" id="fCount" value="1" min="1" max="20" aria-label="Number to add"></div>
+        <div class="fg fg-n"><label>Initiative</label><input type="number" inputmode="numeric" id="fInit" placeholder="12" min="0" max="30" aria-label="Initiative"></div>
+        <div class="fg fg-n"><label>AC</label><input type="number" inputmode="numeric" id="fAC" placeholder="15" min="1" max="30" aria-label="Armour Class"></div>
+        <div class="fg fg-n"><label>Max HP</label><input type="number" inputmode="numeric" id="fHP" placeholder="45" min="1" aria-label="Max hit points"></div>
+        <div class="fg fg-n"><label>Count</label><input type="number" inputmode="numeric" id="fCount" value="1" min="1" max="20" aria-label="Number to add"></div>
         <div class="fg"><label>&nbsp;</label><div style="display:flex;gap:6px"><button class="btn-primary" data-action="addCb">Add</button><button class="btn-ghost" data-action="toggleForm">Cancel</button></div></div>
       </div>
     </div>
@@ -1692,7 +1692,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <div class="dur-picker" id="durPicker">
   <h2 id="durPickerTitle">Set Duration</h2>
   <div class="dur-row">
-    <input class="dur-input" type="number" id="durInput" min="1" max="99" placeholder="—" aria-label="Condition duration in rounds">
+    <input class="dur-input" type="number" inputmode="numeric" id="durInput" min="1" max="99" placeholder="—" aria-label="Condition duration in rounds">
     <span class="dur-label">rounds (end of turn)</span>
   </div>
   <div style="font-size:12px;color:var(--text3);margin-bottom:10px">Leave blank for no auto-remove</div>
@@ -1753,7 +1753,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <div id="spellForm" style="display:none;border-top:1px solid var(--border);padding:0 0 8px">
         <div class="sp-editor-body">
           <div style="font-family:'Cinzel',serif;font-size:12px;color:var(--gold);letter-spacing:.05em;padding:10px 14px 0" id="spellFormTitle">NEW SPELL</div>
-          <div class="sp-field"><label>Spell Name *</label><input type="text" id="sp_name" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomSpell();}" placeholder="e.g. Vortex Warp" aria-label="Spell name"></div>
+          <div class="sp-field"><label>Spell Name *</label><input type="text" id="sp_name" enterkeyhint="done" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomSpell();}" placeholder="e.g. Vortex Warp" aria-label="Spell name"></div>
           <div class="sp-row">
             <div class="sp-field"><label>Level</label>
               <select id="sp_level" aria-label="Spell level">
@@ -1827,6 +1827,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <div class="help-kbd-row"><span class="help-kbd">N</span><span class="help-kbd-desc">Advance to next turn</span></div>
       <div class="help-kbd-row"><span class="help-kbd">Space</span><span class="help-kbd-desc">Pause / Resume turn timer (when timer is active)</span></div>
       <div class="help-kbd-row"><span class="help-kbd">/</span><span class="help-kbd-desc">Open Monster DB and focus search field</span></div>
+      <div class="help-kbd-row"><span class="help-kbd">S</span><span class="help-kbd-desc">Show / hide the active combatant's stat block (if it has one)</span></div>
       <div class="help-kbd-row"><span class="help-kbd">Esc</span><span class="help-kbd-desc">Close open panels and pickers</span></div>
       <div class="help-kbd-row"><span class="help-kbd">Enter</span><span class="help-kbd-desc">Apply damage (when damage field focused)</span></div>
       <div class="help-kbd-row"><span class="help-kbd">H</span><span class="help-kbd-desc">Apply as healing (when damage field focused)</span></div>
@@ -1997,12 +1998,12 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <div class="hppop" id="hppop">
   <h2 id="hpName">HP</h2>
   <div class="hppop-r">
-    <input type="number" id="hpVal" placeholder="0" aria-label="Hit points to set">
+    <input type="number" inputmode="numeric" id="hpVal" placeholder="0" aria-label="Hit points to set">
     <span style="font-size:14px;color:var(--text2)">/ <span id="hpMaxD"></span></span>
   </div>
   <div style="margin-bottom:10px">
     <label style="font-size:12px;color:var(--text3);display:block;margin-bottom:4px">Temp HP</label>
-    <input type="number" id="tmpVal" placeholder="0" style="width:75px" aria-label="Temporary hit points">
+    <input type="number" inputmode="numeric" id="tmpVal" placeholder="0" style="width:75px" aria-label="Temporary hit points">
   </div>
   <div style="display:flex;gap:6px">
     <button class="btn-primary" data-action="applyHP" style="font-size:12px;padding:5px 12px">Set</button>
@@ -2018,7 +2019,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     <button class="btn-ghost" id="hpModeMaxBtn" style="font-size:13px;padding:6px 10px;justify-content:center;color:var(--amber2);border-color:var(--amber)" data-action="applyHPMode" data-mode="max">Maximum HP</button>
     <button class="btn-ghost" id="hpModeRollBtn" style="font-size:13px;padding:6px 10px;justify-content:center;color:var(--green2);border-color:var(--green)" data-action="applyHPMode" data-mode="roll">Roll Dice</button>
     <div style="display:flex;gap:4px;align-items:center">
-      <input type="number" id="hpModeSetVal" min="1" max="9999" placeholder="Value" aria-label="Set HP value"
+      <input type="number" inputmode="numeric" id="hpModeSetVal" min="1" max="9999" placeholder="Value" aria-label="Set HP value"
         style="width:80px;padding:5px 8px;font-size:13px;background:var(--bg4);border:1px solid var(--border2);border-radius:4px;color:var(--text)"
         onkeydown="if(event.key==='Enter'){event.preventDefault();applyHPMode('set');}">
       <button class="btn-ghost" style="font-size:13px;padding:6px 10px;flex:1;justify-content:center;color:var(--blue2);border-color:var(--blue)" data-action="applyHPMode" data-mode="set">Set</button>
@@ -2120,7 +2121,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
             style="width:100%;box-sizing:border-box;background:var(--bg4);border:1px solid var(--border2);border-radius:5px;color:var(--text);font-size:14px;padding:6px 10px;outline:none;margin-top:4px" aria-label="Group name">
           <div style="margin-top:12px">
             <label style="font-size:12px;color:var(--text3)">Add Monsters</label>
-            <input id="groupMonsterSearch" placeholder="Search monsters to add…" autocomplete="off"
+            <input id="groupMonsterSearch" placeholder="Search monsters to add…" enterkeyhint="search" autocomplete="off"
               oninput="groupMonsterSearchResults(this.value)"
               onkeydown="if(event.key==='Escape'){this.value='';groupMonsterSearchResults('');}"
               style="width:100%;box-sizing:border-box;background:var(--bg4);border:1px solid var(--border2);border-radius:5px;color:var(--text);font-size:13px;padding:6px 10px;outline:none;margin-top:4px" aria-label="Search monsters to add to group">
@@ -2144,7 +2145,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
         <div id="groupSBPreviewContent" style="flex:1;overflow-y:auto;padding:12px 14px;font-size:13px"></div>
         <div style="padding:10px 14px;border-top:1px solid var(--border);display:flex;gap:8px;align-items:center;flex-shrink:0;background:var(--bg3)">
           <label style="font-size:12px;color:var(--text3)">Count</label>
-          <input type="number" id="groupSBPreviewCount" value="1" min="1" max="20"
+          <input type="number" inputmode="numeric" id="groupSBPreviewCount" value="1" min="1" max="20"
             style="width:54px;height:28px;font-size:13px;text-align:center;padding:0 4px" aria-label="Count to add">
           <button class="btn-primary" style="font-size:13px;padding:5px 14px"
             data-action="addFromGroupSBPreview">+ Add to Group</button>
@@ -2157,7 +2158,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     <!-- LEFT: search list (always visible in search mode) -->
     <div class="sb-left" id="sbSearchMode">
       <div class="msearch">
-        <input id="msearchIn" placeholder="Search monsters…" oninput="searchMonsters()" autocomplete="off" aria-label="Search monsters">
+        <input id="msearchIn" placeholder="Search monsters…" enterkeyhint="search" oninput="searchMonsters()" autocomplete="off" aria-label="Search monsters">
       </div>
       <div class="msearch-results" id="msearchResults"></div>
     </div>
@@ -2955,7 +2956,7 @@ function renderMonsterSearchItem(m) {
         data-action="applyTransformFromSearch" data-slug="${escapeHtml(m.slug)}">⇄ Transform</button>`
     : `<button class="btn-primary msearch-addbtn"
           data-action="quickAddMonster" data-slug="${escapeHtml(m.slug)}">+ Add</button>
-       <input type="number" id="qc_${m.slug.replace(/-/g,'_')}" class="msearch-qc" value="1" min="1" max="20"
+       <input type="number" inputmode="numeric" id="qc_${m.slug.replace(/-/g,'_')}" class="msearch-qc" value="1" min="1" max="20"
           title="How many to add" aria-label="How many ${escapeHtml(m.name)} to add">
        ${delBtn}`;
 
@@ -3026,7 +3027,7 @@ function showStatBlock(slug) {
       <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
         <div style="display:flex;flex-direction:column;gap:3px">
           <label style="font-size:12px;color:var(--text2);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;letter-spacing:.04em">Count</label>
-          <input type="number" id="sbCount_${m.slug.replace(/-/g,'_')}" aria-label="Count to add" value="1" min="1" max="20"
+          <input type="number" inputmode="numeric" id="sbCount_${m.slug.replace(/-/g,'_')}" aria-label="Count to add" value="1" min="1" max="20"
             onkeydown="if(event.key==='Enter'){event.preventDefault();addFromStatBlock('${m.slug}');}"
             style="width:60px;height:30px;font-size:14px;text-align:center">
         </div>
@@ -3039,7 +3040,7 @@ function showStatBlock(slug) {
             <option value="roll">Roll dice</option>
             <option value="set">Set value…</option>
           </select>
-          <input type="number" class="sb-hp-set-inp" min="1" max="9999" placeholder="HP value" aria-label="Set HP value"
+          <input type="number" inputmode="numeric" class="sb-hp-set-inp" min="1" max="9999" placeholder="HP value" aria-label="Set HP value"
             style="display:none;margin-top:4px;width:100%;padding:4px 6px;font-size:13px;background:var(--bg4);border:1px solid var(--border2);border-radius:4px;color:var(--text)">
         </div>
         <div style="align-self:flex-end">
@@ -5401,7 +5402,7 @@ function buildCardHTML(c, ctx) {
       </div>
       <div class="cb-acts">
         <div class="dmg-row">
-          <input class="dmg-in" type="number" placeholder="0" min="0" id="dmg_${c.id}" aria-label="Damage or heal amount"
+          <input class="dmg-in" type="number" inputmode="numeric" enterkeyhint="done" placeholder="0" min="0" id="dmg_${c.id}" aria-label="Damage or heal amount"
             onkeydown="if(event.key==='Enter')quickDmg(${c.id},false);else if(event.key.toLowerCase()==='h'){event.preventDefault();quickDmg(${c.id},true)}">
           <button class="btn-d d" data-action="quickDmg" data-id="${c.id}" data-heal="false">DMG</button>
           <button class="btn-d h" data-action="quickDmg" data-id="${c.id}" data-heal="true">HEAL</button>
@@ -5649,7 +5650,37 @@ document.addEventListener('keydown',e=>{
   }
   // Escape clears bulk selection when bulk bar is visible
   if(e.key==='Escape' && document.getElementById('bulkBar').classList.contains('on')) { clearSelection(); return; }
-  if(e.key==='n'||e.key==='N') nextTurn();
+  // Guard: action shortcuts (N, Space, /) must not fire while a blocking
+  // overlay (modal, picker, panel, menu) is open — only Escape handling above
+  // runs in those states. Without this, e.g. pressing N behind a dialog would
+  // silently advance the turn.
+  const _overlayOpen = (
+    document.getElementById('mtzModalBg').classList.contains('on') ||
+    document.getElementById('cpicker').classList.contains('on') ||
+    document.getElementById('durPicker').classList.contains('on') ||
+    document.getElementById('spellPanel').classList.contains('on') ||
+    document.getElementById('moreMenu').classList.contains('on') ||
+    document.getElementById('hpModePop').classList.contains('on') ||
+    document.getElementById('logPanel').classList.contains('on') ||
+    document.getElementById('helpPanel').classList.contains('on') ||
+    document.getElementById('guidePanel').classList.contains('on') ||
+    document.getElementById('hppop').classList.contains('on') ||
+    !!document.querySelector('.modal-bg.on')
+  );
+  if(_overlayOpen) return;
+  // N also blocked while the Monster DB panel is open (sbpanel is excluded from
+  // the guard above so that '/' can re-focus its search, but advancing the turn
+  // behind it would be wrong).
+  if((e.key==='n'||e.key==='N') && !document.getElementById('sbpanel').classList.contains('on')) nextTurn();
+  // S — toggle the active combatant's stat block (no-op if no active turn, or the
+  // active combatant has no linked stat block). toggleSB handles the "no statSlug"
+  // guard and the switch/toggle behaviour itself.
+  if((e.key==='s'||e.key==='S') && !document.getElementById('sbpanel').classList.contains('on')) {
+    if(active >= 0 && active < cbs.length && cbs[active] && cbs[active].statSlug) {
+      e.preventDefault();
+      toggleSB(cbs[active].id);
+    }
+  }
   // Space — pause/resume timer (only when timer active and no input focused)
   if(e.key===' ' && timerEnabled && timerInterval !== null) {
     const tag = document.activeElement ? document.activeElement.tagName : '';
@@ -5658,7 +5689,7 @@ document.addEventListener('keydown',e=>{
       pauseResumeTimer();
     }
   }
-  // / — focus Monster DB search
+  // / — open Monster DB and focus search
   if(e.key==='/') {
     const tag = document.activeElement ? document.activeElement.tagName : '';
     if(tag !== 'INPUT' && tag !== 'TEXTAREA') {
@@ -5666,8 +5697,9 @@ document.addEventListener('keydown',e=>{
       const panel = document.getElementById('sbpanel');
       const search = document.getElementById('msearchIn');
       if(panel && search) {
-        if(!panel.classList.contains('on')) openSBPanel();
-        setTimeout(()=>search.focus(), 50);
+        // openMonsterSearch opens the panel and focuses the search field.
+        if(!panel.classList.contains('on')) openMonsterSearch();
+        else setTimeout(()=>search.focus(), 50);
       }
     }
   }
@@ -6464,7 +6496,7 @@ function buildScoresTables() {
           <option value="prof"${profVal==='prof'?' selected':''}>Proficient</option>
         </select></td>
         <td><span class="cm-calc-val" id="calc_${s.id}">${fmtBonus(calc)}</span></td>
-        <td><input class="cm-override" id="ov_${s.id}" type="number" aria-label="Override value" placeholder="—"
+        <td><input class="cm-override" id="ov_${s.id}" type="number" inputmode="numeric" aria-label="Override value" placeholder="—"
           value="${ovCache[s.id]||''}" title="Override — leave blank to use calculated value"></td>
       </tr>`;
     }).join('');
@@ -7576,7 +7608,7 @@ function groupMonsterSearchResults(query) {
       <div class="msearch-add">
         <button class="btn-primary msearch-addbtn"
           data-action="quickAddMonsterToGroup" data-slug="${escapeHtml(m.slug)}" data-name="${escapeHtml(m.name)}" data-countid="${escapeHtml(countId)}">+ Add</button>
-        <input type="number" id="${countId}" class="msearch-qc" value="1" min="1" max="20"
+        <input type="number" inputmode="numeric" id="${countId}" class="msearch-qc" value="1" min="1" max="20"
           title="How many to add" aria-label="How many ${escapeHtml(m.name)} to add">
       </div>
       <button class="msearch-open" type="button" data-action="showStatBlockForGroup" data-slug="${escapeHtml(m.slug)}" title="View stat block for ${escapeHtml(m.name)}">
@@ -10139,7 +10171,7 @@ function closeGuidePanel() {
           </div>
           <div class="xp-party-row">
             <label>Players</label>
-            <input type="number" id="xpPlayers" value="4" min="1" max="10" oninput="setXPPlayerCount(this.value)" aria-label="Number of players">
+            <input type="number" inputmode="numeric" id="xpPlayers" value="4" min="1" max="10" oninput="setXPPlayerCount(this.value)" aria-label="Number of players">
           </div>
           <div style="font-size:13px;color:var(--text3);margin-bottom:6px">Player Levels</div>
           <div id="xpLevelRows"></div>
@@ -10231,7 +10263,7 @@ function closeGuidePanel() {
       <!-- BASICS -->
       <div class="cm-panel on" id="cm-basics">
         <div class="cm-grid">
-          <div class="cm-fg cm-full"><label>Name</label><input id="cmName" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="Ancient Shadow Drake" aria-label="Monster name"></div>
+          <div class="cm-fg cm-full"><label>Name</label><input id="cmName" enterkeyhint="done" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="Ancient Shadow Drake" aria-label="Monster name"></div>
           <div class="cm-fg"><label>Size</label>
             <select id="cmSize" aria-label="Monster size"><option>Tiny</option><option>Small</option><option selected>Medium</option><option>Large</option><option>Huge</option><option>Gargantuan</option></select>
           </div>
@@ -10255,9 +10287,9 @@ function closeGuidePanel() {
             </select>
           </div>
           <div class="cm-fg"><label>CR</label><input id="cmCR" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="5" oninput="cmRecalc()" aria-label="Challenge rating"></div>
-          <div class="cm-fg"><label>AC</label><input type="number" id="cmAC" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="15" aria-label="Armour Class"></div>
+          <div class="cm-fg"><label>AC</label><input type="number" inputmode="numeric" id="cmAC" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="15" aria-label="Armour Class"></div>
           <div class="cm-fg"><label>AC Desc</label><input id="cmACDesc" placeholder="natural armor" aria-label="Armour type description"></div>
-          <div class="cm-fg"><label>HP</label><input type="number" id="cmHP" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="78" aria-label="Hit points"></div>
+          <div class="cm-fg"><label>HP</label><input type="number" inputmode="numeric" id="cmHP" onkeydown="if(event.key==='Enter'){event.preventDefault();saveCustomMonster();}" placeholder="78" aria-label="Hit points"></div>
           <div class="cm-fg"><label>Hit Dice</label><input id="cmDice" placeholder="12d8+24" aria-label="Hit dice"></div>
           <div class="cm-fg"><label>Walk Speed</label><input id="cmSpeed" placeholder="30 ft." aria-label="Speed"></div>
           <div class="cm-fg"><label>Other Speeds</label><input id="cmSpeed2" placeholder="fly 60 ft., swim 30 ft." aria-label="Additional speeds"></div>
@@ -10302,12 +10334,12 @@ function closeGuidePanel() {
           <span style="font-size:12px;color:var(--text3);margin-left:auto">Prof bonus: <span id="cmProfDisplay" style="color:var(--gold2);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif">+2</span> (from CR)</span>
         </div>
         <div class="cm-scores" style="margin-bottom:16px">
-          <div class="cm-score"><label>STR</label><input type="number" id="cmSTR" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Strength"></div>
-          <div class="cm-score"><label>DEX</label><input type="number" id="cmDEX" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Dexterity"></div>
-          <div class="cm-score"><label>CON</label><input type="number" id="cmCON" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Constitution"></div>
-          <div class="cm-score"><label>INT</label><input type="number" id="cmINT" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Intelligence"></div>
-          <div class="cm-score"><label>WIS</label><input type="number" id="cmWIS" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Wisdom"></div>
-          <div class="cm-score"><label>CHA</label><input type="number" id="cmCHA" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Charisma"></div>
+          <div class="cm-score"><label>STR</label><input type="number" inputmode="numeric" id="cmSTR" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Strength"></div>
+          <div class="cm-score"><label>DEX</label><input type="number" inputmode="numeric" id="cmDEX" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Dexterity"></div>
+          <div class="cm-score"><label>CON</label><input type="number" inputmode="numeric" id="cmCON" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Constitution"></div>
+          <div class="cm-score"><label>INT</label><input type="number" inputmode="numeric" id="cmINT" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Intelligence"></div>
+          <div class="cm-score"><label>WIS</label><input type="number" inputmode="numeric" id="cmWIS" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Wisdom"></div>
+          <div class="cm-score"><label>CHA</label><input type="number" inputmode="numeric" id="cmCHA" value="10" min="1" max="30" oninput="cmRecalc()" aria-label="Charisma"></div>
         </div>
 
         <!-- Saving throws table -->
@@ -10600,6 +10632,9 @@ function closeGuidePanel() {
     <h3>Device Accessibility Settings</h3>
     <p>The tracker respects your operating system's accessibility preferences: if you have <b>reduce motion</b> enabled, animations are calmed throughout; if your system is set to a light appearance, the tracker opens in Day mode to match. Base text scales with your browser's text-size / zoom, so increasing the font size behaves as expected.</p>
 
+    <h3>Tablet &amp; Phone Input <span style="color:var(--gold)">(v1.33)</span></h3>
+    <p>Number fields — damage, HP, AC, initiative, counts and ability scores — request the <b>numeric keypad</b> on tablets and phones, so entering values during combat is quick. To dismiss the on-screen keyboard, tap anywhere outside the field (or use your keyboard's <em>Done</em> / down button). The damage field keeps focus after you apply, so you can damage several creatures in a row; tap away when you're finished to close the keyboard.</p>
+
     <h3>Player Portraits</h3>
     <p>You can give a player a <b>portrait</b> in the XP / party panel: use the avatar control on that player's row to pick an image. It then appears as a small rounded thumbnail on the left of that combatant's card during combat. Players without a portrait show a tidy <b>initials chip</b> instead (which follows your accent colour). Portraits are handled privately and efficiently — the image is shrunk to a small thumbnail in your own browser and only that compact version is stored; the original file is never kept or uploaded, and nothing leaves your device. Portraits travel with their party through Export / Import and Quick Save / Load.</p>
 
@@ -10608,6 +10643,7 @@ function closeGuidePanel() {
     <tr><td><b>N</b></td><td>Next Turn</td></tr>
     <tr><td><b>Space</b></td><td>Pause / Resume turn timer (when timer is active)</td></tr>
     <tr><td><b>/</b></td><td>Open Monster DB and focus search field</td></tr>
+    <tr><td><b>S</b></td><td>Show / hide the active combatant's stat block (if it has one) <span style="color:var(--gold)">(v1.33)</span></td></tr>
     <tr><td><b>Esc</b></td><td>Close any open panel</td></tr>
     <tr><td><b>Enter</b></td><td>Apply damage (when field focused)</td></tr>
     <tr><td><b>H</b></td><td>Apply as healing (when field focused)</td></tr>
