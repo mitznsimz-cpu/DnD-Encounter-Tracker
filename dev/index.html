@@ -3734,8 +3734,15 @@ function rollAll() {
 }
 
 function _doRollAll() {
+  // Group initiative: identical creatures share one roll (e.g. 5 goblins all get
+  // the same initiative). Group by statSlug when present (definitive for DB/custom
+  // monsters), else by base name with any trailing duplicate-number stripped.
+  const groupKey = (c) => c.statSlug ? ('slug:' + c.statSlug) : ('name:' + (c.name || '').replace(/\s+\d+$/, '').trim().toLowerCase());
+  const rolled = {};
   cbs.forEach(c => {
-    c.initiative = rollInitiative(c);
+    const k = groupKey(c);
+    if (!(k in rolled)) rolled[k] = rollInitiative(c);
+    c.initiative = rolled[k];
   });
   round = 1; active = -1;
   sortInit(true);
@@ -4018,8 +4025,13 @@ function bulkSetInit() {
 
 function bulkRerollInit() {
   pushHistory();
+  // Group identical creatures so they share one roll (same logic as Roll Init).
+  const groupKey = (c) => c.statSlug ? ('slug:' + c.statSlug) : ('name:' + (c.name || '').replace(/\s+\d+$/, '').trim().toLowerCase());
+  const rolled = {};
   const results = getSelected().map(c => {
-    c.initiative = rollInitiative(c);
+    const k = groupKey(c);
+    if (!(k in rolled)) rolled[k] = rollInitiative(c);
+    c.initiative = rolled[k];
     return c.name + ' → ' + c.initiative;
   });
   logEvent('note', 'Bulk initiative rerolled: ' + results.join(', '));
