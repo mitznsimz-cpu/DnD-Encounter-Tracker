@@ -888,11 +888,17 @@ html[data-theme="light"] .msearch-item .m-meta { color: var(--text2); }
   /* App fills remaining height via flex (see .app rule); no fixed height here. */
 
   /* Combatant cards — linear layout */
+  /* Combatant card grid. The drag-handle (desktop drag-to-reorder) is not
+     useful on touch and was throwing the column count off, squeezing .cb-main
+     into a tiny cell (truncated name, vertical "+note"). Hide it and lay the
+     four row-1 children out explicitly: move buttons, select, init, main info.
+     cb-acts and cb-sb still span the full width on their own rows. */
   .cb {
-    grid-template-columns: 24px 36px 1fr !important;
+    grid-template-columns: 28px 22px 36px 1fr !important;
     gap: 0 8px;
   }
-  .cb.sb-open { grid-template-columns: 24px 36px 1fr !important; }
+  .cb.sb-open { grid-template-columns: 28px 22px 36px 1fr !important; }
+  .cb > .drag-handle { display:none !important; }
   .cb-acts {
     grid-column: 1 / -1;
     display:flex;
