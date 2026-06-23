@@ -6243,8 +6243,10 @@ function toggleTheme() {
 }
 
 // ── Header collapse (small screens only) ────────────────────────────
-// Manual grip toggles; scroll-down on the combatant list auto-collapses,
-// scroll-up restores. Desktop (>900px) is unaffected.
+// Scroll-down on the combatant list auto-collapses the header/footer to give
+// the list more room. Restore is MANUAL only (the chevron) — scrolling back up
+// does not bring it back, so the header doesn't flicker while scrubbing a long
+// combat list. Desktop (>900px) is unaffected.
 let _hdrUserExpanded = false;   // set true if the user manually expands, to pause auto-collapse briefly
 let _hdrAutoTimer = null;
 function toggleHeaderCollapse() {
@@ -6270,22 +6272,20 @@ function initHeaderAutoCollapse() {
     ticking = true;
     requestAnimationFrame(() => {
       ticking = false;
-      // Only on phone/tablet widths.
-      if (window.innerWidth > 900) { _setHeaderCollapsed(false); lastY = list.scrollTop; return; }
       const y = list.scrollTop;
       const dy = y - lastY;
-      // Phones get a tighter trigger; tablets a gentler one.
+      lastY = y;
+      // Desktop / wide tablets: never collapse from scroll.
+      if (window.innerWidth > 900) return;
+      // Collapse-only: scrolling DOWN hides the header/footer to give the list
+      // more room. Scrolling back UP does NOT bring them back — the user
+      // restores manually with the chevron. This avoids the header flickering
+      // in and out while scrubbing up and down a long combat. A brief guard
+      // after a manual expand stops an immediate re-collapse.
       const isPhone = window.innerWidth <= 650;
       const downThresh = isPhone ? 24 : 48;
-      const upThresh   = isPhone ? 16 : 32;
       if (dy > downThresh && y > 40 && !_hdrUserExpanded) {
         _setHeaderCollapsed(true);
-        lastY = y;
-      } else if (dy < -upThresh || y <= 8) {
-        _setHeaderCollapsed(false);
-        lastY = y;
-      } else if (Math.abs(dy) > 4) {
-        lastY = y;
       }
     });
   }, { passive: true });
@@ -11228,7 +11228,7 @@ function closeGuidePanel() {
     <p>The MitzNSimz Encounter Tracker removes that friction so the DM can focus on what matters: <b>the story, the drama, and the players.</b></p>
     <p><b>Core Design Principles:</b> Offline First · No Accounts · No Subscriptions · Local Data · DM-Focused · Physical Dice</p>
     <p><b>What this tracker is not:</b> not a Virtual Tabletop (no grid or maps), not a character sheet manager, not a dice roller, not a campaign manager.</p>
-    <p><b>Best viewed on:</b> a tablet (iPad, Android tablet) or laptop/desktop browser gives the most room. Phones are fully supported too (v1.37): the toolbar becomes a single side-scrolling row, and when you start combat the header automatically collapses to a slim bar showing the round, the active combatant and a <b>Next</b> button — handing the rest of the screen to the combatant list. Scroll up (or tap the small chevron) to bring the full header back; scroll down to collapse it again. On phones and tablets you can collapse or expand the header at any time with the chevron next to <b>? Help</b>.</p>
+    <p><b>Best viewed on:</b> a tablet (iPad, Android tablet) or laptop/desktop browser gives the most room. Phones are fully supported too (v1.37): the toolbar becomes a single side-scrolling row, and when you start combat the header automatically collapses to a slim bar showing the round, the active combatant and a <b>Next</b> button — handing the rest of the screen to the combatant list. Scrolling down also collapses it; to bring the full header and footer back, tap the small chevron on the slim bar (it stays collapsed while you scroll so nothing flickers in and out). You can collapse or expand the header at any time with the chevron next to <b>? Help</b>.</p>
 
     <h2 id="g-offline">Offline Use, Privacy &amp; Data</h2>
 
@@ -11442,7 +11442,7 @@ function closeGuidePanel() {
     <p>Ctrl+Z / Cmd+Z or ↩ Undo. Restores full state — HP, conditions, active turn, round — up to 20 steps back. Every state change is tracked including HP edits, AC/initiative edits, condition changes, and notes. The Undo button shows a gold count badge indicating steps remaining.</p>
 
     <h3>On my phone the header and toolbar disappear when I start combat — is that normal?</h3>
-    <p>Yes (v1.37). On phones and small tablets, the tracker collapses the header and toolbar into a slim bar once combat begins, so the combatant list gets nearly the whole screen. The slim bar still shows the round, whose turn it is, and a <b>Next</b> button. To bring everything back, <b>scroll up</b> in the list or tap the small <b>chevron</b> on the left of the slim bar; scrolling down collapses it again. You can also collapse/expand manually any time using the chevron next to <b>? Help</b>. On desktop and wide tablets the header always stays put.</p>
+    <p>Yes (v1.37). On phones and small tablets, the tracker collapses the header and toolbar into a slim bar once combat begins (and whenever you scroll down the list), so the combatant list gets nearly the whole screen. The slim bar still shows the round, whose turn it is, and a <b>Next</b> button. It deliberately <b>stays</b> collapsed while you scroll up and down — so it won't flicker in and out as you scan a long combat. To bring the full header and footer back, tap the small <b>chevron</b> on the left of the slim bar (or the chevron next to <b>? Help</b>). On desktop and wide tablets the header always stays put.</p>
 
     <p>It's a <b>reminder only</b> — it flags that a creature's stat block contains a start- or end-of-turn ability (regeneration, an aura, ongoing damage, a recharge-on-turn effect, and so on) and pulses during that creature's turn. It does <b>not</b> resolve anything, and deliberately so. One subtlety worth knowing: a "start/end of turn" effect might trigger on <b>this creature's own turn</b> (e.g. a troll regaining HP) <b>or on another combatant's turn</b> (e.g. an aura that damages anyone who starts their turn near it). The pill can't know which — it just makes sure you don't forget the effect exists. Tap it, read the ability, check the stat block, and resolve it yourself. If you realise you missed it on an earlier turn, you can apply it retroactively or use Undo to step back to that combatant and resolve it there.</p>
 
