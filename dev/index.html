@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.62 - DEV</title>
+<title>MitzNSimz D&D Encounter Tracker v1.70 - DEV</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAGXElEQVR4nO3dz3HUTBCG8TH13SkuXKgiEC5E4KOzcAKOgATIgiMR+OJ0XE4AvgtTluWVVn9merrffn5XMFrNPDTySotvvn75/LcAIj6MfgFASwQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQQNKQRt5P6WpbZwwwP+fV0K+efvPwNeSQ6MjY6WpjLTuh8mdAd7gmVat0XQDZ2ZvITdBv/2NXIt5u/fPp76emzDhD7pSMiPTy+rX8O0Po6gDzo7kUsh7B4IeqcWIU8RdVsEvUPrmKcIuw2C3qBnyHOEfQ5Br7AMeYqojyPoBaNiniLs/Qh6xkPIc4S9HUH/4zHkKaLehqCL/5inCHtd6qAjhTxH2JelDDpyyFNE/V6qoFVCniPsV2mCVo15irATBJ0h5KnsUcsGnS3kuaxhSwadPeapbGFLBU3Iy7KELRE0IW+TIerwQRPzfsphhw2akM9TDDtc0ITcllrUYYIm5L5Uwg4RtIeY7x6eF3/t149PYY5xTfSwXQc9OuS1wJbsDc/iGHtFjtpl0KNDLuVYaNXW4CyOcUbEsN0FPTrmM5HNLUVncYyWIoXtJujRIZfSNrRqHpzFMXqIEvV/o1+Ah5BxXd2HpbDrPo4Oe+iE9hRzj8lZ1QlqcQwrXif2kKA9hVxK39AsEbXxJYe3kHGOx8sQk6AJWZunsLv/t/HeY1a53Chl/Ll4+CkF3Sa095DRx+hpbf62HSHncC3sXkx/Ug0x52O952ZBE3NelnvPzxKDlPRBW9+M6EnpXI5KHzS0EDSkDH/arrWlmwtr/xz/+vFJ/uGkI+sSUbeHk+Y3Vnp+p7s3FIsH75eOZfk8dKt1aWH+fnSvGyvhLzmOBDL6FrGFrOsSdkK3WvyeE3TER7B6rctZVhM6ZNCtJ8mlzYv4IVmLdTmKS47Bjm7mnq+zOEY24SZ0r+u8o+8SbPnarc4cY9S6bMUlxwW9v2mJOvkirAuXHMABBA0pYYK2eI804vuwrMtbYYIGtiBoSCFoSCFoSCFoSCFoSAkTtMVdvIh3ClmXt8IEDWwh9xGskY7egIg0Ab0LFXTPz/4diarVa5n/OXtfi7d1GSlU0KX02TyLB/L3OBL4yHXxJFzQI4x+lqEeP2Jg1kJ+U9hyY9f+rLuH5+ExT117PVbr4lnYCX32/7q4FrJnaxO757pEEHJCTx3ZgLVPY3uPeWrt9bZcl0jCTuip6UYc3eBIIc/dPTyvTuv6ey5RiHhKIuipkW+/jbQUdaUW7pLwlxxnKcRcKZ3LUamDVgxA8Zz2SBu08sYrn9s1KYPOsOEZzvGSdEFn2uhM51qlCjrjBmc75zRBZ9vYqUznniZo5JAi6EwTakmWNUgRNPKQDzrLZNoiw1rIB41cCBpSCBpSpIPOcM24l/qaSAeNfAgaUggaUggaUggaUggaUggaUqSDzvLR/T3U10Q6aORD0JBC0JAiH7T6NeMeGdZCPmjkkiLoDJPpmixrYBb049OL1aHgjOXem07okVFnmVCXjDx36z03v+R4fHoZFnbGqEed86h9vvn65fPfnge4v13/O/P928eeh79I/VMb1YiYr0X88/efrsfvPqGvncCIv8UZJnXGmEsxmNBT3qa16qS2jtlDyJVp0JWnsNWitozZU8jVkKArL2GrRJ095lIGB10KUbdiFbPXkKvhQVcewo4atUXM3kOu3ARdEfZ2TOX33AVdio+oS/EbNiEvcxl0RdhvEfJ1roOusofNuxfbhQi6FD9RT/UKPOtdvhbCBF15DLs6Grjnp+GihFyFC7ryHHYUajGXEjjoirD3Uwy5Ch90KUS9lXLIlUTQFWEvyxBzKWJBV4T9KkvIlWTQpRB1tpAr2aCrbGFnDbmSD7rKEHb2mEtJFHQpulET8qtUQVcqYRPyeymDriKHTcyXpQ66ihQ2Ia8j6H+8R03I2xD0jMewiXk7gl7gIWxC3o+gV4yKmpCPI+gNLMMm5nMIeoeeYRNyGwS9U+uoCbktgj6oRdjE3B5Bn3QkbELuh6Ab2RI2IfdH0A1di3oNMbdB0B3sCZuQ2yLojtbCJuQ+Uvwk2VGWoiXmfpjQRu5vPxCyAYKGFC45IIWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIYWgIeV/ZkOfilT9Y1oAAAAASUVORK5CYII=">
@@ -1643,7 +1643,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.62</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.70</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1997,7 +1997,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     <a class="btn-ghost" href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_User_Guide.pdf" target="_blank" rel="noopener noreferrer" style="font-family:inherit;font-size:11px;line-height:1.4;padding:4px 10px;margin-top:6px;margin-left:6px;border-radius:6px;vertical-align:middle;box-sizing:border-box;text-decoration:none;display:inline-flex;align-items:center;justify-content:center">📄 User Guide (PDF)</a>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.62</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.70</p>
   </div>
   <div class="help-body">
 
@@ -2746,7 +2746,7 @@ async function forceRefreshDBConfirmed() {
 const IDB_NAME    = STORAGE_NS ? 'encounter_tracker_dev' : 'encounter_tracker';
 const IDB_VERSION = 1;
 const IDB_STORE   = 'db_cache';
-const CACHE_VERSION = 5;   // bump when cached monster/spell SHAPE changes (e.g. Open5e API v2) to auto-invalidate stale caches
+const CACHE_VERSION = 6;   // v6: + environments (v1.67). Bump when cached monster/spell SHAPE changes (e.g. Open5e API v2) to auto-invalidate stale caches
 
 function openIDB() {
   return new Promise((resolve, reject) => {
@@ -2831,6 +2831,27 @@ function titleAlign(a){
   if (!a || typeof a !== 'string') return a || '';
   return a.replace(/\S+/g, w => /^(of|the|and|or)$/i.test(w) ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase());
 }
+// Environment dropdown (v1.67): options are COLLATED FROM THE CACHED DB — the
+// distinct environment tags actually present, with monster counts — so the
+// filter always matches reality. (The old hardcoded DMG list never matched
+// Open5e's vocabulary, and the field wasn't even cached before v6.)
+function populateEnvDropdown() {
+  const sel = document.getElementById('regenEnv');
+  if (!sel) return;
+  const counts = {};
+  monsterDB.forEach(m => (m.environments||[]).forEach(e => { counts[e] = (counts[e]||0) + 1; }));
+  const names = Object.keys(counts).sort((a,b) => counts[b]-counts[a] || a.localeCompare(b));
+  const current = sel.value;
+  let html = '<option value="">Any environment</option>';
+  if (!names.length) {
+    html += '<option value="" disabled>(no environment data cached — Refresh DB)</option>';
+  } else {
+    names.forEach(n => { html += `<option value="${escapeHtml(n)}">${escapeHtml(n.charAt(0).toUpperCase()+n.slice(1))} (${counts[n]})</option>`; });
+  }
+  sel.innerHTML = html;
+  if ([...sel.options].some(o => o.value === current)) sel.value = current;
+}
+
 function minifyMonster(m) {
   return {
     slug:m.slug, name:m.name, size:m.size, type:m.type, subtype:m.subtype,
@@ -2848,6 +2869,7 @@ function minifyMonster(m) {
     special_abilities:m.special_abilities, actions:m.actions,
     bonus_actions:m.bonus_actions, reactions:m.reactions,
     legendary_desc:m.legendary_desc, legendary_actions:m.legendary_actions,
+    environments:(m.environments||[]).map(e=>String(e.name||e).toLowerCase()),
     document__title:m.document__title, document__slug:m.document__slug
   };
 }
@@ -2895,6 +2917,7 @@ function minifyMonsterV2(m){
   const sc=m.ability_scores||{};
   const out={
     slug:m.key, name:m.name,
+    environments:(m.environments||[]).map(e=>String(e.name||e).toLowerCase()),
     size:(m.size&&m.size.name)||'', type:(m.type&&m.type.name)||'', subtype:m.subtype||'',
     alignment:titleAlign(m.alignment), armor_class:m.armor_class, armor_desc:m.armor_detail||'',
     hit_points:m.hit_points, hit_dice:m.hit_dice||'', speed:_v2Speed(m.speed),
@@ -3004,6 +3027,7 @@ async function loadDB() {
       sArr.forEach(s => { spellDB[s.name.toLowerCase()] = s; spellDB[s.slug] = s; });
       setDBStatus('ok', `${monsterDB.length.toLocaleString()} monsters · ${sArr.length.toLocaleString()} spells`);
       dbReady = true;
+      populateEnvDropdown();
       refreshLastUpdatedDisplays();
       checkDBFreshness();
       resetLinkSpellsCache(); clearSBCache(); rebuildSpellVariants();
@@ -3036,6 +3060,7 @@ async function loadDB() {
 
     setDBStatus('ok', `${monsterDB.length.toLocaleString()} monsters · ${spells.length.toLocaleString()} spells`);
     dbReady = true;
+    populateEnvDropdown();
     refreshLastUpdatedDisplays();
     checkDBFreshness();
     // Re-detect recharge/legendary for any existing combatants
@@ -4092,13 +4117,18 @@ function _doRollAll() {
 }
 
 function newEncounterConfirmed() {
+  // Undoable (v1.66): snapshot the outgoing encounter first and KEEP the undo
+  // history — Undo restores combatants/round/turn. The combat log is cleared
+  // and is NOT part of undo snapshots (export a summary for a permanent record).
+  if (cbs.length) pushHistory();
   cbs=[];round=1;active=-1;uid=0;selectedIds.clear();collapsedGroups.clear();
-  combatLog=[]; actionHistory=[];
+  combatLog=[];
   logEvent('note', '⚔ New encounter started');
   render(); save();
-  // Reset banner
-  const bnr=document.getElementById('bnr');
-  if(bnr){bnr.style.display='none';}
+  // Banner visibility is owned by render() (v1.64): it removes the 'on' class
+  // when active < 0, which a new encounter guarantees. The old inline
+  // display:none here permanently out-ranked the class-based show and hid the
+  // banner for the rest of the session once combat restarted.
 }
 
 function clearAll() {
@@ -4107,7 +4137,7 @@ function clearAll() {
   const hasActivity = combatLog.length > 1 || round > 1;
   if (hasActivity) {
     mtzConfirm('New Encounter',
-      'Start a new encounter? The current encounter will be cleared. You can export a session summary first if you\u2019d like to keep a record.',
+      'Start a new encounter? The combatants can be brought back with Undo, but the combat log starts fresh \u2014 export a session summary first if you\u2019d like to keep a record.',
       newEncounterConfirmed,
       { confirmText:'New Encounter', danger:true,
         thirdText:'Export Summary First',
@@ -4115,10 +4145,10 @@ function clearAll() {
           exportSessionSummary();
           // Re-offer New Encounter after the export so the flow continues,
           // but without the export option a second time.
-          mtzConfirm('New Encounter', 'Summary exported. Start the new encounter now? The current encounter will be cleared.', newEncounterConfirmed, {confirmText:'New Encounter', danger:true});
+          mtzConfirm('New Encounter', 'Summary exported. Start the new encounter now? (Undo can bring the combatants back; the log starts fresh.)', newEncounterConfirmed, {confirmText:'New Encounter', danger:true});
         } });
   } else {
-    mtzConfirm('New Encounter', 'Start a new encounter? The current encounter will be cleared.', newEncounterConfirmed, {confirmText:'New Encounter', danger:true});
+    mtzConfirm('New Encounter', 'Start a new encounter? (Undo can bring the combatants back if needed.)', newEncounterConfirmed, {confirmText:'New Encounter', danger:true});
   }
 }
 
@@ -5815,130 +5845,15 @@ function computeGroups(cbs) {
   return { groupMap, groupBases };
 }
 
-function buildCardHTML(c, ctx) {
-  const { isActive, pct, col, isGrouped, key } = ctx;
-  // Lair cards (v1.57): spawned via spawnLairCard — an initiative marker, not a
-  // creature. Hide HP/AC/damage machinery; keep conditions, stat block, note.
-  const isLair = !!(c.statSlug && /^lair-/.test(c.statSlug));
-
-  const ctags = c.conditions.map(cond => {
-    const n   = typeof cond==='string' ? cond : cond.n;
-    const dur = typeof cond==='object' ? cond.dur : null;
-    const cd  = getConditions().find(x => x.n === n);
-    // Exhausted: dur field stores level not rounds — show "Lv N"
-    const durHtml = dur!==null&&dur!==undefined
-      ? (n === 'Exhausted'
-          ? `<span class="cond-dur" title="Exhaustion level — click to change"
-                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">Lv${dur}</span>`
-          : `<span class="cond-dur${dur<=1?' warning':''}" title="Rounds remaining — click to adjust"
-                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">${dur}r</span>`)
-      : '';
-    const _ci = getCondIcon(n);
-    // Other: show the user's label on the pill instead of the bare name.
-    const _label = (n === 'Other') ? (typeof cond==='object' && cond.label ? cond.label : 'Other') : n;
-    // Exhausted: show level on badge, skip durHtml (level not a round count)
-    const _isExh = n === 'Exhausted';
-    const _exhLevel = _isExh && typeof cond === 'object' && cond.dur ? ' Lv' + cond.dur : '';
-    const _durDisplay = _isExh ? '' : durHtml;
-    // Rule-reminder expand toggle (ⓘ). Has its own data-action so the card
-    // dispatcher routes it to toggleCondRule, not the pill's openConds.
-    const _isOpen = _openCondRule[c.id] === n;
-    const _expand = (CONDITION_RULES[n] || n === 'Other')
-      ? `<span class="cond-expand${_isOpen?' open':''}" role="button" tabindex="0"
-             data-action="toggleCondRule" data-id="${c.id}" data-cond="${escapeHtml(n)}"
-             title="${_isOpen?'Hide':'Show'} rule reminder" aria-label="${_isOpen?'Hide':'Show'} rule reminder for ${escapeHtml(n)}" aria-expanded="${_isOpen?'true':'false'}">&#9432;</span>`
-      : '';
-    return `<span class="cond-tag" style="background:${cd?.bg||'#333'};color:${cd?.c||'#aaa'}" data-action="openConds" data-id="${c.id}" role="button" tabindex="0" title="${_isExh?'Exhaustion level '+(_exhLevel||''):'Edit conditions'}">${_ci}${escapeHtml(_label)}${_exhLevel}${_durDisplay}${_expand}</span>`;
-  }).join('');
-
-  // Death saves
-  const showDS = c.deathSavesEnabled && (c.currentHP === 0 || c.dead) && !c.stable;
-  const ds = showDS ? (() => {
-    const successes = c.dead ? c.deathSaves.success : c.deathSaves.success;
-    const failures  = c.dead ? 3 : c.deathSaves.failure;
-    const sPips = [0,1,2].map(i => {
-      const on = successes > i;
-      return `<svg class="ds-pip s${on?' on':''}" data-action="toggleDS" data-id="${c.id}" data-which="success" data-idx="${i}"
-        title="Death Save Success ${i+1}" viewBox="0 0 16 16">
-        <use href="${on?'#pip-heart':'#pip-circle'}"/>
-      </svg>`;
-    }).join('');
-    const fPips = [0,1,2].map(i => {
-      const on = failures > i;
-      return `<svg class="ds-pip f${on?' on':''}" data-action="toggleDS" data-id="${c.id}" data-which="failure" data-idx="${i}"
-        title="Death Save Failure ${i+1}" viewBox="0 0 16 16">
-        <use href="${on?'#pip-skull':'#pip-circle'}"/>
-      </svg>`;
-    }).join('');
-    return `<div class="ds-row">
-      <svg class="ico-sm" style="color:var(--green2);flex-shrink:0"><use href="#ico-heal"/></svg>
-      <div class="ds-pips">${sPips}</div>
-      <span style="margin:0 2px;color:var(--border2)">|</span>
-      <svg class="ico-sm" style="color:var(--red2);flex-shrink:0"><use href="#ico-skull"/></svg>
-      <div class="ds-pips">${fPips}</div>
-      ${!c.dead && (c.deathSaves.success>=3||c.stable)?'<span class="ds-stable">Stable</span>':''}
-      ${!c.dead?`<button class="ds-nat20" data-action="dsNatTwenty" data-id="${c.id}" title="Natural 20 — regain 1 HP and wake up">Nat 20</button>
-      <button class="ds-nat20" style="background:rgba(192,64,64,.15);border-color:var(--red);color:var(--red2)" data-action="dsNatOne" data-id="${c.id}" title="Natural 1 — counts as two failures">Nat 1</button>`:''}
-    </div>`;
-  })() : '';
-
-  // Resurrect button
-  const resurrectBtn = c.dead && c.deathSavesEnabled ? (() => {
-    const roundsSinceDeath = c.deathRound != null ? round - c.deathRound : null;
-    const revivifyRounds   = roundsSinceDeath != null ? Math.max(0, 10 - roundsSinceDeath) : null;
-    const revivifyHtml = revivifyRounds != null
-      ? revivifyRounds > 0
-        ? `<span class="revivify-countdown ${revivifyRounds<=3?'urgent':''}" title="Revivify must be cast within 1 minute (10 rounds) of death">
-            ⏳ Revivify: ${revivifyRounds} round${revivifyRounds!==1?'s':''} remaining
-           </span>`
-        : `<span class="revivify-countdown expired" title="Too late for Revivify — 10 rounds have passed">
-            ✗ Revivify window expired
-           </span>`
-      : '';
-    return `<div style="margin-top:4px">
-      <button class="resurrect-btn" data-action="resurrect" data-id="${c.id}" title="Revive this character — enter HP restored">✦ Revive</button>
-      ${revivifyHtml}
-    </div>`;
-  })() : '';
-
-  const tmp  = c.tempHP > 0 ? `<span class="tmp-b">+${c.tempHP}</span>` : '';
-  const conc = c.concentrating ? `<span class="conc-dot" tabindex="0" role="img" aria-label="Concentrating. On damage, make a Constitution save, DC 10 or half the damage, whichever is higher, per source, or the effect ends. Lost if incapacitated or if you cast another concentration spell." title="Concentrating&#10;On damage: CON save (DC 10 or half damage, whichever is higher) per source, or the effect ends.&#10;Also lost if incapacitated or you cast another concentration spell."></span>` : '';
-
-  // Transform badge
-  const transformBadge = c._transformSlug
-    ? `<span class="transform-badge" data-action="openTransformPanel" data-id="${c.id}" role="button" tabindex="0" title="Currently transformed — click to manage">
-        <svg class="ico-sm"><use href="#ico-transform"/></svg> ${c._transformName||'Transformed'}
-      </span>
-      <button class="transform-revert-btn" data-action="revertTransform" data-id="${c.id}" title="Revert to original form">↩ Revert</button>`
-    : '';
-
-  const sbBtnLabel  = c.showSB ? '▴ Stat Block' : '▾ Stat Block';
-  const absentBtn   = c.type === 'player'
-    ? '<button class="cond-btn' + (c.absent?' style=\'border-color:var(--amber);color:var(--amber2)\'' : '') + '" data-action="toggleAbsent" data-id="'+c.id+'" title="'+(c.absent?'Mark as present':'Mark as absent this session')+'">👤'+(c.absent?' Absent':'')+'</button>'
-    : '';
-  const sbToggleBtn = c.statSlug && dbReady && (c.type !== 'player' || c._transformSlug)
-    ? `<button class="stat-btn" data-action="toggleSB" data-id="${c.id}" title="Show/hide stat block">${sbBtnLabel}</button>` : '';
-  const sbCol = c.showSB && c.statSlug && dbReady
-    ? buildInlineSB(findMonster(c.statSlug)) : '';
-
+// ── CARD SECTION HELPERS (v1.63 decomposition) ──────────────────
+// Pure string-in/string-out fragments extracted from buildCardHTML.
+// Regression contract: tests/run-cardhtml.js golden hashes (byte-identical).
+function cardControlsHTML(c) {
   // Move button disabled states (based on array position + neighbour initiative)
   const cbsIdx = cbs.indexOf(c);
   const canUp   = cbsIdx > 0            && cbs[cbsIdx-1].initiative === c.initiative;
   const canDown = cbsIdx < cbs.length-1 && cbs[cbsIdx+1].initiative === c.initiative;
-
-  // Player avatar (v1.28): rounded-square thumbnail if set; else an initials
-  // chip for players. Monsters/others/allies with no avatar collapse cleanly
-  // (no slot rendered), leaving their cards unchanged.
-  let avatarHTML = '';
-  if (c.avatar) {
-    avatarHTML = `<span class="cb-avatar" role="img" aria-label="${escapeHtml(c.name)}" style="background-image:url('${c.avatar}')"></span>`;
-  } else if (c.type === 'player') {
-    const initials = (c.name || '?').trim().split(/\s+/).map(w => w[0] || '').join('').slice(0,2).toUpperCase() || '?';
-    avatarHTML = `<span class="cb-avatar cb-avatar-chip" aria-hidden="true">${escapeHtml(initials)}</span>`;
-  }
-
-  return `
-      <div class="drag-handle" draggable="true"
+  return `      <div class="drag-handle" draggable="true"
         onmousedown="event.stopPropagation()"
         ondragstart="cbDragStart(event,${c.id})"
         ondragend="cbDragEnd(event)"
@@ -5958,15 +5873,40 @@ function buildCardHTML(c, ctx) {
       <div class="cb-check">
         <input type="checkbox" ${selectedIds.has(c.id)?'checked':''} onchange="toggleSelect(${c.id})" aria-label="Select ${escapeHtml(c.name)}">
       </div>
-      <button class="init-b" data-action="editInit" data-id="${c.id}" title="Click to edit initiative — type new value and press Enter">${c.initiative}</button>
-      <div class="cb-main">
-        <div class="cb-top">
-          ${avatarHTML}<span class="cb-name" data-action="editName" data-id="${c.id}" role="button" tabindex="0" title="Click to rename">${escapeHtml(c.name)}</span>${transformBadge}${c.absent?'<span class="absent-badge">absent</span>':''}
-          ${conc}
-          <span class="type-b ${c.type}">${isLair?"⛰ Lair":c.type==="monster"?"💀 Monster":c.type==="player"?"🛡️ Player":c.type==="other"?"🌍 Other":"💬 Ally"}</span>
-          ${isLair?'':`<span class="ac-b" data-action="editAC" data-id="${c.id}" role="button" tabindex="0" title="Click to edit AC">AC <strong>${c.ac}</strong></span>`}
-          ${tmp}
-          ${(()=>{
+      <button class="init-b" data-action="editInit" data-id="${c.id}" title="Click to edit initiative — type new value and press Enter">${c.initiative}</button>`;
+}
+function cardHPRowHTML(c, pct, col) {
+  const isLair = !!(c.statSlug && /^lair-/.test(c.statSlug));
+  return isLair?'':`<div class="hp-row">
+          <div class="hp-bar"><div class="hp-fill" style="width:${pct}%;background:${col}"></div></div>
+          <span class="hp-txt" data-action="openHP" data-id="${c.id}" role="button" tabindex="0" title="Click to edit HP">${c.currentHP}<span style="color:var(--text3)">/${c.maxHP}</span></span>
+          ${c.currentHP>0&&c.maxHP>0&&(c.currentHP/c.maxHP)<=0.5&&!c.dead?'<span class="bloodied-badge">Bloodied</span>':''}
+        </div>`;
+}
+function cardDmgRowHTML(c) {
+  const isLair = !!(c.statSlug && /^lair-/.test(c.statSlug));
+  return isLair?'':`<div class="dmg-row">
+          ${cardDmgTurnPillHTML(c)}
+          <input class="dmg-in" type="number" inputmode="numeric" enterkeyhint="done" placeholder="0" min="0" id="dmg_${c.id}" aria-label="Damage or heal amount"
+            onkeydown="if(event.key==='Enter')quickDmg(${c.id},false);else if(event.key.toLowerCase()==='h'){event.preventDefault();quickDmg(${c.id},true)}">
+          <button class="btn-d d" data-action="quickDmg" data-id="${c.id}" data-heal="false">DMG</button>
+          <button class="btn-d h" data-action="quickDmg" data-id="${c.id}" data-heal="true">HEAL</button>
+        </div>`;
+}
+function cardActRowHTML(c) {
+  const isLair = !!(c.statSlug && /^lair-/.test(c.statSlug));
+  return `        <div class="act-row">
+          <button class="cond-btn" data-action="openConds" data-id="${c.id}">Conditions</button>
+          ${cardSBToggleHTML(c)}
+          ${isLair ? '' : c.statSlug&&dbReady&&c.type!=='player' ? '<button class="cond-btn" style="color:var(--amber2);border-color:var(--amber)" data-action="openHPMode" data-id="'+c.id+'" title="Set HP: avg / max / roll">HP ▾</button>' : '<button class="cond-btn" style="color:var(--amber2);border-color:var(--amber)" data-action="openHPMode" data-id="'+c.id+'" title="Set Max HP">HP ▾</button>'}
+          <button class="cond-btn" data-action="setReadyAction" data-id="${c.id}" title="${c.readyAction?.active?'Edit ready action':'Set ready action'}${c.readyAction?.active?' (active)':''}"><svg class="ico-sm"><use href="#ico-ready"/></svg></button>
+          <button class="cond-btn" data-action="openTransformPanel" data-id="${c.id}" title="Wild Shape / Transform — swap to another stat block"><svg class="ico-sm"><use href="#ico-transform"/></svg></button>
+          ${(c.type!=='player'&&!isLair)?'<button class="ds-toggle-btn'+(c.deathSavesEnabled?' active':'')+'\" data-action="toggleDeathSaves" data-id="'+c.id+'" title="'+(c.deathSavesEnabled?'Disable death saves':'Enable death saves for boss')+'">☠ DS</button>':''}
+          ${isLair?'':`<button class="btn-reinforce" data-action="reinforceCb" data-id="${c.id}" title="Add another of this combatant">+1</button>`}
+          <button class="btn-icon" data-action="removeCb" data-id="${c.id}" title="Remove">✕</button>
+        </div>`;
+}
+function cardStatusRowHTML(c, ctags) {
             // ── INLINE STATUS — reaction, recharge, ready — sit on AC row ──
             const iParts = [];
             const hasSpecialFeatures = c.legendaryMax > 0 || Object.keys(c.rechargeState||{}).length > 0;
@@ -6033,19 +5973,12 @@ function buildCardHTML(c, ctx) {
             // Conditions inline after status items on the same row
             if (ctags) iParts.push(`<span class="cb-inline-conds">${ctags}</span>`);
             return iParts.length ? `<span class="cb-top-status">${iParts.join('')}</span>` : ctags ? `<span class="cb-inline-conds">${ctags}</span>` : '';
-          })()}
-        </div>
-        ${(_openCondRule[c.id] && c.conditions.some(x => (typeof x==='string'?x:x.n) === _openCondRule[c.id])) ? getCondRuleHTML(_openCondRule[c.id], c) : ''}
-        ${isLair?'':`<div class="hp-row">
-          <div class="hp-bar"><div class="hp-fill" style="width:${pct}%;background:${col}"></div></div>
-          <span class="hp-txt" data-action="openHP" data-id="${c.id}" role="button" tabindex="0" title="Click to edit HP">${c.currentHP}<span style="color:var(--text3)">/${c.maxHP}</span></span>
-          ${c.currentHP>0&&c.maxHP>0&&(c.currentHP/c.maxHP)<=0.5&&!c.dead?'<span class="bloodied-badge">Bloodied</span>':''}
-        </div>`}
-        ${ds}
-        ${resurrectBtn}
-        ${(()=>{
+          }
+function cardLegendaryHTML(c) {
           // ── LEGENDARY PIPS — own row, needs horizontal space ──
-          if (c.legendaryMax < 1) return '';
+          // Falsy-safe (v1.67): undefined < 1 is false, which rendered an empty
+          // LEG label for sparse combatants (e.g. the sample encounter).
+          if (!c.legendaryMax) return '';
           const pips = Array.from({length:c.legendaryMax},(_,i) => {
             const used = i < c.legendaryUsed;
             return `<svg class="ss-leg-pip${used?' used':''}"
@@ -6055,8 +5988,8 @@ function buildCardHTML(c, ctx) {
             </svg>`;
           }).join('');
           return `<div class="status-strip"><span class="ss-legendary"><span class="ss-legendary-label">LEG</span>${pips}</span></div>`;
-        })()}
-        ${(()=>{
+        }
+function cardLairPipHTML(c) {
           // ── LAIR PIP (v1.55) — once per round, initiative count 20 ──
           if (!c.lairMax) return '';
           // Live check (v1.58): once the lair has its own card, the pip retires
@@ -6068,14 +6001,8 @@ function buildCardHTML(c, ctx) {
             title="Lair action — initiative count 20 (losing ties), once per round — ${used?'used this round':'available'}" viewBox="0 0 16 16">
             <use href="${used?'#pip-star':'#pip-circle'}"/>
           </svg></span></div>`;
-        })()}
-        ${timerEnabled && isActive ? `<div class="card-timer on" id="cardTimer_${c.id}">
-          <button class="card-timer-btn" data-action="pauseResumeTimer" id="timerPauseBtn" title="Pause/Resume">⏸</button>
-          <button class="card-timer-btn" data-action="startTurnTimer" title="Restart timer">↺</button>
-          <div class="card-timer-bar-wrap"><div class="card-timer-bar green" id="timerBar"></div></div>
-          <span class="card-timer-secs green" id="timerCountdown"></span>
-        </div>` : ''}
-        ${(()=>{
+        }
+function cardSpellTrackerHTML(c) {
           // ── SPELL TRACKER ──────────────────────────────────────
           const hasSC = Object.keys(c.spellSlots||{}).length > 0
                      || Object.keys(c.innateSpells||{}).length > 0
@@ -6132,13 +6059,8 @@ function buildCardHTML(c, ctx) {
           }
           html += '</div>';
           return html;
-        })()}
-        <!-- conditions moved to cb-conds-row in cb-top -->
-        <div class="cb-note${!c.note?' empty':''}" data-action="editNote" data-id="${c.id}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();editNote(${c.id});}" role="button" tabindex="0" aria-label="${c.note?'Edit note':'Add note'} for ${escapeHtml(c.name)}">${c.note?escapeHtml(c.note):'+ note'}</div>
-      </div>
-      <div class="cb-acts">
-        ${isLair?'':`<div class="dmg-row">
-          ${(() => {
+        }
+function cardDmgTurnPillHTML(c) {
             const dt = c._dmgTurn || 0;
             if (dt <= 0) return '';
             const BIG_HIT = 50; // informational "heavy blow this turn" marker (not a rule)
@@ -6168,22 +6090,174 @@ function buildCardHTML(c, ctx) {
             tips.push('Resets when the turn advances');
             const tip = tips.join(' — ');
             return `<span class="${cls}" title="${escapeHtml(tip)}" aria-label="${escapeHtml(tips[0] + (massive ? ' (massive damage)' : hitThresh ? ' (threshold reached)' : '') + (bigHit ? ' (big hit)' : ''))}">${marker}${dt}</span>`;
-          })()}
-          <input class="dmg-in" type="number" inputmode="numeric" enterkeyhint="done" placeholder="0" min="0" id="dmg_${c.id}" aria-label="Damage or heal amount"
-            onkeydown="if(event.key==='Enter')quickDmg(${c.id},false);else if(event.key.toLowerCase()==='h'){event.preventDefault();quickDmg(${c.id},true)}">
-          <button class="btn-d d" data-action="quickDmg" data-id="${c.id}" data-heal="false">DMG</button>
-          <button class="btn-d h" data-action="quickDmg" data-id="${c.id}" data-heal="true">HEAL</button>
-        </div>`}
-        <div class="act-row">
-          <button class="cond-btn" data-action="openConds" data-id="${c.id}">Conditions</button>
-          ${sbToggleBtn}
-          ${isLair ? '' : c.statSlug&&dbReady&&c.type!=='player' ? '<button class="cond-btn" style="color:var(--amber2);border-color:var(--amber)" data-action="openHPMode" data-id="'+c.id+'" title="Set HP: avg / max / roll">HP ▾</button>' : '<button class="cond-btn" style="color:var(--amber2);border-color:var(--amber)" data-action="openHPMode" data-id="'+c.id+'" title="Set Max HP">HP ▾</button>'}
-          <button class="cond-btn" data-action="setReadyAction" data-id="${c.id}" title="${c.readyAction?.active?'Edit ready action':'Set ready action'}${c.readyAction?.active?' (active)':''}"><svg class="ico-sm"><use href="#ico-ready"/></svg></button>
-          <button class="cond-btn" data-action="openTransformPanel" data-id="${c.id}" title="Wild Shape / Transform — swap to another stat block"><svg class="ico-sm"><use href="#ico-transform"/></svg></button>
-          ${(c.type!=='player'&&!isLair)?'<button class="ds-toggle-btn'+(c.deathSavesEnabled?' active':'')+'\" data-action="toggleDeathSaves" data-id="'+c.id+'" title="'+(c.deathSavesEnabled?'Disable death saves':'Enable death saves for boss')+'">☠ DS</button>':''}
-          ${isLair?'':`<button class="btn-reinforce" data-action="reinforceCb" data-id="${c.id}" title="Add another of this combatant">+1</button>`}
-          <button class="btn-icon" data-action="removeCb" data-id="${c.id}" title="Remove">✕</button>
+          }
+function cardCondTagsHTML(c) {
+  return c.conditions.map(cond => {
+    const n   = typeof cond==='string' ? cond : cond.n;
+    const dur = typeof cond==='object' ? cond.dur : null;
+    const cd  = getConditions().find(x => x.n === n);
+    // Exhausted: dur field stores level not rounds — show "Lv N"
+    const durHtml = dur!==null&&dur!==undefined
+      ? (n === 'Exhausted'
+          ? `<span class="cond-dur" title="Exhaustion level — click to change"
+                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">Lv${dur}</span>`
+          : `<span class="cond-dur${dur<=1?' warning':''}" title="Rounds remaining — click to adjust"
+                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">${dur}r</span>`)
+      : '';
+    const _ci = getCondIcon(n);
+    // Other: show the user's label on the pill instead of the bare name.
+    const _label = (n === 'Other') ? (typeof cond==='object' && cond.label ? cond.label : 'Other') : n;
+    // Exhausted: show level on badge, skip durHtml (level not a round count)
+    const _isExh = n === 'Exhausted';
+    const _exhLevel = _isExh && typeof cond === 'object' && cond.dur ? ' Lv' + cond.dur : '';
+    const _durDisplay = _isExh ? '' : durHtml;
+    // Rule-reminder expand toggle (ⓘ). Has its own data-action so the card
+    // dispatcher routes it to toggleCondRule, not the pill's openConds.
+    const _isOpen = _openCondRule[c.id] === n;
+    const _expand = (CONDITION_RULES[n] || n === 'Other')
+      ? `<span class="cond-expand${_isOpen?' open':''}" role="button" tabindex="0"
+             data-action="toggleCondRule" data-id="${c.id}" data-cond="${escapeHtml(n)}"
+             title="${_isOpen?'Hide':'Show'} rule reminder" aria-label="${_isOpen?'Hide':'Show'} rule reminder for ${escapeHtml(n)}" aria-expanded="${_isOpen?'true':'false'}">&#9432;</span>`
+      : '';
+    return `<span class="cond-tag" style="background:${cd?.bg||'#333'};color:${cd?.c||'#aaa'}" data-action="openConds" data-id="${c.id}" role="button" tabindex="0" title="${_isExh?'Exhaustion level '+(_exhLevel||''):'Edit conditions'}">${_ci}${escapeHtml(_label)}${_exhLevel}${_durDisplay}${_expand}</span>`;
+  }).join('');
+}
+function cardDeathSavesHTML(c) {
+  // Death saves
+  const showDS = c.deathSavesEnabled && (c.currentHP === 0 || c.dead) && !c.stable;
+  return showDS ? (() => {
+    const successes = c.dead ? c.deathSaves.success : c.deathSaves.success;
+    const failures  = c.dead ? 3 : c.deathSaves.failure;
+    const sPips = [0,1,2].map(i => {
+      const on = successes > i;
+      return `<svg class="ds-pip s${on?' on':''}" data-action="toggleDS" data-id="${c.id}" data-which="success" data-idx="${i}"
+        title="Death Save Success ${i+1}" viewBox="0 0 16 16">
+        <use href="${on?'#pip-heart':'#pip-circle'}"/>
+      </svg>`;
+    }).join('');
+    const fPips = [0,1,2].map(i => {
+      const on = failures > i;
+      return `<svg class="ds-pip f${on?' on':''}" data-action="toggleDS" data-id="${c.id}" data-which="failure" data-idx="${i}"
+        title="Death Save Failure ${i+1}" viewBox="0 0 16 16">
+        <use href="${on?'#pip-skull':'#pip-circle'}"/>
+      </svg>`;
+    }).join('');
+    return `<div class="ds-row">
+      <svg class="ico-sm" style="color:var(--green2);flex-shrink:0"><use href="#ico-heal"/></svg>
+      <div class="ds-pips">${sPips}</div>
+      <span style="margin:0 2px;color:var(--border2)">|</span>
+      <svg class="ico-sm" style="color:var(--red2);flex-shrink:0"><use href="#ico-skull"/></svg>
+      <div class="ds-pips">${fPips}</div>
+      ${!c.dead && (c.deathSaves.success>=3||c.stable)?'<span class="ds-stable">Stable</span>':''}
+      ${!c.dead?`<button class="ds-nat20" data-action="dsNatTwenty" data-id="${c.id}" title="Natural 20 — regain 1 HP and wake up">Nat 20</button>
+      <button class="ds-nat20" style="background:rgba(192,64,64,.15);border-color:var(--red);color:var(--red2)" data-action="dsNatOne" data-id="${c.id}" title="Natural 1 — counts as two failures">Nat 1</button>`:''}
+    </div>`;
+  })() : '';
+}
+function cardResurrectHTML(c) {
+  // Resurrect button
+  return c.dead && c.deathSavesEnabled ? (() => {
+    const roundsSinceDeath = c.deathRound != null ? round - c.deathRound : null;
+    const revivifyRounds   = roundsSinceDeath != null ? Math.max(0, 10 - roundsSinceDeath) : null;
+    const revivifyHtml = revivifyRounds != null
+      ? revivifyRounds > 0
+        ? `<span class="revivify-countdown ${revivifyRounds<=3?'urgent':''}" title="Revivify must be cast within 1 minute (10 rounds) of death">
+            ⏳ Revivify: ${revivifyRounds} round${revivifyRounds!==1?'s':''} remaining
+           </span>`
+        : `<span class="revivify-countdown expired" title="Too late for Revivify — 10 rounds have passed">
+            ✗ Revivify window expired
+           </span>`
+      : '';
+    return `<div style="margin-top:4px">
+      <button class="resurrect-btn" data-action="resurrect" data-id="${c.id}" title="Revive this character — enter HP restored">✦ Revive</button>
+      ${revivifyHtml}
+    </div>`;
+  })() : '';
+}
+function cardTransformBadgeHTML(c) {
+  // Transform badge
+  return c._transformSlug
+    ? `<span class="transform-badge" data-action="openTransformPanel" data-id="${c.id}" role="button" tabindex="0" title="Currently transformed — click to manage">
+        <svg class="ico-sm"><use href="#ico-transform"/></svg> ${c._transformName||'Transformed'}
+      </span>
+      <button class="transform-revert-btn" data-action="revertTransform" data-id="${c.id}" title="Revert to original form">↩ Revert</button>`
+    : '';
+}
+function cardAvatarHTML(c) {
+  // Player avatar (v1.28): rounded-square thumbnail if set; else an initials
+  // chip for players. Monsters/others/allies with no avatar collapse cleanly
+  // (no slot rendered), leaving their cards unchanged.
+  let avatarHTML = '';
+  if (c.avatar) {
+    avatarHTML = `<span class="cb-avatar" role="img" aria-label="${escapeHtml(c.name)}" style="background-image:url('${c.avatar}')"></span>`;
+  } else if (c.type === 'player') {
+    const initials = (c.name || '?').trim().split(/\s+/).map(w => w[0] || '').join('').slice(0,2).toUpperCase() || '?';
+    avatarHTML = `<span class="cb-avatar cb-avatar-chip" aria-hidden="true">${escapeHtml(initials)}</span>`;
+  }
+  return avatarHTML;
+}
+function cardSBToggleHTML(c) {
+  const sbBtnLabel  = c.showSB ? '\u25b4 Stat Block' : '\u25be Stat Block';
+  return c.statSlug && dbReady && (c.type !== 'player' || c._transformSlug)
+    ? `<button class="stat-btn" data-action="toggleSB" data-id="${c.id}" title="Show/hide stat block">${sbBtnLabel}</button>` : '';
+}
+function cardSBColHTML(c) {
+  return c.showSB && c.statSlug && dbReady
+    ? buildInlineSB(findMonster(c.statSlug)) : '';
+}
+
+function buildCardHTML(c, ctx) {
+  const { isActive, pct, col, isGrouped, key } = ctx;
+  // Lair cards (v1.57): spawned via spawnLairCard — an initiative marker, not a
+  // creature. Hide HP/AC/damage machinery; keep conditions, stat block, note.
+  const isLair = !!(c.statSlug && /^lair-/.test(c.statSlug));
+
+  const ctags = cardCondTagsHTML(c);
+
+  const ds = cardDeathSavesHTML(c);
+
+  const resurrectBtn = cardResurrectHTML(c);
+
+  const tmp  = c.tempHP > 0 ? `<span class="tmp-b">+${c.tempHP}</span>` : '';
+  const conc = c.concentrating ? `<span class="conc-dot" tabindex="0" role="img" aria-label="Concentrating. On damage, make a Constitution save, DC 10 or half the damage, whichever is higher, per source, or the effect ends. Lost if incapacitated or if you cast another concentration spell." title="Concentrating&#10;On damage: CON save (DC 10 or half damage, whichever is higher) per source, or the effect ends.&#10;Also lost if incapacitated or you cast another concentration spell."></span>` : '';
+
+  const transformBadge = cardTransformBadgeHTML(c);
+
+  const sbCol = cardSBColHTML(c);
+
+
+  const avatarHTML = cardAvatarHTML(c);
+
+  return `
+${cardControlsHTML(c)}
+      <div class="cb-main">
+        <div class="cb-top">
+          ${avatarHTML}<span class="cb-name" data-action="editName" data-id="${c.id}" role="button" tabindex="0" title="Click to rename">${escapeHtml(c.name)}</span>${transformBadge}${c.absent?'<span class="absent-badge">absent</span>':''}
+          ${conc}
+          <span class="type-b ${c.type}">${isLair?"⛰ Lair":c.type==="monster"?"💀 Monster":c.type==="player"?"🛡️ Player":c.type==="other"?"🌍 Other":"💬 Ally"}</span>
+          ${isLair?'':`<span class="ac-b" data-action="editAC" data-id="${c.id}" role="button" tabindex="0" title="Click to edit AC">AC <strong>${c.ac}</strong></span>`}
+          ${tmp}
+          ${cardStatusRowHTML(c, ctags)}
         </div>
+        ${(_openCondRule[c.id] && c.conditions.some(x => (typeof x==='string'?x:x.n) === _openCondRule[c.id])) ? getCondRuleHTML(_openCondRule[c.id], c) : ''}
+        ${cardHPRowHTML(c, pct, col)}
+        ${ds}
+        ${resurrectBtn}
+        ${cardLegendaryHTML(c)}
+        ${cardLairPipHTML(c)}
+        ${timerEnabled && isActive ? `<div class="card-timer on" id="cardTimer_${c.id}">
+          <button class="card-timer-btn" data-action="pauseResumeTimer" id="timerPauseBtn" title="Pause/Resume">⏸</button>
+          <button class="card-timer-btn" data-action="startTurnTimer" title="Restart timer">↺</button>
+          <div class="card-timer-bar-wrap"><div class="card-timer-bar green" id="timerBar"></div></div>
+          <span class="card-timer-secs green" id="timerCountdown"></span>
+        </div>` : ''}
+        ${cardSpellTrackerHTML(c)}
+        <!-- conditions moved to cb-conds-row in cb-top -->
+        <div class="cb-note${!c.note?' empty':''}" data-action="editNote" data-id="${c.id}" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();editNote(${c.id});}" role="button" tabindex="0" aria-label="${c.note?'Edit note':'Add note'} for ${escapeHtml(c.name)}">${c.note?escapeHtml(c.note):'+ note'}</div>
+      </div>
+      <div class="cb-acts">
+        ${cardDmgRowHTML(c)}
+${cardActRowHTML(c)}
       </div>
       <div class="cb-sb">${sbCol}</div>`;
 }
@@ -6255,6 +6329,7 @@ function render() {
   }
   es.style.display = 'none';
 
+  bnr.style.display = '';   // render owns banner visibility — clear any stray inline style (v1.64)
   if (active >= 0 && active < cbs.length) {
     renderBanner(cbs[active]);
     bnr.classList.add('on');
@@ -6391,7 +6466,7 @@ function loadEnc() {
       try {
         const d=JSON.parse(ev.target.result);
         cbs=d.cbs||[]; round=d.round||1; active=d.active!=null?d.active:-1; uid=d.uid||cbs.length;
-        combatLog=[]; actionHistory=[];
+        combatLog=[]; actionHistory=[]; updateUndoBtn();
         cbs.forEach(c=>ensureCbDefaults(c));
         logEvent('note', '📂 Encounter loaded — ' + cbs.length + ' combatants, round ' + round);
         sortInit(); render(); save();
@@ -6816,7 +6891,7 @@ function loadFromLibrary(i) {
   const loadFn = () => {
     const d = libs[i].data;
     cbs = d.cbs||[]; round = d.round||1; active = d.active!=null?d.active:-1; uid = d.uid||cbs.length;
-    combatLog=[]; actionHistory=[];
+    combatLog=[]; actionHistory=[]; updateUndoBtn();
     cbs.forEach(c => ensureCbDefaults(c));
     logEvent('note', '📂 Encounter loaded from library — ' + cbs.length + ' combatants, round ' + round);
     sortInit(); closeModal('libModal'); render(); save();
@@ -9484,12 +9559,25 @@ function dismissWelcome() {
 }
 
 function loadSampleEncounter() {
+  // Diagnostic wrapper (v1.69): a sample-load failure must never be silent.
+  // Any exception surfaces as a visible alert with the build version and the
+  // real error; success leaves a version-stamped console breadcrumb.
+  try {
+    _loadSampleEncounterInner();
+    console.info('[MitzNSimz v1.70] sample encounter loaded:', cbs.length, 'combatants');
+  } catch (err) {
+    try { mtzAlert('Sample Load Failed (v1.70)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.70] sample load failed:', err);
+  }
+}
+function _loadSampleEncounterInner() {
   dismissWelcome();
   // Build a sample encounter: 4 Goblins, 1 Goblin Boss, 2 Player placeholders
   cbs = [];
   uid = 0;
   round = 1;
   active = -1;
+  selectedIds.clear(); collapsedGroups.clear(); combatLog = [];   // stale UI state must not leak into the sample (v1.68)
 
   // Players
   cbs.push({id:++uid,name:'Hero 1',type:'player',initiative:18,ac:16,maxHP:45,currentHP:45,tempHP:0,conditions:[],concentrating:false,note:'',dead:false,deathSaves:{success:0,failure:0},statSlug:null,showSB:false});
@@ -9504,6 +9592,7 @@ function loadSampleEncounter() {
     cbs.push({id:++uid,name:'Goblin '+(i+1),type:'monster',initiative:goblinInits[i],ac:15,maxHP:7,currentHP:7,tempHP:0,conditions:[],concentrating:false,note:'',dead:false,deathSaves:{success:0,failure:0},statSlug:'goblin',showSB:false});
   }
 
+  cbs.forEach(c => ensureCbDefaults(c));   // complete all fields via the standard path (v1.67)
   sortInit();
   render();
   save();
@@ -9711,6 +9800,15 @@ function ensureCbDefaults(c) {
   if (c.lairUsed === undefined) c.lairUsed = 0;
   if (c.lairMax === undefined) c.lairMax = 0;
   if (!c.rechargeState) c.rechargeState = {};
+  // Spell-tracking fields (v1.70): these four were NEVER defaulted here, so any
+  // sparse combatant (the sample encounter, imports, old saves) crashed in the
+  // DB-linked detection below at Object.keys(c.spellSlots) — but only when the
+  // monster DB was loaded and the statSlug resolved, which is why the bug hid
+  // from every test that ran against an empty DB.
+  if (!c.spellSlots) c.spellSlots = {};
+  if (!c.innateSpells) c.innateSpells = {};
+  if (!c.atWillSpells) c.atWillSpells = [];
+  if (!c.xDayAbilities) c.xDayAbilities = {};
   // Re-detect legendary and recharge from DB if empty and we have a statSlug
   // This handles monsters added before detection logic was implemented
   if (c.statSlug && dbReady && monsterDB.length) {
@@ -10103,23 +10201,33 @@ function generateEncounter() {
   const env          = document.getElementById('regenEnv').value;
   const partySize    = xpLevels.length || 4;
 
-  // Get XP budget for chosen difficulty
+  // ── XP band boundaries (v1.65) ────────────────────────────────────
+  // Per-character thresholds summed over the CURRENT party (Party & XP roster;
+  // defaults to 4× level 5 if none configured). An encounter's difficulty is
+  // where its ADJUSTED XP falls between these sums — so the generator now
+  // targets the band's interior and verifies the result actually lands in it.
   const diffIdx = {easy:0, medium:1, hard:2, deadly:3}[difficulty];
   const thresh = xpRuleset === '2024' ? XP_THRESH_2024 : XP_THRESH;
   const crXp   = xpRuleset === '2024' ? CR_XP_2024 : CR_XP;
-  let budget = 0;
-  xpLevels.forEach(lv => {
-    const t = thresh[Math.min(20, Math.max(1, lv))] || thresh[1];
-    budget += t[diffIdx];
-  });
-  // Adjust budget toward midpoint of this difficulty band
-  if (diffIdx < 3) {
-    const nextThresh = xpLevels.reduce((s, lv) => {
+  const bandLow = [0,0,0,0];
+  for (let d = 0; d < 4; d++) {
+    bandLow[d] = xpLevels.reduce((s2, lv) => {
       const t = thresh[Math.min(20, Math.max(1, lv))] || thresh[1];
-      return s + t[diffIdx + 1];
+      return s2 + t[d];
     }, 0);
-    budget = Math.round((budget + nextThresh) / 2);
   }
+  // Deadly is open-ended upward — give it a working ceiling so builds aim ABOVE
+  // the threshold (previously they aimed AT it and half landed in Hard).
+  const bandHigh = diffIdx < 3 ? bandLow[diffIdx + 1] : Math.round(bandLow[3] * 1.6);
+  const target   = diffIdx < 3 ? Math.round((bandLow[diffIdx] + bandHigh) / 2)
+                               : Math.round(bandLow[3] * 1.25);
+  const budget = target;
+  // 2024 rules have NO encounter multiplier — the budgets already price action
+  // economy. 2014 keeps the DMG multiplier incl. party-size row shift.
+  const mult = xpRuleset === '2024' ? (() => 1) : (n) => xpMultiplier(n, partySize);
+  const classify = (adj) => adj >= bandLow[3] ? 'deadly' : adj >= bandLow[2] ? 'hard'
+                          : adj >= bandLow[1] ? 'medium' : adj >= bandLow[0] ? 'easy' : 'trivial';
+  const adjOf = (raw, n) => Math.round(raw * mult(n));
 
   // Filter monster pool by environment if specified
   const basePool = monsterDB.filter(m => !m._custom && m.challenge_rating && crXp[String(m.challenge_rating)]);
@@ -10133,7 +10241,8 @@ function generateEncounter() {
   }
   pool = srcPool;
   if (env) {
-    const envPool = pool.filter(m => (m.environments || []).some(e => e.toLowerCase().includes(env)));
+    const envPool = pool.filter(m => (m.environments || []).includes(env));
+    var _envFellBack = !envPool.length;
     pool = envPool.length ? envPool : srcPool; // env-empty falls back within the chosen sources
   }
   if (!pool.length) pool = basePool;
@@ -10152,65 +10261,117 @@ function generateEncounter() {
     return;
   }
 
-  let selected = [];
-  const mult = xpRuleset === '2024' ? xpMultiplier2024 : (n) => xpMultiplier(n, partySize);
+  // ── Selection: DMG-correct maths per shape, with band verification ──
+  // Every acceptance test evaluates the TRUE adjusted total — (raw + candidate)
+  // × multiplier(newCount) — never raw-spent plus one multiplied increment.
+  const xpOf = (m) => crXp[String(m.challenge_rating)] || 0;
+  const buildOnce = () => {
+    let sel = [];
+    switch (type) {
+      case 'horde': {
+        const weak = validPool.filter(m => xpOf(m) <= budget * 0.15);
+        const monster = weak.length ? weak[Math.floor(Math.random()*weak.length)] : validPool[Math.floor(Math.random()*validPool.length)];
+        const mxp = xpOf(monster) || 1;
+        let count = 1;
+        while (count < 20) {
+          const nextAdj = adjOf(mxp * (count + 1), count + 1);
+          if (nextAdj >= bandHigh) break;          // strict: band ceilings are exclusive
+          count++;
+          if (adjOf(mxp * count, count) >= target) break;   // aim for the band interior
+        }
+        sel = Array(count).fill(monster);
+        break;
+      }
+      case 'boss': {
+        // A lone monster's adjusted XP equals its raw XP, so select directly
+        // from the environment/source pool by the band itself — the generic
+        // validPool cap (80% of target) would exclude every legitimate boss.
+        const strong = pool.filter(m => { const a = xpOf(m); return a >= bandLow[diffIdx] && a < bandHigh; });
+        const boss = strong.length ? strong[Math.floor(Math.random()*strong.length)]
+                                   : pool.slice().sort((a,b)=>Math.abs(xpOf(a)-target)-Math.abs(xpOf(b)-target))[0];
+        sel = [boss];
+        break;
+      }
+      case 'boss_minions': {
+        const bossPool = validPool.filter(m => xpOf(m) >= budget * 0.4 && xpOf(m) <= budget * 0.7);
+        const boss = bossPool.length ? bossPool[Math.floor(Math.random()*bossPool.length)] : validPool[Math.floor(Math.random()*validPool.length)];
+        sel = [boss];
+        // Minions are deliberately tiny — select from the env/source pool without
+        // validPool's minimum-XP floor (which excluded all real minions at some bands).
+        const minionPool = pool.filter(m => xpOf(m) > 0 && xpOf(m) <= xpOf(boss) * 0.4 && m.slug !== boss.slug);
+        if (minionPool.length) {
+          // ── Tiered minion affinity (v1.68) ──────────────────────────
+          // 1. Name family: minions sharing a significant name token with the
+          //    boss ("Hobgoblin Captain" → Hobgoblins) — the classic published
+          //    leader-and-retinue pairing, and it works for any source book.
+          // 2. Same creature type: undead lead undead, fiends lead fiends.
+          // 3. Anything that fits the numbers (previous behaviour) — so
+          //    generation never fails on a thin pool.
+          const _stop = new Set(['the','of','and','a','an','young','adult','ancient','greater','lesser','giant']);
+          const _tokens = (n) => String(n||'').toLowerCase().split(/[^a-z]+/).filter(w => w.length >= 3 && !_stop.has(w));
+          const bossTokens = new Set(_tokens(boss.name));
+          const bossType = String(boss.type||'').toLowerCase();
+          const tier1 = minionPool.filter(m => _tokens(m.name).some(w => bossTokens.has(w)));
+          const tier2 = minionPool.filter(m => bossType && String(m.type||'').toLowerCase() === bossType);
+          const kinPool = tier1.length ? tier1 : (tier2.length ? tier2 : minionPool);
+          // Variety: sometimes bring a second minion type — kin preferred, but a
+          // same-type outrider is allowed (Orc War Chief + Orcs + Wolves energy).
+          const pickA = kinPool[Math.floor(Math.random()*kinPool.length)];
+          let pickB = null;
+          if (Math.random() < 0.5) {
+            // Variety stays WITHIN the matched tier — a second name-kin kind, or a
+            // second same-type kind — never a cross-tier outrider (a Hobgoblin
+            // Captain gets more hobgoblin-family, not rival Orcs). If the tier
+            // has one kind, minions stay uniform: coherence beats variety.
+            const bPool = kinPool.filter(m => m.slug !== pickA.slug);
+            if (bPool.length) pickB = bPool[Math.floor(Math.random()*bPool.length)];
+          }
+          const kinds = pickB ? [pickA, pickB] : [pickA];
+          let raw = xpOf(boss), ki = 0;
+          while (sel.length < 9) {
+            // Alternate kinds; if the current kind no longer fits, try the other.
+            let placed = false;
+            for (let t2 = 0; t2 < kinds.length; t2++) {
+              const k = kinds[(ki + t2) % kinds.length];
+              const nextAdj = adjOf(raw + xpOf(k), sel.length + 1);
+              if (nextAdj >= bandHigh) continue;
+              sel.push(k); raw += xpOf(k); ki++;
+              placed = (nextAdj >= target) ? 'done' : true;
+              break;
+            }
+            if (!placed || placed === 'done') break;
+          }
+        }
+        break;
+      }
+      default: { // 'any' / 'skirmish' — mix of different monsters within the band
+        let raw = 0, attempts = 0;
+        while (attempts < 60 && sel.length < 8) {
+          attempts++;
+          const cand = validPool[Math.floor(Math.random()*validPool.length)];
+          const nAdj = adjOf(raw + xpOf(cand), sel.length + 1);
+          if (nAdj >= bandHigh) continue;
+          sel.push(cand); raw += xpOf(cand);
+          if (nAdj >= target) break;
+        }
+        if (!sel.length) sel = [validPool[Math.floor(Math.random()*validPool.length)]];
+      }
+    }
+    return sel;
+  };
 
-  switch(type) {
-    case 'horde': {
-      // Pick a weak monster and fill with multiples
-      const weak = validPool.filter(m => (crXp[String(m.challenge_rating)]||0) <= budget * 0.15);
-      const monster = weak.length ? weak[Math.floor(Math.random()*weak.length)] : validPool[Math.floor(Math.random()*validPool.length)];
-      const mxp = crXp[String(monster.challenge_rating)] || 1;
-      let count = 0, spent = 0;
-      while (count < 20) {
-        const adj = mxp * mult(count + 1);
-        if (spent + adj > budget * 1.1) break;
-        spent += adj; count++;
-      }
-      selected = Array(Math.max(1,count)).fill(monster);
-      break;
-    }
-    case 'boss': {
-      // Pick one high-CR monster consuming most of budget
-      const strong = validPool.filter(m => (crXp[String(m.challenge_rating)]||0) >= budget * 0.5);
-      const boss = strong.length ? strong[Math.floor(Math.random()*strong.length)] : validPool[validPool.length-1];
-      selected = [boss];
-      break;
-    }
-    case 'boss_minions': {
-      // Boss uses ~60% of budget, fill rest with minions
-      const bossPool = validPool.filter(m => (crXp[String(m.challenge_rating)]||0) >= budget * 0.4 && (crXp[String(m.challenge_rating)]||0) <= budget * 0.7);
-      const boss = bossPool.length ? bossPool[Math.floor(Math.random()*bossPool.length)] : validPool[Math.floor(Math.random()*validPool.length)];
-      const bossXP = crXp[String(boss.challenge_rating)] || 0;
-      const remaining = budget - bossXP;
-      const minionPool = validPool.filter(m => (crXp[String(m.challenge_rating)]||0) <= remaining * 0.4 && m.slug !== boss.slug);
-      selected = [boss];
-      if (minionPool.length && remaining > 0) {
-        const minion = minionPool[Math.floor(Math.random()*minionPool.length)];
-        const mxp = crXp[String(minion.challenge_rating)] || 1;
-        let count = 0;
-        while (count < 8 && mxp * (count+1) <= remaining * 1.1) count++;
-        selected.push(...Array(Math.max(1, count)).fill(minion));
-      }
-      break;
-    }
-    default: { // 'any' or 'skirmish'
-      // Mix 2-4 different monsters within budget
-      let spent = 0, attempts = 0;
-      const usedSlugs = new Set();
-      while (spent < budget * 0.85 && attempts < 60) {
-        attempts++;
-        const m = validPool[Math.floor(Math.random()*validPool.length)];
-        const mxp = crXp[String(m.challenge_rating)] || 0;
-        if (spent + mxp * mult(selected.length+1) > budget * 1.15) continue;
-        selected.push(m);
-        spent += mxp;
-        usedSlugs.add(m.slug);
-        if (selected.length >= 8) break;
-      }
-      if (!selected.length) selected = [validPool[Math.floor(Math.random()*validPool.length)]];
-    }
+  // Verify-and-retry: build up to 14 times, keep the first result whose
+  // adjusted XP classifies into the requested band; otherwise keep the closest.
+  let selected = [], best = null, bestDist = Infinity;
+  for (let tryN = 0; tryN < 14; tryN++) {
+    const sel = buildOnce();
+    const raw2 = sel.reduce((s2,m) => s2 + xpOf(m), 0);
+    const adj2 = adjOf(raw2, sel.length);
+    if (classify(adj2) === difficulty) { selected = sel; break; }
+    const dist = Math.abs(adj2 - target);
+    if (dist < bestDist) { bestDist = dist; best = sel; }
   }
+  if (!selected.length) selected = best || [validPool[Math.floor(Math.random()*validPool.length)]];
 
   // Group duplicates
   const grouped = [];
@@ -10220,15 +10381,17 @@ function generateEncounter() {
     countMap[m.slug]++;
   });
 
-  // Calculate actual XP
-  const rawXP = selected.reduce((s,m) => s+(crXp[String(m.challenge_rating)]||0), 0);
-  const adjXP = Math.round(rawXP * mult(selected.length));
+  // Actual XP + HONEST classification of what was actually built
+  const rawXP = selected.reduce((s2,m) => s2 + xpOf(m), 0);
+  const adjXP = adjOf(rawXP, selected.length);
+  const actualDiff = classify(adjXP);
   const diffLabels = {easy:'Easy',medium:'Medium',hard:'Hard',deadly:'Deadly'};
 
   const resultEl = document.getElementById('regenResult');
   resultEl.className = 'regen-result on';
   resultEl.innerHTML = `
-    <div class="regen-result-title">${diffLabels[difficulty]} encounter · ${selected.length} monster${selected.length!==1?'s':''} · ${adjXP.toLocaleString()} adj. XP</div>
+    <div class="regen-result-title">${diffLabels[actualDiff] || actualDiff} encounter · ${selected.length} monster${selected.length!==1?'s':''} · ${adjXP.toLocaleString()} adj. XP${actualDiff !== difficulty ? ` <span style=\"color:var(--text3);font-weight:400\">(requested ${diffLabels[difficulty]} — closest the pool allows)</span>` : ''}</div>
+    ${typeof _envFellBack !== 'undefined' && _envFellBack && env ? `<div style="font-size:11.5px;color:var(--text3);margin:2px 0 6px">No ${escapeHtml(env)} monsters matched the current filters — drew from all environments instead.</div>` : ''}
     ${grouped.map(m => `
       <div class="regen-monster-row">
         <span class="regen-monster-name">${countMap[m.slug]>1?countMap[m.slug]+'× ':''}${escapeHtml(m.name)}</span>
@@ -11897,7 +12060,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.62</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.70</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -12094,6 +12257,9 @@ function closeGuidePanel() {
     <p>⚔ Party &amp; XP shows Easy/Medium/Hard/Deadly in real time as monsters die. Toggle between 2014 and 2024 rules.</p>
     <h3>Random Encounter Generator</h3>
     <p>Set difficulty, type (Horde/Skirmish/Boss/Boss+Minions), environment. ⚄ Generate. ⚄ Reroll. Add All in one click.</p>
+    <p><b>Difficulty you can trust <span style="color:var(--gold)">(v1.65)</span>:</b> the XP budget is computed from your <b>current party</b> (the Party &amp; XP roster — set it up for accurate results; without one, four level-5 characters are assumed), using the official rules for your chosen ruleset: 2014 thresholds with the encounter multiplier (including the party-size adjustment), or 2024 XP budgets, which correctly use <i>no</i> multiplier. Every generated encounter is verified to actually land in the requested difficulty band before it's shown, and the result is labelled by what was really built — in the rare case the monster pool can't hit the band (e.g. a heavily filtered source list), the label says so honestly rather than pretending.</p>
+    <p><b>Environment filter <span style="color:var(--gold)">(v1.67)</span>:</b> the Environment dropdown is built from the monster database itself — it lists the environment tags actually present in your cached data, with monster counts (e.g. "Forest (214)"), so a choice always matches real monsters. Open5e provides these tags per creature; they join the local cache with this version, so the tracker will re-download the database once, automatically. If your chosen environment has no monsters within your selected source books, the generator says so honestly and draws from all environments instead.</p>
+    <p><b>Smarter Boss + Minions <span style="color:var(--gold)">(v1.68)</span>:</b> minions are chosen by affinity with the boss — first by <b>name family</b> (a Hobgoblin Captain leads Hobgoblins), then by <b>creature type</b> (undead lead undead), and only then by pure numbers, so the pairing is thematic whenever your monster pool allows and generation never fails when it doesn't. Sometimes the retinue mixes <b>two minion kinds</b> from the same family for variety. The difficulty maths is unchanged and still verified.</p>
     <p><b>Source filter (v1.31):</b> The generator has its own <b>Sources ▾</b> dropdown (independent of the Monster DB browser filter) so you can roll encounters from only the books you choose — e.g. SRD-only, or a single bestiary. Your generator source choice is remembered separately from the browser filter.</p>
 
     <h2 id="g-timer">Turn Timer (Optional)</h2>
@@ -12157,7 +12323,7 @@ function closeGuidePanel() {
     <p>Click <b>HP ▾</b> on any card to open the HP mode popup: <b>Average HP</b>, <b>Maximum HP</b>, <b>Roll Dice</b>, or <b>Set Value</b> (enter any number). The Monster DB also offers these modes before adding. In the bulk action bar, Set Max HP opens the same popup — dice modes available when at least one selected combatant has a stat block.</p>
 
     <h3>I made a mistake — how do I fix it?</h3>
-    <p>Ctrl+Z / Cmd+Z or ↩ Undo. Restores full state — HP, conditions, active turn, round — up to 20 steps back. Every state change is tracked including HP edits, AC/initiative edits, condition changes, and notes. The Undo button shows a gold count badge indicating steps remaining.</p>
+    <p>Ctrl+Z / Cmd+Z or ↩ Undo. Restores full state — HP, conditions, active turn, round — up to 20 steps back. Every state change is tracked including HP edits, AC/initiative edits, condition changes, and notes. The Undo button shows a gold count badge indicating steps remaining. <b>New Encounter is undoable too <span style="color:var(--gold)">(v1.66)</span>:</b> if you clear the field by accident, Undo brings the whole encounter back — combatants, round, and turn. The one thing that starts fresh is the combat log, so export a session summary first if you want a permanent record.</p>
 
     <h3>On my phone the header and toolbar disappear when I start combat — is that normal?</h3>
     <p>Yes (v1.37). On phones and small tablets, the tracker collapses the header and toolbar into a slim bar once combat begins (and whenever you scroll down the list), so the combatant list gets nearly the whole screen. The slim bar still shows the round, whose turn it is, and a <b>Next</b> button. It deliberately <b>stays</b> collapsed while you scroll up and down — so it won't flicker in and out as you scan a long combat. To bring the full header and footer back, tap the small <b>chevron</b> on the left of the slim bar (or the chevron next to <b>? Help</b>). On desktop and wide tablets the header always stays put.</p>
