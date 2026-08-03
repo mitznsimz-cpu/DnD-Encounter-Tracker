@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.72</title>
+<title>MitzNSimz D&D Encounter Tracker v1.75</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -466,6 +466,14 @@ select option{background:var(--bg4)}
 .sb-header{background:var(--bg3);border-bottom:1px solid var(--border);padding:14px 18px;position:sticky;top:0;z-index:1;flex-shrink:0}
 .sb-header h2{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:20px;color:var(--gold2);font-weight:700}
 .sb-header p{font-size:16px;color:var(--text2);margin-top:2px}
+/* Help panel document links (v1.75): a wrapping row that reserves space for the
+   absolutely-positioned Close button, so a third link can never slide under it. */
+.help-header-row{display:flex;align-items:flex-start;gap:8px;margin-top:2px}
+.help-doc-links{display:flex;flex-wrap:wrap;gap:6px;flex:1 1 auto;min-width:0}
+.sb-close.help-close{position:static;flex:0 0 auto;margin-left:auto;align-self:flex-start}
+.help-doc-link{font-family:inherit;font-size:11px;line-height:1.4;padding:4px 10px;border-radius:6px;
+  box-sizing:border-box;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
+
 .sb-close{position:absolute;top:12px;right:14px;background:transparent;border:1px solid var(--border2);color:var(--text2);padding:4px 10px;font-size:13px;border-radius:4px;cursor:pointer}
 /* Add-as toggle in DB panel */
 .add-as-toggle{display:flex;gap:0;border:1px solid var(--border2);border-radius:5px;overflow:hidden;margin:8px 0 4px}
@@ -1461,6 +1469,9 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 .guide-toc a{display:block;font-size:12px;color:var(--blue2);
   text-decoration:none;padding:2px 0}
 .guide-toc a:hover{color:var(--gold)}
+.guide-toc-part{font-family:'Cinzel',serif;font-size:10.5px;color:var(--gold2);letter-spacing:.06em;margin:9px 0 3px;padding-top:6px;border-top:1px solid var(--border)}
+.guide-toc-part:first-of-type{margin-top:2px;padding-top:0;border-top:none}
+.guide-part-banner{font-family:'Cinzel',serif;font-size:13px;color:var(--gold);letter-spacing:.06em;margin:26px 0 6px;padding:6px 0;border-top:2px solid var(--gold-dim);border-bottom:1px solid var(--border)}
 
 /* Source badge in monster search results */
 .source-badge{font-size:10px;font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;letter-spacing:.04em;padding:1px 5px;border-radius:3px;background:var(--bg4);border:1px solid var(--border2);color:var(--text3);vertical-align:middle;margin-left:4px}
@@ -1643,7 +1654,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.72</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.75</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1992,12 +2003,17 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <!-- ── HELP / ABOUT PANEL ───────────────────────────────────── -->
 <div class="help-panel" id="helpPanel">
   <div class="sb-header">
-    <button class="sb-close" data-action="closeHelpPanel">✕ Close</button>
-    <button class="btn-ghost" style="font-family:inherit;font-size:11px;line-height:1.4;padding:4px 10px;margin-top:6px;border-radius:6px;vertical-align:middle;box-sizing:border-box;cursor:pointer;display:inline-flex;align-items:center;justify-content:center" data-action="helpToGuide">📖 Open User Guide</button>
-    <a class="btn-ghost" href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_User_Guide.pdf" target="_blank" rel="noopener noreferrer" style="font-family:inherit;font-size:11px;line-height:1.4;padding:4px 10px;margin-top:6px;margin-left:6px;border-radius:6px;vertical-align:middle;box-sizing:border-box;text-decoration:none;display:inline-flex;align-items:center;justify-content:center">📄 User Guide (PDF)</a>
+    <div class="help-header-row">
+    <div class="help-doc-links">
+      <button class="btn-ghost help-doc-link" data-action="helpToGuide">📖 Open User Guide</button>
+      <a class="btn-ghost help-doc-link" href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_User_Guide.pdf" target="_blank" rel="noopener noreferrer">📄 User Guide (PDF)</a>
+      <a class="btn-ghost help-doc-link" href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_Table_Card.pdf" target="_blank" rel="noopener noreferrer" title="One printable page — the essentials to keep beside the dice">🃏 Table Card</a>
+    </div>
+      <button class="sb-close help-close" data-action="closeHelpPanel">✕ Close</button>
+    </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.72</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.75</p>
   </div>
   <div class="help-body">
 
@@ -5904,6 +5920,7 @@ function cardActRowHTML(c) {
           <button class="cond-btn" data-action="setReadyAction" data-id="${c.id}" title="${c.readyAction?.active?'Edit ready action':'Set ready action'}${c.readyAction?.active?' (active)':''}"><svg class="ico-sm"><use href="#ico-ready"/></svg></button>
           <button class="cond-btn" data-action="openTransformPanel" data-id="${c.id}" title="Wild Shape / Transform — swap to another stat block"><svg class="ico-sm"><use href="#ico-transform"/></svg></button>
           ${(c.type!=='player'&&!isLair)?'<button class="ds-toggle-btn'+(c.deathSavesEnabled?' active':'')+'\" data-action="toggleDeathSaves" data-id="'+c.id+'" title="'+(c.deathSavesEnabled?'Disable death saves':'Enable death saves for boss')+'">☠ DS</button>':''}
+          ${c.type==='player'?`<button class="cond-btn${c.absent?' active':''}" data-action="toggleAbsent" data-id="${c.id}" title="${c.absent?'Mark present — return to turn order':'Mark absent — skip in turn order (still counts for XP)'}" aria-pressed="${!!c.absent}">${c.absent?'👤 Absent':'👤'}</button>`:''}
           ${isLair?'':`<button class="btn-reinforce" data-action="reinforceCb" data-id="${c.id}" title="Add another of this combatant">+1</button>`}
           <button class="btn-icon" data-action="removeCb" data-id="${c.id}" title="Remove">✕</button>
         </div>`;
@@ -9582,10 +9599,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.72] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.75] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.72)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.72] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.75)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.75] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -12101,21 +12118,24 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.72</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.75</p>
   </div>
   <div class="guide-body" id="guideBody">
 
     <div class="guide-toc">
       <div class="guide-toc-title">CONTENTS</div>
+      <div class="guide-toc-part">PART 1 — START HERE</div>
       <a href="#g-why">Why This Tracker Exists</a>
       <a href="#g-offline">Offline Use, Privacy &amp; Data</a>
       <a href="#g-workflow">Typical Session Workflow</a>
       <a href="#g-quickstart">Quick Start</a>
+      <div class="guide-toc-part">PART 2 — RUNNING ENCOUNTERS</div>
       <a href="#g-combat">Running Combat</a>
       <a href="#g-status">Status Strip &amp; Ability Tracking</a>
       <a href="#g-bulk">Group Management &amp; Bulk Actions</a>
       <a href="#g-other">Other Combatant Type</a>
       <a href="#g-groups">Monster Groups</a>
+      <div class="guide-toc-part">PART 3 — ADVANCED &amp; REFERENCE</div>
       <a href="#g-monsters">Monster Database &amp; Custom Content</a>
       <a href="#g-encounter">Encounter Tools</a>
       <a href="#g-timer">Turn Timer</a>
@@ -12125,6 +12145,7 @@ function closeGuidePanel() {
       <a href="#g-faq">Frequently Asked Questions</a>
     </div>
 
+    <p class="guide-part-banner">PART 1 — START HERE</p>
     <h2 id="g-why">Why This Tracker Exists</h2>
     <p>Running combat in D&D 5e requires a Dungeon Master to simultaneously manage initiative, HP, conditions, concentration, legendary actions, ability recharges, and round flow — all while narrating the scene and keeping players engaged.</p>
     <p>The MitzNSimz Encounter Tracker removes that friction so the DM can focus on what matters: <b>the story, the drama, and the players.</b></p>
@@ -12139,12 +12160,12 @@ function closeGuidePanel() {
 
     <h3>Privacy &amp; GDPR</h3>
     <p>This tracker does not collect, store, transmit, or process any personal data. No user accounts, no analytics, no tracking, no advertising. All data you enter — encounter names, combatant names, custom monsters, party configurations — is stored exclusively in your own browser's local storage (<code>localStorage</code> and <code>IndexedDB</code>) and never leaves your device.</p>
-    <p>The only external connection this tracker makes is to <a href="https://open5e.com" target="_blank" rel="noopener noreferrer">Open5e</a> on first load to download the monster and spell database. No user data is included in that request. Once downloaded, the tracker operates fully offline.</p>
-    <p>As no personal data is collected or processed, this tracker is inherently compliant with GDPR and similar data protection regulations. There is nothing to request, delete, or export under data subject rights because no data about you is held anywhere other than your own device.</p>
+    <p>The only external connection this tracker makes is to <a href="https://open5e.com" target="_blank" rel="noopener noreferrer">Open5e</a> on first load to download the monster and spell database. No user data is included in that request. Once that download has completed and been cached, the tracker's combat features and the cached reference libraries work with no connection at all. (A completely fresh browser — or one whose storage has been cleared — needs one online visit to fetch the database again.)</p>
+    <p>The tracker is designed to minimise privacy concerns: there are no accounts, no analytics, no advertising and no server-side storage, and everything you enter stays in your browser on your own device. <b>MitzNSimz does not collect, receive or process any of it</b> — so there is nothing held about you for us to disclose, delete or export. Note that anything you type in (player names, for example) is still personal data <i>on your device</i>, and remains under your control: you are responsible for what you choose to enter and for any backup files you export. Clearing your browser storage removes it all.</p>
 
     <h3>Local Storage &amp; Offline Use</h3>
     <p><b>Your encounter data never leaves your device.</b> The tracker stores everything locally — no cloud, no account, no server.</p>
-    <p>On first open, the monster database downloads (~30-60 seconds, requires internet). After that, fully offline.</p>
+    <p><b>You need to be online once.</b> On first open the monster and spell database downloads (~30–60 seconds). After that the tracker runs entirely offline — no connection needed at the table. The only time you need to be online again is to update the database on demand, or to re-fetch it if browser storage has been cleared (or you start fresh on another device or browser).</p>
     <div class="warn">⚠ Browser storage may be lost if storage is cleared, the device is replaced, or the browser is uninstalled. Export regularly as a backup.</div>
     <p><b>Full Backup (recommended) <span style="color:var(--gold)">(v1.33)</span>:</b> ⋯ More → ⬇ Full Backup saves all your custom data — parties, encounters, monster groups, custom monsters and custom spells — in one file. ⬆ Restore Backup loads it back and asks whether to <b>Merge</b> (keep your current data, add anything new, skip duplicates) or <b>Clear &amp; Replace</b> (wipe your current custom data first, then restore only the file). App preferences (theme, font, ruleset) are not part of the backup — re-set those after restoring.</p>
     <p><b>Backup reminder <span style="color:var(--gold)">(v1.40)</span>:</b> under the Full Backup menu item, a small passive note shows when you last backed up and when your custom content last changed (e.g. “Last backup: 5 days ago · custom content changed today”). It’s just a gentle at-a-glance reminder — no popups, no nagging.</p>
@@ -12177,10 +12198,19 @@ function closeGuidePanel() {
     </table>
 
     <h2 id="g-quickstart">Quick Start</h2>
+    <p style="border-left:3px solid var(--gold-dim);padding-left:10px"><b>🃏 Prefer one page you can print?</b> The <a href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_Table_Card.pdf" target="_blank" rel="noopener noreferrer">Table Card</a> condenses the essentials — setting up, damage and conditions during the fight, ending the session, and the four keyboard shortcuts — onto a single sheet to keep beside the dice. It's also linked at the top of this Help panel.</p>
     <p>1. Open in any modern browser. 2. First open: database downloads (~30-60s). 3. Load Sample Encounter or Start Empty. 4. Add combatants via + Add Combatant or Monster DB. 5. Click Next Turn (or press <b>N</b>) to start combat.</p>
     <div class="tip">💡 Open with internet access before your session to pre-cache the database.</div>
 
+    <p class="guide-part-banner">PART 2 — RUNNING ENCOUNTERS <span style="font-size:11px;color:var(--text3);letter-spacing:0">(everything you use during a fight)</span></p>
     <h2 id="g-combat">Running Combat</h2>
+    <h3>Initiative Housekeeping <span style="color:var(--gold)">(v1.73)</span></h3>
+    <p>Three small things that save a lot of fiddling:</p>
+    <ul>
+      <li><b>Fix a wrong initiative</b> — click the number in the circle on any card, type the correct value and press Enter. The list re-sorts immediately and the active turn stays with the same creature.</li>
+      <li><b>Break a tie your way</b> — combatants on the same initiative can be nudged with the ▲ / ▼ buttons on their cards, or dragged by the handle on the left edge. Ordering only moves within the tie.</li>
+      <li><b>Re-sort everything</b> — <b>More ▾ → Sort by Initiative</b> re-orders the whole list by initiative, useful after adding several combatants mid-fight.</li>
+    </ul>
     <h3>Damage &amp; Healing</h3>
     <p>Enter a number in the damage field. Press <b>Enter</b> or click <b>DMG</b>. Press <b>H</b> or click <b>HEAL</b>. Temp HP absorbed first. Mistakes? <b>Ctrl+Z</b>.</p>
     <h3>Finding the Active Turn <span style="color:var(--gold)">(v1.62)</span></h3>
@@ -12273,6 +12303,7 @@ function closeGuidePanel() {
     <p><b>Split layout:</b> When adding monsters to a group, click any search result name to open a stat block preview on the right. The panel widens so you can browse and read simultaneously.</p>
     <p><b>Export / Import:</b> ⬇ Export saves all groups as JSON. ⬆ Import restores them on any device.</p>
 
+    <p class="guide-part-banner">PART 3 — ADVANCED &amp; REFERENCE <span style="font-size:11px;color:var(--text3);letter-spacing:0">(prep, homebrew, portability, customisation)</span></p>
     <h2 id="g-monsters">Monster Database &amp; Custom Content</h2>
     <p>Click 📖 Monster DB. ~3,500 monsters plus the full spell list — both the <b>2014 (SRD 5.1)</b> and <b>2024 (SRD 5.2)</b> rules — cached offline. Panel stays open — add multiple monsters, toast confirms each.</p>
     <p><b>Split layout (v1.17):</b> Click any monster name to open its stat block on the right while the search list stays visible on the left. The panel widens automatically. Click ✕ in the stat block header to close and return to full search.</p>
@@ -12280,6 +12311,7 @@ function closeGuidePanel() {
     <p><b>Source filter (v1.31):</b> Next to the All / Official / Custom buttons, the <b>Sources ▾</b> dropdown lets you limit the list to specific source books — tick as many as you like (e.g. only the SRD, or only your Kobold Press titles), and "All sources" clears the selection. It only lists books actually present in your database, combines with the All/Official/Custom filter and the search box, and your choice is remembered between sessions.</p>
     <p><b>Advanced filters (v1.36):</b> The <b>⚙ Filters</b> button opens a panel to narrow the list by <b>Type</b> (Beast, Dragon, Undead…), <b>Size</b> (Tiny–Gargantuan) and <b>Challenge Rating</b> (a min–max range). Tap chips to toggle them; the button shows a count of active filters. Everything combines — type, size, CR, the source filter, the All/Official/Custom buttons and the search box all apply together — so you can ask for, say, "Large dragons of CR 5–10" in a couple of taps. The type and size chips only show values that exist in your database. <b>Clear all</b> resets them.</p>
     <p><b>⚗ Parse Block:</b> paste any stat block — D&D Beyond, PDF, Homebrewery, plain text, or <b>Tetra-cube Markdown</b> — into the parser, or paste a <b>Tetra-cube <code>.monster</code> JSON</b>. You can also click <b>⬆ File</b> to load a <code>.monster</code>, <code>.json</code>, <code>.md</code> or <code>.txt</code> file directly. → preview → Open in Editor → Save.</p>
+    <p style="border-left:3px solid var(--amber);padding-left:10px"><b>Always check what the parser guessed <span style="color:var(--gold)">(v1.75)</span>:</b> parsing is a time-saving starting point, not a guarantee. Stat blocks copied from PDFs and websites arrive with broken columns, lost line breaks and stray punctuation, and the parser has to infer structure from that. Before you save, review <b>AC, HP and hit dice, attack bonuses and damage, recharge text, legendary actions and lair actions</b> in the preview or the editor — these create real game mechanics at the table, and a misread number is easier to fix now than mid-combat.</p>
     <p><b>Tetra-cube import (v1.26):</b> For <code>.monster</code> JSON the parser computes Armor Class from the armour fields and resolves Tetra-cube expressions automatically — attack bonuses (<code>[STR ATK]</code>), damage (<code>[DEX 2D8]</code>), save DCs (<code>[WIS SAVE]</code>) and name tokens (<code>[MON]</code>). Try the <b>Tetra JSON</b> example button next to Goblin / Dragon. The Markdown export is the most robust route, as its values are already resolved.</p>
     <p><b>⚗ Parse Spell:</b> Open Spell Library → ⚗ Parse Spell. Paste any spell stat block (2014 or 2024 format). All fields extracted automatically.</p>
     <p><b>Spell split view (v1.17):</b> Click any spell to open its full stat block on the right — level, school, casting time, range, duration, components, description, source, and At Higher Levels. <b>Source pills (v1.23):</b> when a spell exists in more than one ruleset, a pill appears per source (e.g. 2014 / 2024) — tap to switch between versions. Opened from a creature, the sheet defaults to the version matching that creature. Clone to Custom creates an editable copy.</p>
@@ -12292,11 +12324,26 @@ function closeGuidePanel() {
     <p><b>Renamed (v1.38):</b> the toolbar button previously called <b>XP Calc</b> is now <b>⚔ Party &amp; XP</b>, since party save/load is its most-used feature. Same panel — party setup, XP &amp; difficulty, and the random encounter generator all still live here.</p>
     <p><b>Updating a saved party (v1.31):</b> Load a party, adjust levels, names or portraits in the calculator, then click <b>⟳ Update</b> on that party's row to overwrite it in place — no more duplicate copies. Load, Update, Add to Encounter and Delete each sit on the party's row.</p>
     <p><b>Backup &amp; transfer (v1.31):</b> Use <b>⬇ Export</b> to save all your parties to a JSON file, and <b>⬆ Import</b> to load them on another device (duplicates by name are skipped). This matches the Export/Import already available for custom monsters, custom spells, monster groups and encounters.</p>
+    <h3>Adding Several Monsters at Once <span style="color:var(--gold)">(v1.73)</span></h3>
+    <p>When adding from the Monster Database, set the <b>quantity</b> before clicking Add and the tracker creates numbered siblings (Goblin 1, Goblin 2…) that automatically collapse into one group header — one line in the list instead of eight. Need one more mid-fight? The <b>+1</b> button on any card duplicates that creature, rolling it into the same group. Click a group header to expand or collapse its members.</p>
+    <h3>Moving Encounters Between Devices <span style="color:var(--gold)">(v1.73)</span></h3>
+    <p>Everything lives in this browser only, so moving between machines is a deliberate export/import:</p>
+    <ul>
+      <li><b>A single encounter</b> — <b>More ▾ → Save Encounter</b> writes a file you can carry anywhere; <b>Load Encounter</b> reads it back on the other device.</li>
+      <li><b>Everything you have made</b> — <b>More ▾ → Full Backup (All Custom Data)</b> exports your custom monsters and spells, party configurations and saved encounters in one file. Import it on the new device to restore the lot.</li>
+      <li><b>The monster database itself</b> doesn't travel — it re-downloads on first use. <b>Refresh Database</b> updates it on demand, and if you're offline the tracker refuses the refresh rather than clearing what you already have.</li>
+    </ul>
     <h3>Encounter Library</h3>
     <p>More → Quick Save at any point. Load next session to resume exactly — HP, conditions, round, everything. For mid-session continuity across multiple sessions.</p>
     <h3>XP &amp; Difficulty</h3>
     <p>⚔ Party &amp; XP shows Easy/Medium/Hard/Deadly in real time as monsters die. Toggle between 2014 and 2024 rules.</p>
     <h3>Random Encounter Generator</h3>
+    <p><i>A word on what this is for:</i> the generator is a bit of cheeky fun — a way to break the deadlock when you
+    can't decide what to throw at the party, or when they wander somewhere you hadn't prepped. Roll it, and either run
+    what comes out or let it spark something better of your own. It knows the XP maths and it knows which creatures
+    live where, but it doesn't know your story: it will happily suggest something that makes no sense in your dungeon,
+    and swapping a creature or two is expected rather than a sign anything went wrong. Treat it as a prompt, not a
+    ruling — you're still the DM.</p>
     <p>Set difficulty, type (Horde/Skirmish/Boss/Boss+Minions), environment. ⚄ Generate. ⚄ Reroll. Add All in one click.</p>
     <p><b>Difficulty you can trust <span style="color:var(--gold)">(v1.65)</span>:</b> the XP budget is computed from your <b>current party</b> (the Party &amp; XP roster — set it up for accurate results; without one, four level-5 characters are assumed), using the official rules for your chosen ruleset: 2014 thresholds with the encounter multiplier (including the party-size adjustment), or 2024 XP budgets, which correctly use <i>no</i> multiplier. Every generated encounter is verified to actually land in the requested difficulty band before it's shown, and the result is labelled by what was really built — in the rare case the monster pool can't hit the band (e.g. a heavily filtered source list), the label says so honestly rather than pretending.</p>
     <p><b>Environment filter <span style="color:var(--gold)">(v1.67)</span>:</b> the Environment dropdown is built from the monster database itself — it lists the environment tags actually present in your cached data, with monster counts (e.g. "Forest (214)"), so a choice always matches real monsters. Open5e provides these tags per creature; they join the local cache with this version, so the tracker will re-download the database once, automatically. If your chosen environment has no monsters within your selected source books, the generator says so honestly and draws from all environments instead.</p>
@@ -12385,7 +12432,7 @@ function closeGuidePanel() {
     <p>After a character dies via 3 failed death saves, a countdown shows rounds remaining before Revivify is no longer viable (10 rounds = 1 minute). Pulses red in last 3 rounds. Red bold when expired.</p>
 
     <h3>A player is absent tonight — how do I handle it?</h3>
-    <p>Click 👤 on the player card. They are skipped in turn order but still count toward XP difficulty. Click 👤 again to restore.</p>
+    <p>Click the <b>👤</b> button in the button row at the bottom of that player's card. The card dims, shows an <i>absent</i> badge, and that player is skipped when you press Next Turn — but they still count toward your party size for XP and difficulty. Click <b>👤 Absent</b> again when they turn up late.</p>
 
     <h3>How do I get a log of the encounter?</h3>
     <p>Click 📜 Log. All meaningful events are captured automatically — damage, conditions, reactions, spell slots, group drops, per-turn entries, timer expiry, undo diffs, HP changes, initiative changes, AC changes, notes, death save tracking, and legendary action use. Add DM notes at the bottom. ⬇ Export for a .txt session summary. The log resets on new encounter or when loading a saved encounter.</p>
