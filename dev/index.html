@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.70 - DEV</title>
+<title>MitzNSimz D&D Encounter Tracker v1.72 - DEV</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -1643,7 +1643,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.70</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.72</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1997,7 +1997,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     <a class="btn-ghost" href="https://mitznsimz-cpu.github.io/DnD-Encounter-Tracker/MitzNSimz_Encounter_Tracker_User_Guide.pdf" target="_blank" rel="noopener noreferrer" style="font-family:inherit;font-size:11px;line-height:1.4;padding:4px 10px;margin-top:6px;margin-left:6px;border-radius:6px;vertical-align:middle;box-sizing:border-box;text-decoration:none;display:inline-flex;align-items:center;justify-content:center">📄 User Guide (PDF)</a>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.70</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.72</p>
   </div>
   <div class="help-body">
 
@@ -2840,7 +2840,9 @@ function populateEnvDropdown() {
   if (!sel) return;
   const counts = {};
   monsterDB.forEach(m => (m.environments||[]).forEach(e => { counts[e] = (counts[e]||0) + 1; }));
-  const names = Object.keys(counts).sort((a,b) => counts[b]-counts[a] || a.localeCompare(b));
+  // Alphabetical (v1.72): DMs look up a known environment rather than browse by
+  // popularity. Counts stay visible so a thin pool is still obvious at a glance.
+  const names = Object.keys(counts).sort((a,b) => a.localeCompare(b));
   const current = sel.value;
   let html = '<option value="">Any environment</option>';
   if (!names.length) {
@@ -6974,6 +6976,21 @@ function xpMultiplier(n, partySize) {
 let xpLevels = [5,5,5,5];
 let xpNames  = [];
 let xpAvatars = [];      // parallel to xpLevels/xpNames: optional data-URI thumbnail per player
+// Party persistence (v1.71): xpLevels/xpNames lived in memory only, so every
+// page reload silently reverted the generator's budget to four level-5s until
+// the Party & XP modal was reopened — encounters were then built for the wrong
+// party. Restored at load, saved on every change via calcXP().
+try {
+  const _pp = JSON.parse(localStorage.getItem('enc_party') || 'null');
+  if (_pp && Array.isArray(_pp.levels) && _pp.levels.length) {
+    xpLevels = _pp.levels.map(n => Math.max(1, Math.min(20, parseInt(n) || 1)));
+    xpNames  = Array.isArray(_pp.names) ? _pp.names.slice(0, xpLevels.length) : [];
+    while (xpNames.length < xpLevels.length) xpNames.push('');
+  }
+} catch(e) {}
+function persistParty() {
+  try { localStorage.setItem('enc_party', JSON.stringify({levels: xpLevels, names: xpNames})); } catch(e) {}
+}
 let _xpSkipFlush = false; // set true during programmatic loads to skip DOM flush
 
 // ── PLAYER THUMBNAIL PIPELINE (v1.28, Part A) ─────────────────────────────
@@ -7137,6 +7154,7 @@ function renderXPMonsters() {
 }
 
 function calcXP() {
+  persistParty();   // party changes are saved immediately (v1.71)
   const monsters = cbs.filter(c=>c.type==='monster'); // include dead — full encounter XP
   const partySize = xpLevels.length;
   const activeThresh = xpRuleset === '2024' ? XP_THRESH_2024 : XP_THRESH;
@@ -9564,10 +9582,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.70] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.72] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.70)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.70] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.72)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.72] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -10190,6 +10208,24 @@ function setXPRuleset(ruleset) {
 // ════════════════════════════════════════════════════════════════
 // RANDOM ENCOUNTER GENERATOR
 // ════════════════════════════════════════════════════════════════
+// Affinity tiers (v1.68, generalised v1.71): given a leader and candidates,
+// return the strongest-affinity subset — 1. name family, 2. same creature type,
+// 3. everything — so retinues read as thematic whenever the pool allows.
+const _GEN_STOP = new Set(['the','of','and','a','an','young','adult','ancient','greater','lesser','giant','elder']);
+function genNameTokens(n) {
+  return String(n||'').toLowerCase().split(/[^a-z]+/).filter(w => w.length >= 3 && !_GEN_STOP.has(w));
+}
+function genAffinityPool(leader, cands) {
+  if (!cands.length) return cands;
+  const lt = new Set(genNameTokens(leader.name));
+  const tier1 = cands.filter(m => genNameTokens(m.name).some(w => lt.has(w)));
+  if (tier1.length) return tier1;
+  const lty = String(leader.type||'').toLowerCase();
+  const tier2 = lty ? cands.filter(m => String(m.type||'').toLowerCase() === lty) : [];
+  if (tier2.length) return tier2;
+  return cands;
+}
+
 function generateEncounter() {
   if (!dbReady || !monsterDB.length) {
     mtzAlert('Database Not Ready', 'Monster database is still loading. Please wait a moment and try again.');
@@ -10271,15 +10307,25 @@ function generateEncounter() {
       case 'horde': {
         const weak = validPool.filter(m => xpOf(m) <= budget * 0.15);
         const monster = weak.length ? weak[Math.floor(Math.random()*weak.length)] : validPool[Math.floor(Math.random()*validPool.length)];
-        const mxp = xpOf(monster) || 1;
-        let count = 1;
-        while (count < 20) {
-          const nextAdj = adjOf(mxp * (count + 1), count + 1);
-          if (nextAdj >= bandHigh) break;          // strict: band ceilings are exclusive
-          count++;
-          if (adjOf(mxp * count, count) >= target) break;   // aim for the band interior
+        // A horde is mostly one creature, but a same-family companion (goblins
+        // with a few worgs) is more interesting ~1 roll in 3 (v1.71).
+        const kinds = [monster];
+        if (Math.random() < 0.35) {
+          const near = pool.filter(m => m.slug !== monster.slug && xpOf(m) > 0 &&
+                                        xpOf(m) >= xpOf(monster) * 0.5 && xpOf(m) <= xpOf(monster) * 2);
+          const kin = genAffinityPool(monster, near);
+          if (kin.length) kinds.push(kin[Math.floor(Math.random()*kin.length)]);
         }
-        sel = Array(count).fill(monster);
+        sel = [];
+        let raw = 0;
+        while (sel.length < 20) {
+          const k = kinds[sel.length % kinds.length];
+          const nextAdj = adjOf(raw + xpOf(k), sel.length + 1);
+          if (nextAdj >= bandHigh) break;
+          sel.push(k); raw += xpOf(k);
+          if (nextAdj >= target) break;
+        }
+        if (!sel.length) sel = [monster];
         break;
       }
       case 'boss': {
@@ -10293,53 +10339,43 @@ function generateEncounter() {
         break;
       }
       case 'boss_minions': {
-        const bossPool = validPool.filter(m => xpOf(m) >= budget * 0.4 && xpOf(m) <= budget * 0.7);
-        const boss = bossPool.length ? bossPool[Math.floor(Math.random()*bossPool.length)] : validPool[Math.floor(Math.random()*validPool.length)];
+        // Count-first (v1.71): decide the retinue SIZE first, then size the boss
+        // and minions to fill the band together. The old XP-first approach could
+        // legitimately terminate after a single bodyguard — mathematically fine,
+        // but it reads as a bug. A boss wants 2–6 minions around it.
+        const wantMinions = [2,2,3,4,4,6][Math.floor(Math.random()*6)];
+        const n = 1 + wantMinions;
+        const rawTarget = target / mult(n);                       // raw XP the band wants at this size
+        const bossShare = rawTarget * (0.45 + Math.random()*0.2); // boss takes 45–65% of it
+        const perMinion = Math.max(1, (rawTarget - bossShare) / wantMinions);
+        const nearest = (arr, want) => arr.slice().sort((a,b) => Math.abs(xpOf(a)-want) - Math.abs(xpOf(b)-want));
+        const bossCands = pool.filter(m => xpOf(m) > 0);
+        if (!bossCands.length) { sel = [validPool[Math.floor(Math.random()*validPool.length)]]; break; }
+        // Pick from the closest handful so repeated rolls still vary.
+        const bossTop = nearest(bossCands, bossShare).slice(0, 6);
+        const boss = bossTop[Math.floor(Math.random()*bossTop.length)];
         sel = [boss];
-        // Minions are deliberately tiny — select from the env/source pool without
-        // validPool's minimum-XP floor (which excluded all real minions at some bands).
-        const minionPool = pool.filter(m => xpOf(m) > 0 && xpOf(m) <= xpOf(boss) * 0.4 && m.slug !== boss.slug);
-        if (minionPool.length) {
-          // ── Tiered minion affinity (v1.68) ──────────────────────────
-          // 1. Name family: minions sharing a significant name token with the
-          //    boss ("Hobgoblin Captain" → Hobgoblins) — the classic published
-          //    leader-and-retinue pairing, and it works for any source book.
-          // 2. Same creature type: undead lead undead, fiends lead fiends.
-          // 3. Anything that fits the numbers (previous behaviour) — so
-          //    generation never fails on a thin pool.
-          const _stop = new Set(['the','of','and','a','an','young','adult','ancient','greater','lesser','giant']);
-          const _tokens = (n) => String(n||'').toLowerCase().split(/[^a-z]+/).filter(w => w.length >= 3 && !_stop.has(w));
-          const bossTokens = new Set(_tokens(boss.name));
-          const bossType = String(boss.type||'').toLowerCase();
-          const tier1 = minionPool.filter(m => _tokens(m.name).some(w => bossTokens.has(w)));
-          const tier2 = minionPool.filter(m => bossType && String(m.type||'').toLowerCase() === bossType);
-          const kinPool = tier1.length ? tier1 : (tier2.length ? tier2 : minionPool);
-          // Variety: sometimes bring a second minion type — kin preferred, but a
-          // same-type outrider is allowed (Orc War Chief + Orcs + Wolves energy).
-          const pickA = kinPool[Math.floor(Math.random()*kinPool.length)];
-          let pickB = null;
-          if (Math.random() < 0.5) {
-            // Variety stays WITHIN the matched tier — a second name-kin kind, or a
-            // second same-type kind — never a cross-tier outrider (a Hobgoblin
-            // Captain gets more hobgoblin-family, not rival Orcs). If the tier
-            // has one kind, minions stay uniform: coherence beats variety.
-            const bPool = kinPool.filter(m => m.slug !== pickA.slug);
-            if (bPool.length) pickB = bPool[Math.floor(Math.random()*bPool.length)];
+        // Minions must be meaningfully weaker than the boss, and sized to the share.
+        const minionCands = pool.filter(m => m.slug !== boss.slug && xpOf(m) > 0 && xpOf(m) <= xpOf(boss) * 0.5);
+        if (minionCands.length) {
+          const kin = genAffinityPool(boss, minionCands);
+          // Choose from the nearest HANDFUL rather than the single nearest
+          // (v1.72): all of them sit at roughly the right XP, so the band maths
+          // is unaffected, but repeated rolls stop serving the same creature.
+          const kinNear = nearest(kin, perMinion).slice(0, 5);
+          const iA = Math.floor(Math.random() * kinNear.length);
+          const kinds = [kinNear[iA]];
+          // With a bigger retinue, a second kind from the same tier adds texture.
+          if (wantMinions >= 3 && kinNear.length > 1 && Math.random() < 0.6) {
+            const others = kinNear.filter((_, i) => i !== iA);
+            kinds.push(others[Math.floor(Math.random() * others.length)]);
           }
-          const kinds = pickB ? [pickA, pickB] : [pickA];
-          let raw = xpOf(boss), ki = 0;
-          while (sel.length < 9) {
-            // Alternate kinds; if the current kind no longer fits, try the other.
-            let placed = false;
-            for (let t2 = 0; t2 < kinds.length; t2++) {
-              const k = kinds[(ki + t2) % kinds.length];
-              const nextAdj = adjOf(raw + xpOf(k), sel.length + 1);
-              if (nextAdj >= bandHigh) continue;
-              sel.push(k); raw += xpOf(k); ki++;
-              placed = (nextAdj >= target) ? 'done' : true;
-              break;
-            }
-            if (!placed || placed === 'done') break;
+          let raw = xpOf(boss);
+          for (let i = 0; i < wantMinions; i++) {
+            const k = kinds[i % kinds.length];
+            const nextAdj = adjOf(raw + xpOf(k), sel.length + 1);
+            if (nextAdj >= bandHigh) break;   // never blow past the band
+            sel.push(k); raw += xpOf(k);
           }
         }
         break;
@@ -10362,13 +10398,18 @@ function generateEncounter() {
 
   // Verify-and-retry: build up to 14 times, keep the first result whose
   // adjusted XP classifies into the requested band; otherwise keep the closest.
+  // Shapes that promise several monsters shouldn't return a lone creature just
+  // because the numbers happened to work (v1.71).
+  const wantsCrowd = (type === 'horde' || type === 'boss_minions');
   let selected = [], best = null, bestDist = Infinity;
   for (let tryN = 0; tryN < 14; tryN++) {
     const sel = buildOnce();
     const raw2 = sel.reduce((s2,m) => s2 + xpOf(m), 0);
     const adj2 = adjOf(raw2, sel.length);
-    if (classify(adj2) === difficulty) { selected = sel; break; }
-    const dist = Math.abs(adj2 - target);
+    const crowdOK = !wantsCrowd || sel.length >= 3;
+    if (classify(adj2) === difficulty && crowdOK) { selected = sel; break; }
+    // Penalise lonely builds for crowd shapes so the fallback prefers a group.
+    const dist = Math.abs(adj2 - target) + (crowdOK ? 0 : target);
     if (dist < bestDist) { bestDist = dist; best = sel; }
   }
   if (!selected.length) selected = best || [validPool[Math.floor(Math.random()*validPool.length)]];
@@ -12060,7 +12101,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.70</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.72</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -12259,7 +12300,8 @@ function closeGuidePanel() {
     <p>Set difficulty, type (Horde/Skirmish/Boss/Boss+Minions), environment. ⚄ Generate. ⚄ Reroll. Add All in one click.</p>
     <p><b>Difficulty you can trust <span style="color:var(--gold)">(v1.65)</span>:</b> the XP budget is computed from your <b>current party</b> (the Party &amp; XP roster — set it up for accurate results; without one, four level-5 characters are assumed), using the official rules for your chosen ruleset: 2014 thresholds with the encounter multiplier (including the party-size adjustment), or 2024 XP budgets, which correctly use <i>no</i> multiplier. Every generated encounter is verified to actually land in the requested difficulty band before it's shown, and the result is labelled by what was really built — in the rare case the monster pool can't hit the band (e.g. a heavily filtered source list), the label says so honestly rather than pretending.</p>
     <p><b>Environment filter <span style="color:var(--gold)">(v1.67)</span>:</b> the Environment dropdown is built from the monster database itself — it lists the environment tags actually present in your cached data, with monster counts (e.g. "Forest (214)"), so a choice always matches real monsters. Open5e provides these tags per creature; they join the local cache with this version, so the tracker will re-download the database once, automatically. If your chosen environment has no monsters within your selected source books, the generator says so honestly and draws from all environments instead.</p>
-    <p><b>Smarter Boss + Minions <span style="color:var(--gold)">(v1.68)</span>:</b> minions are chosen by affinity with the boss — first by <b>name family</b> (a Hobgoblin Captain leads Hobgoblins), then by <b>creature type</b> (undead lead undead), and only then by pure numbers, so the pairing is thematic whenever your monster pool allows and generation never fails when it doesn't. Sometimes the retinue mixes <b>two minion kinds</b> from the same family for variety. The difficulty maths is unchanged and still verified.</p>
+    <p><b>Smarter Boss + Minions <span style="color:var(--gold)">(v1.68)</span>:</b> minions are chosen by affinity with the boss — first by <b>name family</b> (a Hobgoblin Captain leads Hobgoblins), then by <b>creature type</b> (undead lead undead), and only then by pure numbers, so the pairing is thematic whenever your monster pool allows and generation never fails when it doesn't. Sometimes the retinue mixes <b>two minion kinds</b> from the same family for variety. Retinues are built <b>size-first <span style="color:var(--gold)">(v1.71)</span></b> — a boss plus roughly 2–6 minions, with the boss taking about half the budget — so you always get a proper entourage rather than a lone bodyguard, and hordes occasionally mix in a same-family companion. The difficulty maths is unchanged and still verified.</p>
+    <p><b>Your party is remembered <span style="color:var(--gold)">(v1.71)</span>:</b> the Party &amp; XP roster now persists between sessions, so the generator always budgets for your real party. Previously it reverted to a default four level-5 characters after a reload until you reopened Party &amp; XP — which quietly made generated encounters too soft for a higher-level party.</p>
     <p><b>Source filter (v1.31):</b> The generator has its own <b>Sources ▾</b> dropdown (independent of the Monster DB browser filter) so you can roll encounters from only the books you choose — e.g. SRD-only, or a single bestiary. Your generator source choice is remembered separately from the browser filter.</p>
 
     <h2 id="g-timer">Turn Timer (Optional)</h2>
