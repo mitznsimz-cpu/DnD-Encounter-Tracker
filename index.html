@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.78</title>
+<title>MitzNSimz D&D Encounter Tracker v1.83</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -214,6 +214,20 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 /* GROUP HEADER */
 .group-hdr{display:flex;align-items:center;gap:8px;padding:5px 10px;background:var(--bg3);border:1px solid var(--border);border-radius:6px;cursor:pointer;user-select:none;margin-bottom:2px}
 .group-hdr:hover{border-color:var(--border2)}
+/* Group order controls (v1.80): moved to the right edge, given a label and
+   button chrome so they can't be mistaken for the collapse caret on the left. */
+.group-move-btns{display:inline-flex;align-items:center;gap:3px;flex-shrink:0;margin-left:10px;
+  padding-left:10px;border-left:1px solid var(--border)}
+.group-move-label{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text3);margin-right:1px}
+/* Same visual language as the per-card arrows (.cb-move-btn) — they are the
+   same control at a different scope, so they must look like relatives (v1.81).
+   Separation from the collapse caret comes from position, divider and label. */
+.group-move-btn{background:none;border:none;color:var(--text3);cursor:pointer;font-size:13px;
+  line-height:1;padding:0;border-radius:2px;width:26px;height:24px;display:inline-flex;
+  align-items:center;justify-content:center}
+.group-move-btn:hover:not(:disabled){color:var(--gold);background:var(--bg3)}
+.group-move-btn:disabled{opacity:.2;cursor:default}
+@media (max-width:520px){.group-move-label{display:none}}
 .group-hdr-title{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:12px;color:var(--text2);letter-spacing:.04em;flex:1}
 .group-hdr-info{font-size:12px;color:var(--text3);display:flex;gap:10px;align-items:center}
 .group-hdr-hp{font-size:12px}
@@ -1674,7 +1688,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.78</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.83</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1725,6 +1739,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
         <button class="more-menu-item" data-action="mLoadEnc">📂 Quick Load</button>
         <button class="more-menu-item" data-action="mSessionSummary">📝 Session Summary</button>
         <div class="more-menu-sep"></div>
+        <button class="more-menu-item" data-action="mInitMode" id="mInitModeItem">🎲 Initiative rolls: Grouped</button>
         <button class="more-menu-item" data-action="mMiniPhotos">📷 Manage Mini Photos</button>
         <button class="more-menu-item" data-action="mFullBackup">⬇ Full Backup (All Custom Data)</button>
         <label class="more-menu-item" style="cursor:pointer" title="Restore parties, encounters, monsters, spells and groups from a backup file">⬆ Restore Backup<input type="file" accept=".json,application/json" style="display:none" aria-hidden="true" onchange="importFullBackup(event)"></label>
@@ -1817,7 +1832,8 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <!-- Initiative cluster -->
       <div class="bulk-cluster">
         <span class="bulk-cluster-label">Initiative</span>
-        <button class="bulk-btn" data-action="bulkRerollInit">Reroll</button>
+        <button class="bulk-btn" data-action="bulkRerollInit" title="Reroll initiative for the selected combatants using the current mode">Reroll</button>
+        <button class="bulk-btn" data-action="bulkRerollSplit" title="Reroll the selected combatants so each gets its own initiative — use this to break up a tied group">Reroll Split</button>
         <button class="bulk-btn" data-action="bulkSetInit">Set</button>
       </div>
 
@@ -2034,7 +2050,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.78</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.83</p>
   </div>
   <div class="help-body">
 
@@ -2453,6 +2469,8 @@ if (STORAGE_NS) {
 
 // ── STATE ─────────────────────────────────────────────────────
 let cbs = [], round = 1, active = -1, uid = 0, selectedIds = new Set(), collapsedGroups = new Set();
+let initRollMode = 'group';   // 'group' | 'individual' (v1.82) — read by render() via the toolbar label
+try { if (localStorage.getItem('enc_init_mode') === 'individual') initRollMode = 'individual'; } catch(e) {}
 let miniIndex = {};     // mini photos (v1.77): slug -> {bytes, added, used}; read by render()
 let _miniMem  = new Map();   // session cache of slug -> dataURI
 let hideDead = false;   // hide-defeated preference (v1.60) — must live here, see toggleHideDead
@@ -4157,21 +4175,52 @@ function rollAll() {
   _doRollAll();
 }
 
-function _doRollAll() {
-  // Group initiative: identical creatures share one roll (e.g. 5 goblins all get
-  // the same initiative). Group by statSlug when present (definitive for DB/custom
-  // monsters), else by base name with any trailing duplicate-number stripped.
-  const groupKey = (c) => c.statSlug ? ('slug:' + c.statSlug) : ('name:' + (c.name || '').replace(/\s+\d+$/, '').trim().toLowerCase());
+// Identical creatures are grouped by statSlug when present (definitive for DB
+// and custom monsters), else by base name with any trailing duplicate number
+// stripped — "Goblin 3" and "Goblin 5" share a key.
+function initGroupKey(c) {
+  return c.statSlug ? ('slug:' + c.statSlug)
+                    : ('name:' + (c.name || '').replace(/\s+\d+$/, '').trim().toLowerCase());
+}
+
+// The single roller used by both Roll Init and the bulk reroll (v1.82).
+// In 'group' mode identical creatures share one roll (the 5e default for a mob);
+// in 'individual' mode every combatant rolls its own d20 — each roll still adds
+// that creature's initiative bonus from its stat block.
+function rollInitFor(list, mode) {
+  const m = mode || initRollMode;
   const rolled = {};
-  cbs.forEach(c => {
+  const out = [];
+  list.forEach(c => {
     if (c.type === 'other') return;   // lair cards & timers keep their fixed initiative
-    const k = groupKey(c);
-    if (!(k in rolled)) rolled[k] = rollInitiative(c);
-    c.initiative = rolled[k];
+    if (m === 'individual') {
+      c.initiative = rollInitiative(c);
+    } else {
+      const k = initGroupKey(c);
+      if (!(k in rolled)) rolled[k] = rollInitiative(c);
+      c.initiative = rolled[k];
+    }
+    out.push(c);
   });
+  return out;
+}
+
+function setInitRollMode(mode) {
+  initRollMode = (mode === 'individual') ? 'individual' : 'group';
+  try { localStorage.setItem('enc_init_mode', initRollMode); } catch(e) {}
+  render();
+  mtzToast(initRollMode === 'individual'
+    ? 'Initiative rolls: every combatant rolls separately'
+    : 'Initiative rolls: identical creatures share one roll');
+}
+function toggleInitRollMode() { setInitRollMode(initRollMode === 'group' ? 'individual' : 'group'); }
+
+function _doRollAll() {
+  rollInitFor(cbs);
   round = 1; active = -1;
   sortInit(true);
-  logEvent('round', '🎲 Initiative rolled — encounter order set, round reset to 1');
+  logEvent('round', '🎲 Initiative rolled ' + (initRollMode === 'individual' ? 'individually' : 'by group')
+                  + ' — encounter order set, round reset to 1');
 }
 
 function newEncounterConfirmed() {
@@ -4468,18 +4517,15 @@ function bulkSetInit() {
   }, {defaultValue:'', inputType:'number', placeholder:'e.g. 14'});
 }
 
-function bulkRerollInit() {
+// Reroll just the selected combatants, honouring the current mode (v1.82).
+// Selecting one group and rerolling in 'individual' mode is how you split a
+// group that tied — each member gets its own value.
+function bulkRerollInit(mode) {
   pushHistory();
-  // Group identical creatures so they share one roll (same logic as Roll Init).
-  const groupKey = (c) => c.statSlug ? ('slug:' + c.statSlug) : ('name:' + (c.name || '').replace(/\s+\d+$/, '').trim().toLowerCase());
-  const rolled = {};
-  const results = getSelected().map(c => {
-    const k = groupKey(c);
-    if (!(k in rolled)) rolled[k] = rollInitiative(c);
-    c.initiative = rolled[k];
-    return c.name + ' → ' + c.initiative;
-  });
-  logEvent('note', 'Bulk initiative rerolled: ' + results.join(', '));
+  const results = rollInitFor(getSelected(), mode).map(c => c.name + ' → ' + c.initiative);
+  if (!results.length) { mtzToast('Nothing to reroll'); return; }
+  const m = mode || initRollMode;
+  logEvent('note', 'Initiative rerolled (' + (m === 'individual' ? 'individually' : 'by group') + '): ' + results.join(', '));
   sortInit();
   render(); save();
 }
@@ -5294,6 +5340,7 @@ function hpCol(cur,max) {
 
 // ── BULK BAR EVENT DISPATCHER ───────────────────────────────────
 const BULK_ACTIONS = {
+  bulkRerollSplit: () => bulkRerollInit('individual'),
   selectSameType:  ()      => selectSameType(),
   clearSelection:  ()      => clearSelection(),
   bulkDmg:         (el)    => bulkDmg(el.dataset.heal === 'true'),
@@ -5602,6 +5649,7 @@ const TOOLBAR_ACTIONS = {
   mLoadEnc:        () => { loadEnc(); closeMoreMenu(); },
   mSessionSummary: () => { exportSessionSummary(); closeMoreMenu(); },
   mAbout:          () => { closeMoreMenu(); openAbout(); },
+  mInitMode:       () => { toggleInitRollMode(); closeMoreMenu(); },
   mMiniPhotos:     () => { closeMoreMenu(); openMiniPhotoManager(); },
   mFullBackup:     () => { exportFullBackup(); closeMoreMenu(); },
   mRefreshDB:      () => { forceRefreshDB(); closeMoreMenu(); },
@@ -5781,6 +5829,8 @@ const CM_ACTIONS = {
 // is a separate later pass). onchange/onkeydown/ondrag stay as-is.
 
 const CARD_ACTIONS = {
+  moveGroupUp:     (el, e) => { e.stopPropagation(); moveGroup(el.dataset.key, -1); },
+  moveGroupDown:   (el, e) => { e.stopPropagation(); moveGroup(el.dataset.key, 1); },
   pickMiniPhoto:   (el) => pickMiniPhoto(el.dataset.slug),
   dropMiniPhoto:   (el) => dropMiniPhoto(el.dataset.slug),
   showSpellLink:    (el, e) => { e.stopPropagation(); showSpell(el.dataset.key, el.dataset.edition); },
@@ -6358,10 +6408,16 @@ function buildGroupHeaderHTML(ctx) {
       <input class="group-select" type="checkbox" ${allSelected?'checked':''} title="Select all in group" aria-label="Select all in group"
        >
       <span class="group-toggle${isCollapsed?'':' open'}">▶</span>
+
       <span class="group-hdr-title">${escapeHtml(base)} <span style="color:var(--text3)">(${members.length}${deadCount?' · '+deadCount+' dead':''} · init ${members[0].initiative})</span></span>
       <span class="group-hdr-info">
         <span class="group-hdr-hp" style="color:${hpCol2}">${members.reduce((s,m)=>s+m.currentHP,0)}/${members.reduce((s,m)=>s+m.maxHP,0)} HP</span>
-      </span>`;
+      </span>
+      ${ctx.canUp || ctx.canDown ? `<span class="group-move-btns" title="Move this whole group within initiative ${members[0].initiative}">
+        <span class="group-move-label">order</span>
+        <button type="button" class="group-move-btn" data-action="moveGroupUp" data-key="${escapeHtml(ctx.key)}" ${ctx.canUp?'':'disabled'} aria-label="Move the ${escapeHtml(base)} group up" title="Move this whole group up (same initiative)">\u25b2</button>
+        <button type="button" class="group-move-btn" data-action="moveGroupDown" data-key="${escapeHtml(ctx.key)}" ${ctx.canDown?'':'disabled'} aria-label="Move the ${escapeHtml(base)} group down" title="Move this whole group down (same initiative)">\u25bc</button>
+      </span>` : ''}`;
 }
 
 // ── render() thin orchestration ──────────────────────────────────────────
@@ -6385,6 +6441,7 @@ function bindGroupHeader(ghEl, key) {
   }
   ghEl.onclick = (e) => {
     if (e.target.tagName === 'INPUT') return;
+    if (e.target.closest('.group-move-btns')) return;  // the whole order control is not a collapse toggle (v1.80)
     if (collapsedGroups.has(key)) collapsedGroups.delete(key);
     else collapsedGroups.add(key);
     render(); save();
@@ -6461,7 +6518,8 @@ function render() {
       const hpCol2      = hpPct === 0 ? 'var(--hp-dead)' : hpPct <= 25 ? 'var(--hp-low)' : hpPct <= 60 ? 'var(--hp-mid)' : 'var(--hp-high)';
 
       const ghEl = ensureGroupHeaderEl(key, existing);
-      ghEl.innerHTML = buildGroupHeaderHTML({ base, members, deadCount, allSelected, hpPct, hpCol2, isCollapsed });
+      ghEl.innerHTML = buildGroupHeaderHTML({ base, members, deadCount, allSelected, hpPct, hpCol2, isCollapsed,
+                                               key, canUp: groupCanMove(key, -1), canDown: groupCanMove(key, 1) });
       bindGroupHeader(ghEl, key);  // unconditional — inner checkbox is new after each innerHTML write
 
       order.push(ghEl);
@@ -9903,10 +9961,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.78] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.83] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.78)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.78] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.83)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.83] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -11022,7 +11080,18 @@ async function copyLogForAI() {
 }
 
 // ── MORE MENU ─────────────────────────────────────────────────────
+function _syncInitModeLabel() {
+  const el = document.getElementById('mInitModeItem');
+  if (!el) return;
+  const grouped = initRollMode === 'group';
+  el.textContent = '\u{1F3B2} Initiative rolls: ' + (grouped ? 'Grouped' : 'Individual');
+  el.title = grouped
+    ? 'Identical creatures share one roll. Click to switch to individual rolls.'
+    : 'Every combatant rolls its own d20. Click to switch back to grouped rolls.';
+}
+
 function toggleMoreMenu() {
+  _syncInitModeLabel();
   const menu = document.getElementById('moreMenu');
   const btn  = document.getElementById('moreMenuBtn');
   const isOpen = !menu.classList.contains('on');
@@ -11504,6 +11573,68 @@ function cbDragOver(event) {
 function cbDragLeave(event) {
   const target = event.target.closest('.cb[data-id]');
   if (target) target.classList.remove('drag-over');
+}
+
+// Move a whole monster group up or down within its initiative tie (v1.79).
+// Rolled initiative frequently ties two groups (5 goblins and 2 wolves both on
+// 14), and the per-card arrows only shift one combatant at a time — so ordering
+// two groups relative to each other meant nudging every member individually.
+// This treats the tie band as a sequence of BLOCKS (each group, plus any
+// ungrouped combatant as its own block) and swaps whole blocks. The per-card
+// arrows are untouched and still work for individual tie-breaks.
+function groupKeyOf(c) { return c.name.replace(/\s+\d+$/, '') + '||' + c.initiative; }
+
+// Split the tie band containing `init` into ordered blocks. A block is either
+// all members of one group (normalised to be contiguous) or a single combatant.
+function _tieBlocks(init) {
+  const band = [];
+  cbs.forEach((c, i) => { if (c.initiative === init) band.push(i); });
+  const blocks = [], byKey = {};
+  const groupCount = {};
+  cbs.forEach(c => { const k = groupKeyOf(c); groupCount[k] = (groupCount[k] || 0) + 1; });
+  band.forEach(i => {
+    const c = cbs[i];
+    const gk = groupKeyOf(c);
+    const bk = groupCount[gk] >= 2 ? gk : 'one:' + c.id;
+    if (!byKey[bk]) { byKey[bk] = { key: bk, groupKey: groupCount[gk] >= 2 ? gk : null, items: [] }; blocks.push(byKey[bk]); }
+    byKey[bk].items.push(c);
+  });
+  return { band, blocks };
+}
+
+// Can this group move within its tie? (false when it is alone in the band)
+function groupCanMove(key, dir) {
+  const first = cbs.find(c => groupKeyOf(c) === key);
+  if (!first) return false;
+  const { blocks } = _tieBlocks(first.initiative);
+  const pos = blocks.findIndex(b => b.groupKey === key);
+  if (pos < 0) return false;
+  return dir < 0 ? pos > 0 : pos < blocks.length - 1;
+}
+
+function moveGroup(key, dir) {
+  const first = cbs.find(c => groupKeyOf(c) === key);
+  if (!first) return;
+  const { band, blocks } = _tieBlocks(first.initiative);
+  const pos = blocks.findIndex(b => b.groupKey === key);
+  const swapWith = pos + dir;
+  if (pos < 0 || swapWith < 0 || swapWith >= blocks.length) return;
+
+  const activeId = (active >= 0 && cbs[active]) ? cbs[active].id : -1;
+  pushHistory();
+
+  [blocks[pos], blocks[swapWith]] = [blocks[swapWith], blocks[pos]];
+  const flat = blocks.reduce((a, b) => a.concat(b.items), []);
+  flat.forEach((c, n) => { cbs[band[n]] = c; });
+  cbs.forEach((c, k) => { c.order = k; });
+
+  if (activeId >= 0) {
+    const na = cbs.findIndex(c => c.id === activeId);
+    if (na >= 0) active = na;
+  }
+  const nm = first.name.replace(/\s+\d+$/, '');
+  logEvent('note', '\u2195 ' + nm + ' group moved ' + (dir < 0 ? 'up' : 'down') + ' (initiative ' + first.initiative + ')');
+  render(); save(); updateUndoBtn();
 }
 
 function moveCard(id, dir) {
@@ -12460,7 +12591,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.78</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.83</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -12546,11 +12677,21 @@ function closeGuidePanel() {
 
     <p class="guide-part-banner">PART 2 — RUNNING ENCOUNTERS <span style="font-size:11px;color:var(--text3);letter-spacing:0">(everything you use during a fight)</span></p>
     <h2 id="g-combat">Running Combat</h2>
+    <h3>Rolling Initiative <span style="color:var(--gold)">(v1.82)</span></h3>
+    <p><b>Roll Init</b> rolls for every monster, NPC and ally in the encounter — players keep their own rolls, and lair cards or timers keep their fixed count. Every roll is a d20 <b>plus that creature's own initiative bonus</b>, taken from its stat block (the <i>initiative bonus</i> field where the creature has one, otherwise its Dexterity modifier), so a nimble creature really does tend to go earlier.</p>
+    <p><b>Grouped or individual?</b> By default, identical creatures share a single roll — five goblins all act on the same count, which is how most tables run a mob and keeps the turn order short. If you'd rather every creature rolled separately, switch it under <b>More ▸ Initiative rolls</b>. The menu shows which mode you're in, and your choice is remembered between sessions. Both modes always add each creature's own bonus; the mode only decides whether they share the d20.</p>
+    <p><b>Re-rolling part of the encounter.</b> Tick the combatants you want — or a whole group at once using its header checkbox — and the selection bar gives you two options:</p>
+    <ul>
+      <li><b>Reroll</b> — re-rolls just those combatants, using whichever mode you're currently in. Everything else keeps its initiative.</li>
+      <li><b>Reroll Split</b> — re-rolls those combatants so that <b>each one gets its own value</b>, whatever your default is set to. This is the quick way to break up a group: if your goblins and your wolves both landed on 14, select the goblins, split them, and the tie resolves itself.</li>
+    </ul>
+    <p>Both are undoable, so there's no risk in trying a roll you don't like.</p>
     <h3>Initiative Housekeeping <span style="color:var(--gold)">(v1.73)</span></h3>
     <p>Three small things that save a lot of fiddling:</p>
     <ul>
       <li><b>Fix a wrong initiative</b> — click the number in the circle on any card, type the correct value and press Enter. The list re-sorts immediately and the active turn stays with the same creature.</li>
       <li><b>Break a tie your way</b> — combatants on the same initiative can be nudged with the ▲ / ▼ buttons on their cards, or dragged by the handle on the left edge. Ordering only moves within the tie.</li>
+      <li><b>Move a whole group</b> <span style="color:var(--gold)">(v1.79)</span> — when two monster groups roll the same initiative (five goblins and two wolves both on 14), the group header gets its own <b>ORDER ▲ ▼</b> buttons at the right-hand end, which move that entire group above or below the other in one click. (They sit apart from the ▼ collapse arrow on the left, which expands or hides the group's members.) The arrows on individual cards still work as before for nudging a single combatant within a tie.</li>
       <li><b>Re-sort everything</b> — <b>More ▾ → Sort by Initiative</b> re-orders the whole list by initiative, useful after adding several combatants mid-fight.</li>
     </ul>
     <h3>Damage &amp; Healing</h3>
