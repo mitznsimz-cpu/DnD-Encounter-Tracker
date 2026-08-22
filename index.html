@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.83</title>
+<title>MitzNSimz D&D Encounter Tracker v1.92</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -186,7 +186,7 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 .turn-banner strong{color:var(--gold2);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif}
 .turn-name{color:var(--text);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:19px;font-weight:600}
 
-.list-area{flex:1;overflow-y:auto;padding:12px 20px 100px 20px;display:flex;flex-direction:column;gap:7px;touch-action:pan-y;overscroll-behavior:contain}
+.list-area{flex:1;overflow-y:auto;padding:12px 20px 100px 20px;display:flex;flex-direction:column;gap:7px;touch-action:pan-y;overscroll-behavior:contain;container-type:inline-size;container-name:cblist}
 .list-area::-webkit-scrollbar{width:6px}
 .list-area::-webkit-scrollbar-track{background:var(--bg)}
 .list-area::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
@@ -410,7 +410,7 @@ html[data-theme="light"] .cb-sb{border-top-color:var(--border2)}
 /* ── COMBATANT STAT BLOCK SIDE PANEL (v1.20) ─────────────────────
    Side-by-side with the list on wide screens; inline (above) on narrow. */
 .list-row{flex:1;display:flex;min-height:0;overflow:hidden}
-.cb-sb-panel{display:none;flex-direction:column;width:460px;flex-shrink:0;border-left:1px solid var(--border);background:var(--bg2);overflow:hidden}
+.cb-sb-panel{position:relative;display:none;flex-direction:column;width:460px;flex-shrink:0;border-left:1px solid var(--border);background:var(--bg2);overflow:hidden}
 .cb-sb-panel-bar{display:flex;justify-content:flex-end;align-items:center;padding:8px 10px;border-bottom:1px solid var(--border);flex-shrink:0}
 .cb-sb-panel-close{background:transparent;border:none;color:var(--text3);font-size:20px;cursor:pointer;padding:0 6px;line-height:1}
 .cb-sb-panel-close:hover{color:var(--text)}
@@ -419,6 +419,62 @@ html[data-theme="light"] .cb-sb{border-top-color:var(--border2)}
 .cb-sb-panel-body::-webkit-scrollbar-track{background:var(--bg2)}
 .cb-sb-panel-body::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
 @media (min-width:901px){ .cb-sb-panel.on{display:flex} }
+/* ── Adaptive combatant card (v1.84) ───────────────────────────────────
+   The card used to lay itself out from the VIEWPORT width, which is wrong
+   the moment the stat-block panel takes space off the right: cards became
+   phone-narrow while still using the desktop grid, so the name column was
+   crushed to nothing and the buttons spilled out. It now measures its own
+   container, so it adapts to the panel, to a dragged panel width, and to
+   whatever width the browser reports — no thresholds to guess. */
+@container cblist (max-width: 760px){
+  .cb{grid-template-columns:16px 24px 20px 36px 1fr}
+  .cb-acts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;
+           justify-content:flex-start;margin-top:7px}
+  .cb-acts .dmg-row{flex-wrap:wrap}
+}
+@container cblist (max-width: 420px){
+  .cb{padding:10px 12px}
+  .cb-acts{gap:4px}
+  /* The action row is a single non-wrapping strip by default; at this width it
+     must be allowed to flow onto extra lines or it overhangs the card. */
+  .act-row{flex-wrap:wrap;justify-content:flex-start;row-gap:5px}
+  .hp-row,.dmg-row{flex-wrap:wrap;row-gap:5px}
+}
+/* ── Stat-block display preference (v1.84) ─────────────────────────────
+   'auto' keeps the historic behaviour (side panel on wide screens, inline
+   below the card otherwise). The explicit modes let a DM choose, which is
+   more honest than trying to guess one correct breakpoint for every device. */
+html[data-sbmode="side"]  .cb-sb{display:none !important}
+html[data-sbmode="side"]  .cb-sb-panel.on{display:flex !important}
+html[data-sbmode="below"] .cb-sb-panel.on{display:none !important}
+html[data-sbmode="below"] .cb.sb-open .cb-sb{display:block !important}
+html[data-sbmode="popup"] .cb-sb{display:none !important}
+/* Pop-up floats over the list like the spell popup: no backdrop, so the toolbar
+   and the cards stay usable while you read a stat block (v1.85). */
+html[data-sbmode="popup"] .cb-sb-panel.on{display:flex !important;position:fixed;
+  top:calc(50% + 20px);left:50%;transform:translate(-50%,-50%);width:min(560px,calc(100vw - 28px));
+  max-height:min(78vh,720px);z-index:500;border-radius:10px;border:1px solid var(--border2);
+  box-shadow:0 14px 52px var(--shadow)}
+html[data-sbmode="popup"] .cb-sb-panel-bar{cursor:move;touch-action:none;user-select:none}
+html[data-sbmode="popup"] .cb-sb-panel-bar.dragging{cursor:grabbing}
+.sppop #spName{cursor:move;touch-action:none;user-select:none}
+.sppop #spName.dragging{cursor:grabbing}
+@media (max-width:599px){ html[data-sbmode="popup"] .cb-sb-panel-bar,.sppop #spName{cursor:default;touch-action:auto} }
+.sb-mode-choice{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;
+  background:var(--bg3);border:1px solid var(--border);border-radius:7px;padding:10px 12px;
+  margin-bottom:7px;cursor:pointer;color:var(--text);font-family:inherit;font-size:13px;
+  transition:border-color var(--tr),background var(--tr)}
+.sb-mode-choice:hover{border-color:var(--gold-dim);background:var(--bg4)}
+.sb-mode-choice.active{border-color:var(--gold);background:var(--bg4)}
+.sb-mode-tick{flex:0 0 16px;color:var(--gold);font-weight:700;line-height:1.5}
+.sb-mode-desc{display:block;color:var(--text3);font-size:11.5px;margin-top:2px;line-height:1.45}
+#sbResizeGrip{position:absolute;left:0;top:0;bottom:0;width:14px;margin-left:-7px;cursor:col-resize;
+  touch-action:none;z-index:5;display:flex;align-items:center;justify-content:center;background:transparent}
+#sbResizeGrip span{width:3px;height:44px;border-radius:2px;background:var(--border2);transition:background var(--tr)}
+#sbResizeGrip:hover span,#sbResizeGrip.dragging span{background:var(--gold)}
+html[data-sbmode="popup"] #sbResizeGrip{display:none}
+@media (max-width:900px){ html:not([data-sbmode="side"]) #sbResizeGrip{display:none} }
+
 html[data-theme="light"] .isb-scores{background:var(--bg3);border-color:var(--border)}
 html[data-theme="light"] .isb-legendary{background:rgba(138,106,24,.06)}
 
@@ -986,7 +1042,15 @@ html[data-theme="light"] .msearch-item .m-meta { color: var(--text2); }
 }
 
 /* ── WELCOME MODAL ───────────────────────────────────────────── */
-.welcome-modal{background:var(--bg2);border:1px solid var(--border);border-radius:14px;width:min(560px,95vw);max-height:90vh;display:flex;flex-direction:column;box-shadow:0 24px 80px var(--shadow);overflow:hidden}
+.welcome-modal{position:relative;background:var(--bg2);border:1px solid var(--border);border-radius:14px;width:min(560px,95vw);max-height:90vh;display:flex;flex-direction:column;box-shadow:0 24px 80px var(--shadow);overflow:hidden}
+/* Corner close (v1.90): the dialog's only exit was a button labelled "Start
+   Empty", which is fine on first run but alarming when opened as About during a
+   live encounter — it reads as though it might clear the fight. */
+.welcome-close{position:absolute;top:10px;right:12px;z-index:2;background:rgba(0,0,0,.28);
+  border:1px solid var(--border2);color:var(--text);width:32px;height:32px;border-radius:50%;
+  cursor:pointer;font-size:14px;line-height:1;display:flex;align-items:center;justify-content:center;
+  transition:background var(--tr),border-color var(--tr),color var(--tr)}
+.welcome-close:hover{background:var(--bg3);border-color:var(--gold);color:var(--gold)}
 .welcome-hero{background:var(--bg3);border-bottom:1px solid var(--border);padding:28px 28px 20px;text-align:center}
 .welcome-hero-icon{font-size:40px;margin-bottom:10px}
 .welcome-hero h1{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:22px;color:var(--gold);letter-spacing:.06em;margin-bottom:6px}
@@ -1201,13 +1265,22 @@ html[data-theme="light"] .msearch-item .m-meta { color: var(--text2); }
 }
 /* Secondary "More" menu */
 .more-menu-wrap{position:relative;flex-shrink:0}
-.more-menu{position:absolute;top:calc(100% + 4px);right:0;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:6px;display:none;flex-direction:column;gap:4px;z-index:300;min-width:180px;max-width:calc(100vw - 24px);max-height:calc(100vh - 110px);overflow-y:auto;overscroll-behavior:contain;box-shadow:0 8px 24px var(--shadow)}
+.more-menu{position:absolute;top:calc(100% + 4px);right:0;background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:6px;display:none;flex-direction:column;gap:4px;z-index:300;min-width:260px;max-width:calc(100vw - 24px);max-height:calc(100vh - 110px);overflow-y:auto;overscroll-behavior:contain;box-shadow:0 8px 24px var(--shadow)}
 .more-menu.on{display:flex}
 .more-menu-item{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:12px;padding:7px 12px;border-radius:5px;cursor:pointer;border:none;background:transparent;color:var(--text2);text-align:left;letter-spacing:.04em;transition:all .15s;display:flex;align-items:center;gap:8px}
 .more-menu-item:hover{background:var(--bg3);color:var(--gold)}
 .more-menu-sep{height:1px;background:var(--border);margin:2px 0}
 .more-menu-accent-label{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:12px;padding:5px 12px 2px;color:var(--text2);letter-spacing:.04em}
-.more-menu-accent-row{display:flex;flex-wrap:wrap;gap:8px;padding:4px 12px 6px}
+/* One row by construction (v1.91): six swatches previously had ~2px of slack,
+   so any font or zoom change pushed the last one onto a second line. */
+.more-menu-accent-row{display:flex;flex-wrap:nowrap;gap:8px;padding:4px 12px 6px;justify-content:flex-start}
+.more-menu-accent-row .accent-swatch{flex:0 0 auto}
+/* Below 650px a site-wide accessibility rule gives every button a 44px minimum
+   tap target, so six swatches genuinely cannot share one line. Wrapping is the
+   right answer there — the touch target matters more than the single row. */
+@media (max-width:650px){
+  .more-menu-accent-row{flex-wrap:wrap;row-gap:6px}
+}
 .accent-swatch{width:26px;height:26px;border-radius:6px;background:var(--sw);border:2px solid transparent;cursor:pointer;padding:0;transition:transform .12s,border-color .12s}
 .accent-swatch:hover{transform:scale(1.12)}
 .accent-swatch.active{border-color:var(--text)}
@@ -1688,7 +1761,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.83</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.92</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1730,7 +1803,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <button class="btn-ghost btn-lib" data-action="toggleMoreMenu" id="moreMenuBtn" aria-haspopup="true" aria-expanded="false">⋯ More</button>
       <div class="more-menu" id="moreMenu">
         
-        <button class="more-menu-item" data-action="mSortInit">↕ Sort Initiative</button>
+        <button class="more-menu-item" data-action="mRestartEnc" title="Same combatants and initiative, everyone back to full, round 1">↺ Restart Encounter</button>
         <div class="more-menu-sep"></div>
         <button class="more-menu-item" data-action="mCustomMonster">＋ Custom Monster</button>
         <div class="more-menu-sep"></div>
@@ -1740,6 +1813,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
         <button class="more-menu-item" data-action="mSessionSummary">📝 Session Summary</button>
         <div class="more-menu-sep"></div>
         <button class="more-menu-item" data-action="mInitMode" id="mInitModeItem">🎲 Initiative rolls: Grouped</button>
+        <button class="more-menu-item" data-action="mSbMode" id="mSbModeItem">📖 Stat block: Auto</button>
         <button class="more-menu-item" data-action="mMiniPhotos">📷 Manage Mini Photos</button>
         <button class="more-menu-item" data-action="mFullBackup">⬇ Full Backup (All Custom Data)</button>
         <label class="more-menu-item" style="cursor:pointer" title="Restore parties, encounters, monsters, spells and groups from a backup file">⬆ Restore Backup<input type="file" accept=".json,application/json" style="display:none" aria-hidden="true" onchange="importFullBackup(event)"></label>
@@ -1762,7 +1836,6 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
           <button class="accent-swatch" data-action="setAccent" data-accent="purple" title="Purple" aria-label="Purple accent" style="--sw:#b486dc"></button>
           <button class="accent-swatch" data-action="setAccent" data-accent="silver" title="Silver" aria-label="Silver accent" style="--sw:#c2cad2"></button>
         </div>
-        <div class="more-menu-caption" id="accentCaption">Works in Day &amp; Night</div>
         <div class="more-menu-sep"></div>
         <button class="more-menu-item" data-action="mAbout">ℹ About</button>
       </div>
@@ -1847,6 +1920,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       </div>
     </div>
     <aside class="cb-sb-panel" id="cbSBPanel" aria-label="Combatant stat block">
+      <div id="sbResizeGrip" role="separator" aria-orientation="vertical" aria-label="Drag to resize the stat block; double-tap to reset" title="Drag to resize \u00b7 double-tap to reset"><span></span></div>
       <div class="cb-sb-panel-bar">
         <button data-action="closeCbSBPanel" class="cb-sb-panel-close" title="Close stat block" aria-label="Close stat block">✕</button>
       </div>
@@ -2050,7 +2124,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.83</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.92</p>
   </div>
   <div class="help-body">
 
@@ -2469,6 +2543,10 @@ if (STORAGE_NS) {
 
 // ── STATE ─────────────────────────────────────────────────────
 let cbs = [], round = 1, active = -1, uid = 0, selectedIds = new Set(), collapsedGroups = new Set();
+let sbDisplayMode = 'auto';   // auto | side | below | popup (v1.84)
+try { const _m = localStorage.getItem('enc_sb_mode'); if (['side','below','popup'].includes(_m)) sbDisplayMode = _m; } catch(e) {}
+let sbPanelWidth = 0;         // px; 0 = use the CSS default (v1.84)
+try { const _w = parseInt(localStorage.getItem('enc_sb_width') || '0', 10); if (_w >= 300 && _w <= 900) sbPanelWidth = _w; } catch(e) {}
 let initRollMode = 'group';   // 'group' | 'individual' (v1.82) — read by render() via the toolbar label
 try { if (localStorage.getItem('enc_init_mode') === 'individual') initRollMode = 'individual'; } catch(e) {}
 let miniIndex = {};     // mini photos (v1.77): slug -> {bytes, added, used}; read by render()
@@ -3094,6 +3172,7 @@ async function loadDB() {
       dbReady = true;
       populateEnvDropdown();
       loadMiniIndex().then(() => { render(); hydrateMiniPhotos(); });
+      applySbMode();
       refreshLastUpdatedDisplays();
       checkDBFreshness();
       resetLinkSpellsCache(); clearSBCache(); rebuildSpellVariants();
@@ -4157,6 +4236,67 @@ function sortInit(resetActive=false) {
   render(); save();
 }
 
+// ── Restart Encounter (v1.92) ─────────────────────────────────────────
+// Replaces the old "Sort Initiative" menu item, which was misleading: the list
+// is already sorted automatically from ten call sites, so its only real effect
+// was silently clearing the active turn — with no undo and no warning.
+//
+// Restart keeps the same combatants AND their initiative, and undoes everything
+// the fight did to them, so an encounter can be run again from the top. Roll Init
+// deliberately does NOT do this: it only re-rolls the numbers.
+function _restartCombatant(c) {
+  // Revert a transformation first, so HP is restored to the true original.
+  if (c._original) {
+    c.maxHP = c._original.maxHP;
+    c.ac = c._original.ac;
+    c.statSlug = c._original.statSlug || null;
+    c._transformSlug = null; c._transformName = null; c._original = null;
+  }
+  c.currentHP = c.maxHP;
+  c.tempHP = 0;
+  c.dead = false;
+  c.deathSaves = { success: 0, failure: 0 };
+  c.conditions = [];
+  c.concentrating = false;
+  c.reactionUsed = false;
+  c.readyAction = { active: false, trigger: '' };
+  c.legendaryUsed = 0;
+  c.lairUsed = 0;
+  c._dmgTurn = 0;
+  c.showSB = false;
+  // Ability usage: recharge powers come back, every slot/use pool refills.
+  Object.keys(c.rechargeState || {}).forEach(k => { if (c.rechargeState[k]) c.rechargeState[k].available = true; });
+  Object.keys(c.spellSlots   || {}).forEach(k => { if (c.spellSlots[k])   c.spellSlots[k].used = 0; });
+  Object.keys(c.innateSpells || {}).forEach(k => { if (c.innateSpells[k]) c.innateSpells[k].used = 0; });
+  Object.keys(c.xDayAbilities|| {}).forEach(k => { if (c.xDayAbilities[k])c.xDayAbilities[k].used = 0; });
+  // c.absent is deliberately left alone: who turned up is a fact about tonight,
+  // not a combat state the fight changed.
+}
+
+function restartEncounterConfirmed() {
+  pushHistory();                      // recoverable, unlike the old sort
+  cbs.forEach(_restartCombatant);
+  round = 1;
+  active = -1;
+  selectedIds.clear();
+  sortInit();                          // keep order tidy; active is already -1
+  logEvent('round', '\u21BA Encounter restarted \u2014 everyone back to full, round 1');
+  render(); save(); updateUndoBtn();
+  mtzToast('Encounter restarted');
+}
+
+function restartEncounter() {
+  if (!cbs.length) { mtzToast('Nothing to restart'); return; }
+  // Only ask when there is something to lose, matching the Roll Init guard.
+  const inProgress = active >= 0 || round > 1 ||
+    cbs.some(c => c.dead || c.currentHP < c.maxHP || c.tempHP > 0 ||
+                  (c.conditions && c.conditions.length) || c.legendaryUsed || c.lairUsed);
+  if (!inProgress) { restartEncounterConfirmed(); return; }
+  mtzConfirm('Restart Encounter?',
+    'Everyone goes back to full health with conditions and ability uses cleared, and the fight starts again at round 1. Initiative order is kept \u2014 use Roll Init if you want new rolls. Undo can bring the current state back.',
+    restartEncounterConfirmed, { confirmText: 'Restart', danger: true });
+}
+
 function rollAll() {
   // Guard against an accidental click that would wipe an in-progress fight.
   // Only confirm when there's something to lose — initiative already set,
@@ -4611,6 +4751,277 @@ function toggleSB(id) {
 
 // Wide-screen side panel (>900px). On narrow screens CSS hides this and
 // shows the inline .cb-sb block instead — both read the same c.showSB flag.
+// ── Layout diagnostic (v1.84, DEV BUILDS ONLY) ────────────────────────
+// Gated on STORAGE_NS, which the prod build empties — so this whole feature
+// is inert in production without needing a second build difference. Used to
+// find out what width a real tablet actually reports, since iPadOS Safari can
+// override the page's own sizing and our measurements disagreed with the field.
+const IS_DEV_BUILD = !!STORAGE_NS;
+
+function layoutDiagnosticReport() {
+  const w = window.innerWidth, h = window.innerHeight;
+  const vv = window.visualViewport;
+  const panel = document.getElementById('cbSBPanel');
+  const cardEl = document.querySelector('#listArea .cb');
+  const listEl = document.getElementById('listArea');
+  const side = panel ? getComputedStyle(panel).display !== 'none' : false;
+  const lines = [
+    ['CSS width \u00d7 height', w + ' \u00d7 ' + h],
+    ['orientation', w > h ? 'landscape' : 'portrait'],
+    ['screen', screen.width + ' \u00d7 ' + screen.height],
+    ['devicePixelRatio', String(window.devicePixelRatio)],
+    ['visualViewport', vv ? Math.round(vv.width) + ' \u00d7 ' + Math.round(vv.height) : 'n/a'],
+    ['matches min-width 901px', window.matchMedia('(min-width: 901px)').matches ? 'YES' : 'no'],
+    ['viewport meta honoured', (Math.abs(w - screen.width) < 60 || Math.abs(h - screen.width) < 60) ? 'looks honoured' : 'NO \u2014 layout wider than screen'],
+    ['stat block mode', SB_MODE_LABEL[sbDisplayMode] || sbDisplayMode],
+    ['stat block showing as', side ? 'side panel' : 'below card / hidden'],
+    ['list area width', listEl ? Math.round(listEl.getBoundingClientRect().width) + 'px' : 'n/a'],
+    ['card width', cardEl ? Math.round(cardEl.getBoundingClientRect().width) + 'px' : '(add a combatant)'],
+    ['container queries', (window.CSS && CSS.supports && CSS.supports('container-type','inline-size')) ? 'supported' : 'NOT SUPPORTED'],
+    ['saved panel width', sbPanelWidth ? sbPanelWidth + 'px' : 'default'],
+    ['build', document.title.replace(/^.*?(v[\d.]+).*$/, '$1') + (IS_DEV_BUILD ? ' (dev)' : '')],
+    ['user agent', navigator.userAgent]
+  ];
+  return lines;
+}
+
+function openLayoutDiagnostic() {
+  if (!IS_DEV_BUILD) return;
+  const lines = layoutDiagnosticReport();
+  const rows = lines.map(([k, v]) =>
+    '<div style="display:flex;gap:10px;padding:4px 0;border-bottom:1px solid var(--border)">' +
+      '<span style="color:var(--text3);flex:0 0 45%;font-size:12px">' + escapeHtml(k) + '</span>' +
+      '<span style="font-size:12px;font-weight:600;word-break:break-all">' + escapeHtml(String(v)) + '</span>' +
+    '</div>').join('');
+  const html = '<div style="text-align:left">' +
+    '<div style="font-size:12px;color:var(--text3);margin-bottom:8px">Rotate the device and open this again to capture both orientations.</div>' +
+    rows +
+    '<button class="btn-ghost" data-action="copyLayoutDiagnostic" style="margin-top:10px;font-size:12px">\u{1F4CB} Copy for reporting</button>' +
+  '</div>';
+  mtzAlertHTML('\u{1F527} Layout Diagnostic (dev)', html);
+}
+
+function copyLayoutDiagnostic() {
+  const txt = layoutDiagnosticReport().map(([k, v]) => k + ': ' + v).join('\n');
+  const done = () => mtzToast('Diagnostic copied \u2014 paste it into your report');
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(txt).then(done).catch(() => _copyFallback(txt, done));
+  } else _copyFallback(txt, done);
+}
+function _copyFallback(txt, done) {
+  const ta = document.createElement('textarea');
+  ta.value = txt; ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select();
+  try { document.execCommand('copy'); done(); } catch (e) { mtzAlert('Copy Failed', txt); }
+  document.body.removeChild(ta);
+}
+
+// ── Draggable pop-ups (v1.87) ─────────────────────────────────────────
+// One helper for the stat-block pop-up and the spell pop-up. Pointer events
+// cover mouse, touch and stylus in a single path.
+//
+// The handle is the HEADER ONLY, never the whole pop-up: both pop-ups scroll
+// their contents, and `touch-action:none` on the body would kill that scrolling
+// on touch devices.
+//
+// Dragging is disabled on narrow screens — there is nowhere useful to move a
+// pop-up on a phone, and it would only get in the way of scrolling.
+const DRAG_MIN_VW = 600;
+const DRAG_EDGE   = 48;     // px of the pop-up that must stay on screen
+
+function _clampPopPos(el, left, top) {
+  const r = el.getBoundingClientRect();
+  const maxL = window.innerWidth  - DRAG_EDGE;
+  const maxT = window.innerHeight - DRAG_EDGE;
+  return {
+    left: Math.min(Math.max(left, DRAG_EDGE - r.width), maxL),
+    top:  Math.min(Math.max(top, 0), maxT)          // never above the top edge
+  };
+}
+
+function _applyPopPos(el, pos) {
+  if (!pos) return;
+  const c = _clampPopPos(el, pos.left, pos.top);
+  el.style.left = c.left + 'px';
+  el.style.top  = c.top + 'px';
+  el.style.transform = 'none';     // cancel any centring transform
+  el.dataset.dragged = '1';
+}
+
+function resetPopPos(el, storeKey) {
+  if (!el) return;
+  el.style.left = ''; el.style.top = ''; el.style.transform = '';
+  delete el.dataset.dragged;
+  if (storeKey) { try { localStorage.removeItem(storeKey); } catch(e) {} }
+}
+
+function makeDraggable(el, handle, opts) {
+  if (!el || !handle) return;
+  const o = opts || {};
+  let sx = 0, sy = 0, sl = 0, st = 0, on = false;
+
+  handle.addEventListener('pointerdown', e => {
+    if (window.innerWidth < DRAG_MIN_VW) return;          // phones: not useful
+    if (e.target.closest('button, a, input, select')) return;  // let controls work
+    if (o.enabled && !o.enabled()) return;
+    const r = el.getBoundingClientRect();
+    sx = e.clientX; sy = e.clientY; sl = r.left; st = r.top;
+    on = true;
+    handle.setPointerCapture(e.pointerId);
+    handle.classList.add('dragging');
+    e.preventDefault();
+  });
+
+  handle.addEventListener('pointermove', e => {
+    if (!on) return;
+    _applyPopPos(el, { left: sl + (e.clientX - sx), top: st + (e.clientY - sy) });
+  });
+
+  const end = () => {
+    if (!on) return;
+    on = false;
+    handle.classList.remove('dragging');
+    if (o.storeKey) {
+      const r = el.getBoundingClientRect();
+      try { localStorage.setItem(o.storeKey, JSON.stringify({ left: Math.round(r.left), top: Math.round(r.top) })); } catch(e) {}
+    }
+  };
+  handle.addEventListener('pointerup', end);
+  handle.addEventListener('pointercancel', end);
+  handle.addEventListener('dblclick', () => resetPopPos(el, o.storeKey));
+
+  // A position chosen in landscape must not strand the pop-up in portrait.
+  window.addEventListener('resize', () => {
+    if (el.dataset.dragged !== '1') return;
+    if (window.innerWidth < DRAG_MIN_VW) { resetPopPos(el, null); return; }
+    const r = el.getBoundingClientRect();
+    _applyPopPos(el, { left: r.left, top: r.top });
+  });
+}
+
+// Restore the stat-block pop-up's position (it is set up once and left alone).
+// The spell pop-up deliberately does NOT persist: it is anchored to the link you
+// clicked, which is more useful than remembering where it was last dragged.
+function restoreSbPopPos() {
+  const el = document.getElementById('cbSBPanel');
+  if (!el || sbDisplayMode !== 'popup' || window.innerWidth < DRAG_MIN_VW) return;
+  try {
+    const p = JSON.parse(localStorage.getItem('enc_sb_pop_pos') || 'null');
+    if (p && typeof p.left === 'number' && typeof p.top === 'number') _applyPopPos(el, p);
+  } catch(e) {}
+}
+
+function initPopupDragging() {
+  const sb = document.getElementById('cbSBPanel');
+  const sbBar = sb ? sb.querySelector('.cb-sb-panel-bar') : null;
+  if (sb && sbBar) makeDraggable(sb, sbBar, {
+    storeKey: 'enc_sb_pop_pos',
+    enabled: () => sbDisplayMode === 'popup'      // only when it is a floating pop-up
+  });
+  const sp = document.getElementById('sppop');
+  const spBar = document.getElementById('spName');
+  if (sp && spBar) makeDraggable(sp, spBar, {});   // anchored on open, so no persistence
+}
+
+// ── Stat-block display preference & panel resizing (v1.84) ────────────
+const SB_MODES = ['auto', 'side', 'below', 'popup'];
+const SB_MODE_LABEL = { auto:'Auto', side:'Side panel', below:'Below the card', popup:'Pop-up' };
+const SB_MIN_W = 300, SB_MAX_FRAC = 0.7;
+
+function applySbMode() {
+  const html = document.documentElement;
+  if (sbDisplayMode === 'auto') html.removeAttribute('data-sbmode');
+  else html.setAttribute('data-sbmode', sbDisplayMode);
+  applySbWidth();
+}
+
+// Clamp on every apply so a width saved in landscape can't strand a portrait
+// session, and so rotating a tablet always leaves both columns usable.
+function applySbWidth() {
+  const panel = document.getElementById('cbSBPanel');
+  if (!panel) return;
+  if (sbDisplayMode !== 'popup') resetPopPos(panel, null);   // side/below: drop any dragged offset (v1.87)
+  if (sbDisplayMode === 'popup' || !sbPanelWidth) { panel.style.width = ''; return; }
+  const max = Math.max(SB_MIN_W, Math.round(window.innerWidth * SB_MAX_FRAC));
+  panel.style.width = Math.min(Math.max(sbPanelWidth, SB_MIN_W), max) + 'px';
+}
+
+// A chooser rather than a cycling menu item (v1.85): with four options,
+// cycling meant reopening the menu up to three times to reach the one you
+// wanted, and the labels alone don't explain the difference. The dialog shows
+// all four at once, says what each does, and marks the current choice.
+const SB_MODE_DESC = {
+  auto:  'Side panel on wide screens, below the card on narrow ones.',
+  side:  'Always beside the combatant list.',
+  below: 'Always under the combatant, keeping full width for cards.',
+  popup: 'A floating window over the middle of the screen. Good on phones and smaller tablets.'
+};
+
+function openSbModeChooser() {
+  const rows = SB_MODES.map(m => {
+    const on = m === sbDisplayMode;
+    return '<button class="sb-mode-choice' + (on ? ' active' : '') + '" data-action="setSbModeChoice" data-mode="' + m + '"' +
+           ' role="radio" aria-checked="' + on + '">' +
+             '<span class="sb-mode-tick">' + (on ? '\u2713' : '') + '</span>' +
+             '<span><b>' + escapeHtml(SB_MODE_LABEL[m]) + '</b>' +
+               '<span class="sb-mode-desc">' + escapeHtml(SB_MODE_DESC[m]) + '</span></span>' +
+           '</button>';
+  }).join('');
+  mtzAlertHTML('\u{1F4D6} Where the stat block opens',
+    '<div role="radiogroup" aria-label="Stat block placement">' + rows + '</div>');
+}
+
+function setSbMode(mode) {
+  if (!SB_MODES.includes(mode)) return;
+  sbDisplayMode = mode;
+  try { localStorage.setItem('enc_sb_mode', sbDisplayMode); } catch(e) {}
+  applySbMode();
+  render(); renderCbSBPanel();
+  try { mtzModalClose(false, true); } catch(e) {}
+  mtzToast('Stat block: ' + SB_MODE_LABEL[sbDisplayMode]);
+}
+
+function resetSbWidth() {
+  sbPanelWidth = 0;
+  try { localStorage.removeItem('enc_sb_width'); } catch(e) {}
+  applySbWidth();
+  mtzToast('Stat block width reset');
+}
+
+// Pointer events cover mouse, touch and stylus in one path. The visible grip
+// is thin but the hit area is deliberately wide — a 1px divider is untappable.
+function initSbResize() {
+  const panel = document.getElementById('cbSBPanel');
+  const grip  = document.getElementById('sbResizeGrip');
+  if (!panel || !grip) return;
+  let startX = 0, startW = 0, dragging = false;
+  grip.addEventListener('pointerdown', e => {
+    if (sbDisplayMode === 'popup') return;
+    dragging = true; startX = e.clientX;
+    startW = panel.getBoundingClientRect().width;
+    grip.setPointerCapture(e.pointerId);
+    grip.classList.add('dragging');
+    e.preventDefault();
+  });
+  grip.addEventListener('pointermove', e => {
+    if (!dragging) return;
+    const max = Math.max(SB_MIN_W, Math.round(window.innerWidth * SB_MAX_FRAC));
+    sbPanelWidth = Math.min(Math.max(Math.round(startW - (e.clientX - startX)), SB_MIN_W), max);
+    panel.style.width = sbPanelWidth + 'px';
+  });
+  const end = () => {
+    if (!dragging) return;
+    dragging = false; grip.classList.remove('dragging');
+    try { localStorage.setItem('enc_sb_width', String(sbPanelWidth)); } catch(e) {}
+  };
+  grip.addEventListener('pointerup', end);
+  grip.addEventListener('pointercancel', end);
+  grip.addEventListener('dblclick', resetSbWidth);
+}
+
+window.addEventListener('resize', applySbWidth);
+window.addEventListener('resize', _clampMoreMenu);
+
 function renderCbSBPanel() {
   const panel = document.getElementById('cbSBPanel');
   if (!panel) return;
@@ -4620,6 +5031,8 @@ function renderCbSBPanel() {
   document.getElementById('cbSBPanelBody').innerHTML = buildInlineSB(m);
   setTimeout(hydrateMiniPhotos, 0);   // fill the side-panel photo slot (v1.78)
   panel.classList.add('on');
+  applySbMode();
+  restoreSbPopPos();
 }
 
 function closeCbSBPanel() {
@@ -5642,7 +6055,7 @@ const TOOLBAR_ACTIONS = {
   undo:            () => undo(),
   toggleMoreMenu:  () => toggleMoreMenu(),
   nextTurn:        () => nextTurn(),
-  mSortInit:       () => { sortInit(true); closeMoreMenu(); },
+  mRestartEnc:     () => { closeMoreMenu(); restartEncounter(); },
   mCustomMonster:  () => { openCustomMonster(); closeMoreMenu(); },
   mNewEncounter:   () => { clearAll(); closeMoreMenu(); },
   mSaveEnc:        () => { saveEnc(); closeMoreMenu(); },
@@ -5650,6 +6063,7 @@ const TOOLBAR_ACTIONS = {
   mSessionSummary: () => { exportSessionSummary(); closeMoreMenu(); },
   mAbout:          () => { closeMoreMenu(); openAbout(); },
   mInitMode:       () => { toggleInitRollMode(); closeMoreMenu(); },
+  mSbMode:         () => { closeMoreMenu(); openSbModeChooser(); },
   mMiniPhotos:     () => { closeMoreMenu(); openMiniPhotoManager(); },
   mFullBackup:     () => { exportFullBackup(); closeMoreMenu(); },
   mRefreshDB:      () => { forceRefreshDB(); closeMoreMenu(); },
@@ -5735,6 +6149,13 @@ document.addEventListener('DOMContentLoaded', () => {
   wireDispatcher(document.getElementById('guidePanel'),   GUIDE_ACTIONS);
   wireDispatcher(document.getElementById('xpModal'), XP_ACTIONS);
   wireDispatcher(document.getElementById('cmModal'), CM_ACTIONS);
+  // UI wiring belongs with the DOM, not the database load (v1.87): the DB path
+  // runs on only one of two routes, which previously left these uninitialised.
+  applySbMode(); initSbResize(); initPopupDragging();
+  // Dev-only diagnostic button lives in About; reveal it as soon as the DOM is
+  // wired. (v1.86: it was previously revealed from the database-load path, which
+  // is unrelated and only ran on one of the two load routes, so it stayed hidden.)
+  if (IS_DEV_BUILD) { const _d = document.getElementById('devDiagBtn'); if (_d) _d.style.display = ''; }
   wireDispatcher(document.getElementById('cbSBPanel'), {
     closeCbSBPanel: () => closeCbSBPanel(),
     spawnLair:      (el) => spawnLairCard(el.dataset.slug),
@@ -5763,12 +6184,15 @@ const LIB_ACTIONS = {
 };
 
 const WELCOME_ACTIONS = {
+  openLayoutDiagnostic: () => openLayoutDiagnostic(),
   loadSample:      () => loadSampleEncounter(),
   dismissWelcome:  () => dismissWelcome(),
   welcomeToHelp:   () => welcomeToHelp(),
 };
 
 const MTZMODAL_ACTIONS = {
+  setSbModeChoice: (el) => setSbMode(el.dataset.mode),
+  copyLayoutDiagnostic: () => copyLayoutDiagnostic(),
   dropMiniPhotoFromManager: (el) => dropMiniPhoto(el.dataset.slug),
   mtzModalClose: (el) => mtzModalClose(el.dataset.ok === 'true', el.dataset.ok === 'false'),
   mtzModalThird: () => mtzModalThird(),
@@ -6649,6 +7073,10 @@ document.addEventListener('keydown',e=>{
     closeSpellPanel(); return;
   }
   // Escape closes more menu
+  // Escape closes a popped-out stat block (v1.85)
+  if(e.key==='Escape' && sbDisplayMode==='popup' && document.getElementById('cbSBPanel').classList.contains('on')) {
+    closeCbSBPanel(); return;
+  }
   if(e.key==='Escape' && document.getElementById('moreMenu').classList.contains('on')) {
     closeMoreMenu(); return;
   }
@@ -9939,6 +10367,7 @@ function closeHelpPanel() {
 // ════════════════════════════════════════════════════════════════
 function showWelcomeIfNeeded() {
   if (!localStorage.getItem('enc_welcomed')) {
+    _setWelcomeMode('welcome');
     document.getElementById('welcomeModal').classList.add('on');
   }
 }
@@ -9947,7 +10376,19 @@ function showWelcomeIfNeeded() {
 // what the app is). Unlike showWelcomeIfNeeded(), this ignores the 'welcomed'
 // flag so it always opens.
 function openAbout() {
+  _setWelcomeMode('about');
   document.getElementById('welcomeModal').classList.add('on');
+}
+
+// The same dialog serves first-run welcome and About. On first run "Start Empty"
+// is meaningful; opened later it just means "close", so it is relabelled rather
+// than left looking like it might discard the encounter (v1.90).
+function _setWelcomeMode(mode) {
+  const m = document.getElementById('welcomeModal');
+  if (!m) return;
+  m.dataset.mode = mode;
+  const btn = m.querySelector('[data-action="dismissWelcome"].welcome-btn-secondary');
+  if (btn) btn.textContent = (mode === 'about') ? 'Close' : 'Start Empty';
 }
 
 function dismissWelcome() {
@@ -9961,10 +10402,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.83] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.92] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.83)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.83] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.92)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.92] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -11080,6 +11521,13 @@ async function copyLogForAI() {
 }
 
 // ── MORE MENU ─────────────────────────────────────────────────────
+function _syncSbModeLabel() {
+  const el = document.getElementById('mSbModeItem');
+  if (!el) return;
+  el.textContent = '\u{1F4D6} Stat block: ' + (SB_MODE_LABEL[sbDisplayMode] || 'Auto');
+  el.title = 'Choose where a combatant stat block opens.';
+}
+
 function _syncInitModeLabel() {
   const el = document.getElementById('mInitModeItem');
   if (!el) return;
@@ -11090,12 +11538,33 @@ function _syncInitModeLabel() {
     : 'Every combatant rolls its own d20. Click to switch back to grouped rolls.';
 }
 
+// Keep the menu on screen (v1.88). It is anchored to the button's right edge, so
+// a wider menu can overhang either side depending on where the button sits. The
+// menu is absolutely positioned inside a `relative` parent, so a viewport
+// position has to be converted into parent coordinates — setting `left:8px`
+// alone would be measured from the parent, not the screen.
+function _clampMoreMenu() {
+  const menu = document.getElementById('moreMenu');
+  if (!menu || !menu.classList.contains('on')) return;
+  menu.style.left = ''; menu.style.right = '';        // measure the default anchoring first
+  const r = menu.getBoundingClientRect();
+  const M = 8;
+  const wantLeft = Math.max(M, Math.min(r.left, window.innerWidth - r.width - M));
+  if (Math.abs(wantLeft - r.left) < 1) return;        // already on screen
+  const parent = menu.offsetParent || menu.parentElement;
+  const pLeft = parent ? parent.getBoundingClientRect().left : 0;
+  menu.style.right = 'auto';
+  menu.style.left = Math.round(wantLeft - pLeft) + 'px';
+}
+
 function toggleMoreMenu() {
   _syncInitModeLabel();
+  _syncSbModeLabel();
   const menu = document.getElementById('moreMenu');
   const btn  = document.getElementById('moreMenuBtn');
   const isOpen = !menu.classList.contains('on');
   menu.classList.toggle('on');
+  _clampMoreMenu();
   if (btn) btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
   if (isOpen) {
     refreshLastUpdatedDisplays();
@@ -12543,6 +13012,7 @@ function closeGuidePanel() {
 <!-- ── WELCOME MODAL ────────────────────────────────────────── -->
 <div class="modal-bg" id="welcomeModal" style="z-index:600">
   <div class="welcome-modal">
+    <button class="welcome-close" data-action="dismissWelcome" title="Close" aria-label="Close">✕</button>
     <div class="welcome-hero">
       <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:80px;width:auto;margin-bottom:8px"><div class="welcome-hero-icon" style="display:none">⚔</div>
       <h1>MitzNSimz Encounter Tracker</h1>
@@ -12558,6 +13028,7 @@ function closeGuidePanel() {
     </div>
     <div class="welcome-actions">
       <button class="welcome-btn-primary" data-action="loadSample">⚔ Load Sample Encounter</button>
+    <button class="btn-ghost" id="devDiagBtn" data-action="openLayoutDiagnostic" style="display:none;font-size:11px;padding:4px 10px;margin-top:6px">🔧 Layout Diagnostic (dev)</button>
       <div class="welcome-btn-row">
         <button class="welcome-btn-secondary" data-action="dismissWelcome">Start Empty</button>
         <button class="welcome-btn-secondary" data-action="welcomeToHelp">View Help</button>
@@ -12591,7 +13062,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.83</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.92</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -12677,6 +13148,32 @@ function closeGuidePanel() {
 
     <p class="guide-part-banner">PART 2 — RUNNING ENCOUNTERS <span style="font-size:11px;color:var(--text3);letter-spacing:0">(everything you use during a fight)</span></p>
     <h2 id="g-combat">Running Combat</h2>
+    <h3>Where the Stat Block Opens <span style="color:var(--gold)">(v1.84)</span></h3>
+    <p>When you open a combatant's stat block, it can appear in three different places. Choose from <b>More ▸ Stat block</b>, which opens a short list explaining each option and remembers your choice:</p>
+    <ul>
+      <li><b>Auto</b> (the default) — a side panel on wide screens, and below the card on narrow ones.</li>
+      <li><b>Side panel</b> — always beside the combatant list, whatever the screen size.</li>
+      <li><b>Below the card</b> — always underneath the combatant, keeping the full width for your cards.</li>
+      <li><b>Pop-up</b> — a floating window over the middle of the screen, like the spell pop-up. It doesn't block anything, so you can still damage, heal and take turns while it's open; close it with its ✕ button or the <b>Esc</b> key. Often the best choice on a phone or a smaller tablet, where neither of the other two has much room.</li>
+    </ul>
+    <p><b>Resizing the side panel:</b> drag the handle on its left edge to make it wider or narrower — this works with a mouse, a finger or a stylus. Double-tap or double-click the handle to return it to the default width. Your chosen width is remembered, and is automatically adjusted if you rotate a tablet or shrink the window so that both the panel and your cards always stay usable.</p>
+    <p><b>Moving the pop-ups <span style="color:var(--gold)">(v1.87)</span>:</b> drag a pop-up by its title bar to park it wherever suits you — with a mouse, a finger or a stylus. This works for both the stat-block pop-up and the spell pop-up. Double-click or double-tap the title bar to send it back to where it started. The stat block remembers where you put it; the spell pop-up doesn't, because it deliberately opens next to whichever spell link you tapped. Dragging is switched off on phone-sized screens, where there is nowhere useful to move a pop-up anyway.</p>
+    <p>The combatant cards now measure the space they actually have rather than the size of the screen, so they rearrange themselves neatly however wide or narrow the stat block is — on a squeezed layout the row of buttons simply moves onto its own line.</p>
+    <h3>Restarting, Re-rolling and Starting Over <span style="color:var(--gold)">(v1.92)</span></h3>
+    <p>Three different tools, easy to confuse, so here is exactly what each one does:</p>
+    <table>
+      <tr><th>Command</th><th>What it does</th><th>Use it when</th></tr>
+      <tr><td><b>↺ Restart Encounter</b><br/><span style="color:var(--text3);font-size:11px">More ▸ Restart Encounter</span></td>
+          <td>Keeps the same combatants <b>and their initiative</b>. Everyone returns to full health; conditions, temporary HP, death saves, legendary and lair uses, recharges, spell slots and X/Day abilities are all restored. The round goes back to 1 with no active turn.</td>
+          <td>You want to run the same fight again — testing an encounter, replaying after a wipe, or running it for a second group.</td></tr>
+      <tr><td><b>⚄ Roll Init</b></td>
+          <td>Re-rolls initiative only. Health, conditions and ability uses are left exactly as they are.</td>
+          <td>You just want a new turn order.</td></tr>
+      <tr><td><b>New Encounter</b><br/><span style="color:var(--text3);font-size:11px">More ▸ New Encounter</span></td>
+          <td>Clears the board completely — every combatant is removed.</td>
+          <td>You are moving on to a different fight.</td></tr>
+    </table>
+    <p>Restart asks for confirmation if there is anything to lose, and is undoable either way. Players marked absent stay absent — who turned up tonight isn't something the fight changed. A note is written to the combat log so the record shows where the second run began.</p>
     <h3>Rolling Initiative <span style="color:var(--gold)">(v1.82)</span></h3>
     <p><b>Roll Init</b> rolls for every monster, NPC and ally in the encounter — players keep their own rolls, and lair cards or timers keep their fixed count. Every roll is a d20 <b>plus that creature's own initiative bonus</b>, taken from its stat block (the <i>initiative bonus</i> field where the creature has one, otherwise its Dexterity modifier), so a nimble creature really does tend to go earlier.</p>
     <p><b>Grouped or individual?</b> By default, identical creatures share a single roll — five goblins all act on the same count, which is how most tables run a mob and keeps the turn order short. If you'd rather every creature rolled separately, switch it under <b>More ▸ Initiative rolls</b>. The menu shows which mode you're in, and your choice is remembered between sessions. Both modes always add each creature's own bonus; the mode only decides whether they share the d20.</p>
@@ -12691,9 +13188,7 @@ function closeGuidePanel() {
     <ul>
       <li><b>Fix a wrong initiative</b> — click the number in the circle on any card, type the correct value and press Enter. The list re-sorts immediately and the active turn stays with the same creature.</li>
       <li><b>Break a tie your way</b> — combatants on the same initiative can be nudged with the ▲ / ▼ buttons on their cards, or dragged by the handle on the left edge. Ordering only moves within the tie.</li>
-      <li><b>Move a whole group</b> <span style="color:var(--gold)">(v1.79)</span> — when two monster groups roll the same initiative (five goblins and two wolves both on 14), the group header gets its own <b>ORDER ▲ ▼</b> buttons at the right-hand end, which move that entire group above or below the other in one click. (They sit apart from the ▼ collapse arrow on the left, which expands or hides the group's members.) The arrows on individual cards still work as before for nudging a single combatant within a tie.</li>
-      <li><b>Re-sort everything</b> — <b>More ▾ → Sort by Initiative</b> re-orders the whole list by initiative, useful after adding several combatants mid-fight.</li>
-    </ul>
+      <li><b>Move a whole group</b> <span style="color:var(--gold)">(v1.79)</span> — when two monster groups roll the same initiative (five goblins and two wolves both on 14), the group header gets its own <b>ORDER ▲ ▼</b> buttons at the right-hand end, which move that entire group above or below the other in one click. (They sit apart from the ▼ collapse arrow on the left, which expands or hides the group's members.) The arrows on individual cards still work as before for nudging a single combatant within a tie.</li>    </ul>
     <h3>Damage &amp; Healing</h3>
     <p>Enter a number in the damage field. Press <b>Enter</b> or click <b>DMG</b>. Press <b>H</b> or click <b>HEAL</b>. Temp HP absorbed first. Mistakes? <b>Ctrl+Z</b>.</p>
     <h3>Finding the Active Turn <span style="color:var(--gold)">(v1.62)</span></h3>
