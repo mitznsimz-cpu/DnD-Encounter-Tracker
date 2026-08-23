@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.93 - DEV</title>
+<title>MitzNSimz D&D Encounter Tracker v1.96 - DEV</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -179,6 +179,49 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 .app{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
 .toolbar{background:var(--bg2);border-bottom:1px solid var(--border);padding:8px 20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;flex-shrink:0}
 .toolbar-right{margin-left:auto;display:flex;gap:10px;align-items:center}
+/* Jump list (v1.94): condense a large encounter to one screen of names so a
+   specific combatant can be reached without scrolling several screens. */
+.jump-wrap{position:relative;display:inline-flex}
+.jump-btn{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);cursor:pointer;
+  border-radius:6px;width:34px;height:34px;font-size:15px;line-height:1;display:flex;
+  align-items:center;justify-content:center;transition:color var(--tr),border-color var(--tr)}
+.jump-btn:hover{color:var(--gold);border-color:var(--gold-dim)}
+.jump-btn[aria-expanded="true"]{color:var(--gold);border-color:var(--gold)}
+.jump-list{position:absolute;top:calc(100% + 6px);right:0;z-index:320;display:none;
+  background:var(--bg2);border:1px solid var(--border2);border-radius:9px;padding:8px;
+  width:min(280px,calc(100vw - 24px));box-shadow:0 10px 34px var(--shadow)}
+.jump-list.on{display:block}
+.jump-filter{width:100%;box-sizing:border-box;background:var(--bg4);border:1px solid var(--border2);
+  border-radius:6px;color:var(--text);padding:7px 9px;font-size:13px;font-family:inherit;
+  outline:none;margin-bottom:6px}
+.jump-filter:focus{border-color:var(--gold-dim)}
+.jump-rows{max-height:min(58vh,460px);overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:2px}
+.jump-row{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:transparent;
+  border:none;border-radius:5px;padding:6px 7px;cursor:pointer;color:var(--text2);
+  font-family:inherit;font-size:13px;line-height:1.2}
+.jump-row:hover{background:var(--bg3);color:var(--text)}
+.jump-row.active{background:var(--bg4);color:var(--gold)}
+.jump-init{flex:0 0 26px;text-align:right;color:var(--text3);font-variant-numeric:tabular-nums;font-size:12px}
+.jump-dot{flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:var(--green)}
+.jump-dot.hurt{background:var(--amber)}
+.jump-dot.dead{background:var(--text3)}
+.jump-dot.absent{background:transparent;border:1px solid var(--text3)}
+.jump-name{flex:1 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jump-now{flex:0 0 auto;font-size:9.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.jump-empty{padding:10px 8px;color:var(--text3);font-size:12.5px}
+.cb.jump-flash{animation:jumpFlash 1.4s ease-out}
+@keyframes jumpFlash{0%{box-shadow:0 0 0 3px var(--gold)}100%{box-shadow:0 0 0 3px transparent}}
+@media (prefers-reduced-motion: reduce){.cb.jump-flash{animation:none}}
+/* Touch sizing is driven by pointer type, not viewport width (v1.96): an iPad in
+   Safari's desktop mode reports ~992px, so a width-based rule never fired on the
+   device that most needs bigger targets. Rows are a dense stack of adjacent
+   targets, which is where mis-taps happen. */
+@media (pointer: coarse){
+  .jump-btn{width:44px;height:44px}
+  .jump-row{min-height:44px;padding:10px 8px}
+  .jump-filter{min-height:44px;font-size:15px}
+  .jump-rows{gap:4px}
+}
 .kbd{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:13px;background:var(--bg4);border:1px solid var(--border2);border-radius:3px;padding:2px 7px;color:var(--text2)}
 
 .turn-banner{background:linear-gradient(90deg,var(--bg3) 0%,var(--bg2) 100%);border-bottom:1px solid var(--border);padding:8px 20px;display:none;align-items:center;gap:14px;font-size:17px;color:var(--text2);flex-shrink:0}
@@ -1761,7 +1804,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.93</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.96</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -1842,6 +1885,13 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
 
     <div class="toolbar-right" style="margin-left:auto;display:flex;gap:8px;align-items:center">
+      <div class="jump-wrap">
+        <button class="jump-btn" id="jumpBtn" data-action="toggleJumpList" aria-expanded="false" aria-haspopup="true" title="Jump to a combatant" aria-label="Jump to a combatant">☰</button>
+        <div class="jump-list" id="jumpList" role="dialog" aria-label="Jump to a combatant">
+          <input type="text" id="jumpFilter" class="jump-filter" placeholder="Filter by name…" autocomplete="off" spellcheck="false" aria-label="Filter combatants">
+          <div class="jump-rows" id="jumpListRows"></div>
+        </div>
+      </div>
       <span class="kbd" title="Next turn shortcut">N</span>
       <button class="btn-next" data-action="nextTurn">Next Turn <svg class="ico-sm" style="margin-left:4px"><use href="#ico-next"/></svg></button>
     </div>
@@ -1920,7 +1970,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       </div>
     </div>
     <aside class="cb-sb-panel" id="cbSBPanel" aria-label="Combatant stat block">
-      <div id="sbResizeGrip" role="separator" aria-orientation="vertical" aria-label="Drag to resize the stat block; double-tap to reset" title="Drag to resize \u00b7 double-tap to reset"><span></span></div>
+      <div id="sbResizeGrip" role="separator" aria-orientation="vertical" aria-label="Drag to resize the stat block; double-tap to reset" title="Drag to resize · double-tap to reset"><span></span></div>
       <div class="cb-sb-panel-bar">
         <button data-action="closeCbSBPanel" class="cb-sb-panel-close" title="Close stat block" aria-label="Close stat block">✕</button>
       </div>
@@ -2124,7 +2174,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.93</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.96</p>
   </div>
   <div class="help-body">
 
@@ -6045,6 +6095,7 @@ const HEADER_ACTIONS = {
 
 // Toolbar + more-menu actions
 const TOOLBAR_ACTIONS = {
+  toggleJumpList: () => toggleJumpList(),
   toggleForm:      () => toggleForm(),
   openMonsterSearch:() => openMonsterSearch(),
   openSpellEditor: () => openSpellEditor(),
@@ -6132,6 +6183,16 @@ document.addEventListener('DOMContentLoaded', () => {
   wireDispatcher(document.getElementById('collapsedBar'), { toggleHeaderCollapse: () => toggleHeaderCollapse(), nextTurn: () => nextTurn(), jumpToActive: () => jumpToActive() });
   wireDispatcher(document.getElementById('bnr'), { jumpToActive: () => jumpToActive() });
   wireDispatcher(document.getElementById('toolbarPrimary'), TOOLBAR_ACTIONS);
+  wireDispatcher(document.getElementById('jumpList'), { jumpToId: (el) => jumpToId(el.dataset.id) });
+  const _jf = document.getElementById('jumpFilter');
+  if (_jf) { _jf.addEventListener('keydown', jumpFilterKey); _jf.addEventListener('input', renderJumpList); }
+  // Click outside closes, like the More menu.
+  document.addEventListener('click', e => {
+    const pop = document.getElementById('jumpList');
+    if (!pop || !pop.classList.contains('on')) return;
+    if (e.target.closest('#jumpList') || e.target.closest('#jumpBtn')) return;
+    closeJumpList();
+  });
   wireDispatcher(document.getElementById('addForm'),      ADDFORM_ACTIONS);
   wireDispatcher(document.getElementById('durPicker'),    DURPICKER_ACTIONS);
   wireDispatcher(document.getElementById('concCheckPop'), CONCCHECK_ACTIONS);
@@ -7073,6 +7134,7 @@ document.addEventListener('keydown',e=>{
     closeSpellPanel(); return;
   }
   // Escape closes more menu
+  if(e.key==='Escape' && document.getElementById('jumpList')?.classList.contains('on')) { closeJumpList(); return; }
   // Escape closes a popped-out stat block (v1.85)
   if(e.key==='Escape' && sbDisplayMode==='popup' && document.getElementById('cbSBPanel').classList.contains('on')) {
     closeCbSBPanel(); return;
@@ -10402,10 +10464,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.93] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.96] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.93)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.93] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.96)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.96] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -10559,20 +10621,127 @@ function detectLegendaryMax(m) {
 // Jump to the active combatant (v1.62): click the current-turn name in either
 // banner to scroll straight back to the active card. Expands a collapsed group
 // if needed; honours prefers-reduced-motion.
-function jumpToActive() {
-  if (active < 0 || !cbs[active]) { mtzToast('No active turn yet — press Next Turn to begin'); return; }
-  let el = document.querySelector('.cb.active');
+// Scroll a specific combatant's card to the middle of the list (v1.94).
+// Shared by "jump to the active turn" and the new jump list, so both behave
+// identically: expand a collapsed group if needed, un-hide a hidden defeated
+// combatant, then centre the card.
+function scrollToCombatant(id) {
+  const c = cbs.find(x => x.id === id);
+  if (!c) return false;
+  let el = document.querySelector('#listArea .cb[data-id="' + id + '"]');
   if (!el) {
-    // Active card may be inside a collapsed group — expand and re-render.
-    const c = cbs[active];
+    // The card may be inside a collapsed group, or hidden by hide-defeated.
     const key = c.name.replace(/\s+\d+$/, '') + '||' + c.initiative;
     collapsedGroups.delete(key);
+    if (hideDead && c.dead) { hideDead = false; try { localStorage.setItem('enc_hide_dead','0'); } catch(e) {} }
     render();
-    el = document.querySelector('.cb.active');
+    el = document.querySelector('#listArea .cb[data-id="' + id + '"]');
   }
-  if (!el) return;
+  if (!el) return false;
   const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+  // Brief highlight so the eye lands on the right card after the scroll.
+  el.classList.remove('jump-flash'); void el.offsetWidth; el.classList.add('jump-flash');
+  setTimeout(() => el && el.classList.remove('jump-flash'), 1400);
+  return true;
+}
+
+function jumpToActive() {
+  if (active < 0 || !cbs[active]) { mtzToast('No active turn yet — press Next Turn to begin'); return; }
+  scrollToCombatant(cbs[active].id);
+}
+
+// ── Jump list (v1.94) ─────────────────────────────────────────────────
+// A large encounter is ~5 screens of scrolling with only 5 cards visible at a
+// time, so finding "Skeleton 2" to apply damage is slow. This condenses the
+// whole encounter to one screenful of names in initiative order, with a filter
+// box so it stays fast however many combatants there are. Purely navigational:
+// it changes nothing, and closes as soon as a choice is made.
+function jumpListRowsHTML(q) {
+  const needle = (q || '').trim().toLowerCase();
+  const rows = cbs.map((c, i) => ({ c, i }))
+    .filter(({ c }) => !needle || c.name.toLowerCase().includes(needle) ||
+                       String(c.initiative).startsWith(needle));
+  if (!rows.length) return '<div class="jump-empty">No combatant matches that</div>';
+  return rows.map(({ c, i }) => {
+    const pct = c.maxHP > 0 ? (c.currentHP / c.maxHP) * 100 : 100;
+    const state = c.dead ? 'dead' : (c.absent ? 'absent' : (pct <= 50 ? 'hurt' : 'ok'));
+    return '<button class="jump-row' + (i === active ? ' active' : '') + '" data-action="jumpToId" data-id="' + c.id + '">' +
+             '<span class="jump-init">' + escapeHtml(String(c.initiative)) + '</span>' +
+             '<span class="jump-dot ' + state + '"></span>' +
+             '<span class="jump-name">' + escapeHtml(c.name) + '</span>' +
+             (i === active ? '<span class="jump-now">now</span>' : '') +
+           '</button>';
+  }).join('');
+}
+
+function renderJumpList() {
+  const body = document.getElementById('jumpListRows');
+  if (body) body.innerHTML = jumpListRowsHTML(document.getElementById('jumpFilter')?.value || '');
+}
+
+function openJumpList() {
+  const pop = document.getElementById('jumpList');
+  if (!pop) return;
+  const inp = document.getElementById('jumpFilter');
+  if (inp) inp.value = '';
+  renderJumpList();
+  pop.classList.add('on');
+  document.getElementById('jumpBtn')?.setAttribute('aria-expanded', 'true');
+  // Cap the rows to the space actually below the popup, and nudge it back on
+  // screen if it overhangs — same treatment the More menu gets (v1.94).
+  requestAnimationFrame(() => {
+    const rows = document.getElementById('jumpListRows');
+    const r = pop.getBoundingClientRect();
+    if (rows) {
+      const avail = window.innerHeight - r.top - (r.height - rows.getBoundingClientRect().height) - 12;
+      rows.style.maxHeight = Math.max(140, avail) + 'px';
+    }
+    pop.style.left = ''; pop.style.right = '';
+    const r2 = pop.getBoundingClientRect();
+    const M = 8;
+    const wantLeft = Math.max(M, Math.min(r2.left, window.innerWidth - r2.width - M));
+    if (Math.abs(wantLeft - r2.left) >= 1) {
+      const parent = pop.offsetParent || pop.parentElement;
+      const pLeft = parent ? parent.getBoundingClientRect().left : 0;
+      pop.style.right = 'auto';
+      pop.style.left = Math.round(wantLeft - pLeft) + 'px';
+    }
+  });
+  // Desktop: focus the filter so it is type-then-Enter. On touch, focusing would
+  // raise the keyboard over the very list the user wants to read.
+  if (inp && !window.matchMedia('(pointer: coarse)').matches) setTimeout(() => inp.focus(), 20);
+}
+
+function closeJumpList() {
+  const pop = document.getElementById('jumpList');
+  if (pop) pop.classList.remove('on');
+  document.getElementById('jumpBtn')?.setAttribute('aria-expanded', 'false');
+}
+
+function toggleJumpList() {
+  const pop = document.getElementById('jumpList');
+  if (!pop) return;
+  if (pop.classList.contains('on')) closeJumpList();
+  else if (!cbs.length) mtzToast('No combatants to jump to');
+  else openJumpList();
+}
+
+function jumpToId(id) {
+  closeJumpList();
+  scrollToCombatant(+id);
+}
+
+// Enter jumps to the first match, so a filter can be used without the mouse.
+// Filtering itself listens to `input`, not `keydown`, so paste, autofill and
+// dictation all work — a keydown handler only sees typed characters.
+function jumpFilterKey(e) {
+  if (e.key === 'Escape') { closeJumpList(); return; }
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    const first = document.querySelector('#jumpListRows .jump-row');
+    if (first) jumpToId(first.dataset.id);
+  }
 }
 
 function toggleHideDead() {
@@ -13062,7 +13231,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.93</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.96</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -13159,6 +13328,15 @@ function closeGuidePanel() {
     <p><b>Resizing the side panel:</b> drag the handle on its left edge to make it wider or narrower — this works with a mouse, a finger or a stylus. Double-tap or double-click the handle to return it to the default width. Your chosen width is remembered, and is automatically adjusted if you rotate a tablet or shrink the window so that both the panel and your cards always stay usable.</p>
     <p><b>Moving the pop-ups <span style="color:var(--gold)">(v1.87)</span>:</b> drag a pop-up by its title bar to park it wherever suits you — with a mouse, a finger or a stylus. This works for both the stat-block pop-up and the spell pop-up. Double-click or double-tap the title bar to send it back to where it started. The stat block remembers where you put it; the spell pop-up doesn't, because it deliberately opens next to whichever spell link you tapped. Dragging is switched off on phone-sized screens, where there is nowhere useful to move a pop-up anyway.</p>
     <p>The combatant cards now measure the space they actually have rather than the size of the screen, so they rearrange themselves neatly however wide or narrow the stat block is — on a squeezed layout the row of buttons simply moves onto its own line.</p>
+    <h3>Finding a Combatant Quickly <span style="color:var(--gold)">(v1.94)</span></h3>
+    <p>In a big fight — five players and seventeen monsters, say — the list runs to several screens, and hunting for "Skeleton 2" to apply damage means a lot of scrolling. The <b>☰ button</b> beside Next Turn opens a compact list of everyone in the encounter, in initiative order, on a single screen.</p>
+    <ul>
+      <li><b>Type to filter.</b> Start typing a name (or an initiative number) and the list narrows as you go. On a computer the box is already focused, so you can type and press <b>Enter</b> to jump straight to the first match without touching the mouse.</li>
+      <li><b>Tap a name</b> and the tracker scrolls that combatant's card to the middle of the screen and highlights it briefly, so your eye lands in the right place. The list closes itself — it is purely a way of getting somewhere, and changes nothing.</li>
+      <li><b>The dot</b> beside each name shows condition at a glance: green for healthy, amber for bloodied, grey for defeated, and a hollow ring for an absent player. The combatant whose turn it is now is marked.</li>
+      <li>If the one you pick is inside a collapsed group, or hidden because you are hiding defeated combatants, the tracker reveals it for you rather than doing nothing.</li>
+    </ul>
+    <p>Press <b>Esc</b> or tap elsewhere to close it without going anywhere.</p>
     <h3>Restarting, Re-rolling and Starting Over <span style="color:var(--gold)">(v1.92)</span></h3>
     <p>Three different tools, easy to confuse, so here is exactly what each one does:</p>
     <table>
