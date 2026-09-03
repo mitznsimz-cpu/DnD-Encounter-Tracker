@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.97</title>
+<title>MitzNSimz D&D Encounter Tracker v1.99</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -1636,6 +1636,28 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 .revivify-countdown.expired{background:#8B0000;color:#FFFFFF;font-weight:700;letter-spacing:.05em}
 
 /* XP name input */
+/* Passive scores on the party roster (v1.98). Wraps to its own line so the
+   name and level row is unchanged for anyone who never fills these in. */
+.xp-passives{display:flex;gap:8px;flex:1 1 100%;margin:2px 0 0 34px;flex-wrap:wrap}
+.xp-passives label{display:inline-flex;align-items:center;gap:4px;font-size:10.5px;
+  color:var(--text3);letter-spacing:.04em}
+.xp-passives input{width:46px;background:var(--bg4);border:1px solid var(--border2);
+  border-radius:4px;color:var(--text);font-size:12px;padding:2px 5px;outline:none;
+  font-variant-numeric:tabular-nums;text-align:center;-moz-appearance:textfield}
+.xp-passives input:focus{border-color:var(--gold)}
+.xp-passives input::-webkit-outer-spin-button,.xp-passives input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+@media (pointer: coarse){.xp-passives input{min-height:38px;width:54px;font-size:14px}}
+/* Passive chip (v1.99): styled to match the AC chip it sits beside, rather than
+   floating as unstyled text. Dim label, prominent number — the same
+   label/value rhythm as "AC 10". */
+.cb-passives{display:inline-flex;align-items:center;gap:7px;background:var(--bg4);
+  border:1px solid var(--border2);border-radius:4px;padding:2px 8px;white-space:nowrap;
+  cursor:default}
+.cbp-eye{width:12px;height:12px;color:var(--text3);flex:0 0 auto;opacity:.8}
+.cbp-cell{display:inline-flex;align-items:baseline;gap:3px}
+.cbp-lbl{font-size:9.5px;letter-spacing:.06em;color:var(--text3)}
+.cbp-val{font-size:14px;color:var(--text2);font-variant-numeric:tabular-nums}
+@container cblist (max-width: 760px){ .cbp-lbl{font-size:9px} .cbp-val{font-size:13px} }
 .xp-name-input{background:var(--bg4);border:1px solid var(--border2);border-radius:4px;color:var(--text);font-size:13px;padding:3px 7px;flex:1;min-width:80px;outline:none}
 .xp-name-input:focus{border-color:var(--gold)}
 
@@ -1734,6 +1756,9 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
       <circle cx="12" cy="11" r="8"/><path d="M9 19v-3m6 3v-3M8 14h.01M16 14h.01"/>
     </symbol>
     <!-- Users (Ally) -->
+    <symbol id="ico-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/>
+    </symbol>
     <symbol id="ico-ally" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/>
       <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
@@ -1804,7 +1829,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.97</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.99</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -2174,7 +2199,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.97</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.99</p>
   </div>
   <div class="help-body">
 
@@ -6529,6 +6554,20 @@ function cardActRowHTML(c) {
 function cardStatusRowHTML(c, ctags) {
             // ── INLINE STATUS — reaction, recharge, ready — sit on AC row ──
             const iParts = [];
+            // Passive scores (v1.98): read-only reference for players who have them
+            // set. Edited in Party & XP, not here — this is a glance, not a form.
+            if (c.type === 'player' && c.passives) {
+              const pv = c.passives, bits = [];
+              // Labels use the conventional skill abbreviations; the eye icon marks
+              // the whole chip as PASSIVE scores, so "PER 15" cannot be misread as
+              // an active modifier (v1.99).
+              const cell = (lbl, v) => '<span class="cbp-cell"><span class="cbp-lbl">' + lbl + '</span><span class="cbp-val">' + v + '</span></span>';
+              if (Number.isFinite(pv.per)) bits.push(cell('PER', pv.per));
+              if (Number.isFinite(pv.inv)) bits.push(cell('INV', pv.inv));
+              if (Number.isFinite(pv.ins)) bits.push(cell('INS', pv.ins));
+              if (bits.length) iParts.push('<span class="cb-passives" title="Passive scores — Perception / Investigation / Insight. Edit in Party &amp; XP.">' +
+                '<svg class="cbp-eye" aria-hidden="true"><use href="#ico-eye"/></svg>' + bits.join('') + '</span>');
+            }
             const hasSpecialFeatures = c.legendaryMax > 0 || Object.keys(c.rechargeState||{}).length > 0;
             // All creature types get a reaction pip; only 'other' (timer/clock entries) skips it
             const showReaction = c.type !== 'other';
@@ -7613,6 +7652,10 @@ function xpMultiplier(n, partySize) {
 let xpLevels = [5,5,5,5];
 let xpNames  = [];
 let xpAvatars = [];      // parallel to xpLevels/xpNames: optional data-URI thumbnail per player
+// Passive scores (v1.98): reference values a DM checks constantly — who notices
+// the ambush, who spots the lie. Optional and blank by default; the tracker is
+// not a character manager, these are just handy to have to hand.
+let xpPassives = [];     // parallel: { per, inv, ins } — any field may be null
 // Party persistence (v1.71): xpLevels/xpNames lived in memory only, so every
 // page reload silently reverted the generator's budget to four level-5s until
 // the Party & XP modal was reopened — encounters were then built for the wrong
@@ -7883,10 +7926,42 @@ async function makeThumbnail(file) {
 }
 
 // Keep xpAvatars in lock-step length with xpLevels (defensive; called by render).
+// Normalise a passives object: keep only real numbers, return null if empty, so
+// a party with none stores nothing and older files stay valid (v1.98).
+function _cleanPassives(p) {
+  if (!p || typeof p !== 'object') return null;
+  const out = {};
+  ['per', 'inv', 'ins'].forEach(k => {
+    const v = parseInt(p[k], 10);
+    if (Number.isFinite(v)) out[k] = v;
+  });
+  return Object.keys(out).length ? out : null;
+}
+
+function setXpPassive(i, key, value) {
+  _syncXpPassives();
+  const cur = xpPassives[i] || {};
+  const v = parseInt(value, 10);
+  if (Number.isFinite(v)) cur[key] = v; else delete cur[key];
+  xpPassives[i] = _cleanPassives(cur);
+  // Mirror onto the matching combatant so the card can show it immediately.
+  const nm = (xpNames[i] || '').trim().toLowerCase();
+  const p = cbs.find(c => c.type === 'player' && (c.name || '').trim().toLowerCase() === nm);
+  if (p) p.passives = xpPassives[i];
+  save(); render();
+}
+
+function _syncXpPassives() {
+  if (!Array.isArray(xpPassives)) xpPassives = [];
+  while (xpPassives.length < xpLevels.length) xpPassives.push(null);
+  while (xpPassives.length > xpLevels.length) xpPassives.pop();
+}
+
 function _syncXpAvatars() {
   if (!Array.isArray(xpAvatars)) xpAvatars = [];
   while (xpAvatars.length < xpLevels.length) xpAvatars.push(null);
   while (xpAvatars.length > xpLevels.length) xpAvatars.pop();
+  _syncXpPassives();
   _adoptPlayerAvatars();
 }
 
@@ -7968,6 +8043,7 @@ function renderXPLevels() {
       else if (i >= xpNames.length && inp.value) xpNames[i] = inp.value;
     });
   }
+  _syncXpPassives();
   el.innerHTML = xpLevels.map((lv,i) => {
     const nm = (xpNames[i]||'').replace(/"/g,'&quot;');
     const ph = 'Player '+(i+1);
@@ -7976,6 +8052,7 @@ function renderXPLevels() {
     const avatarBtn = av
       ? `<button class="xp-avatar-btn has-img" data-action="pickXpAvatar" data-idx="${i}" title="Change picture" aria-label="${ph} picture (change)" style="background-image:url('${av}')"></button><button class="xp-avatar-rm" data-action="clearXpAvatar" data-idx="${i}" title="Remove picture" aria-label="Remove ${ph} picture">✕</button>`
       : `<button class="xp-avatar-btn" data-action="pickXpAvatar" data-idx="${i}" title="Add picture" aria-label="Add ${ph} picture">＋</button>`;
+    const pv = xpPassives[i] || {};
     return `<div class="xp-party-row">
       ${avatarBtn}
       <input class="xp-name-input" value="${nm}" oninput="xpNames[${i}]=this.value"
@@ -7985,6 +8062,14 @@ function renderXPLevels() {
         ${opts}
       </select>
       <button class="btn-icon" data-action="removeXPLevel" data-idx="${i}" style="font-size:12px;padding:2px 7px">✕</button>
+      <div class="xp-passives" title="Passive scores — optional, for quick reference">
+        <label>PP<input type="number" inputmode="numeric" value="${pv.per ?? ''}" placeholder="—"
+          onchange="setXpPassive(${i},'per',this.value)" aria-label="${ph} passive Perception"></label>
+        <label>PIn<input type="number" inputmode="numeric" value="${pv.inv ?? ''}" placeholder="—"
+          onchange="setXpPassive(${i},'inv',this.value)" aria-label="${ph} passive Investigation"></label>
+        <label>PIs<input type="number" inputmode="numeric" value="${pv.ins ?? ''}" placeholder="—"
+          onchange="setXpPassive(${i},'ins',this.value)" aria-label="${ph} passive Insight"></label>
+      </div>
     </div>`;
   }).join('');
   // Keep the Players spinner in lock-step with the actual number of rows
@@ -10464,10 +10549,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.97] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.99] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.97)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.97] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.99)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.99] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -10790,6 +10875,7 @@ function ensureCbDefaults(c) {
   if (c._transformSlug === undefined) c._transformSlug = null;
   if (c._transformName === undefined) c._transformName = null;
   if (c._original === undefined) c._original = null;
+  if (c.passives === undefined) c.passives = null;   // v1.99: absent in older saves
   if (c.absent === undefined) c.absent = false;
   if (c.deathSavesEnabled === undefined) c.deathSavesEnabled = (c.type === 'player'); // other defaults off like monsters
   if (c.order === undefined) c.order = 0;
@@ -12011,6 +12097,7 @@ function buildPartyFromXP() {
       ac: p ? p.ac : 10,
       maxHP: p ? p.maxHP : 10,
       avatar: xpAvatars[i] || (p ? p.avatar : null) || null,
+      passives: _cleanPassives(xpPassives[i] || (p ? p.passives : null)),
     };
   });
 }
@@ -12066,6 +12153,8 @@ function loadPartyConfig(idx) {
   xpLevels = pc.party.map(p => p.level);
   xpNames  = pc.party.map(p => p.name || '');
   xpAvatars = pc.party.map(p => p.avatar || null);
+  // Parties saved before v1.99 have no passives; they simply come back blank.
+  xpPassives = pc.party.map(p => _cleanPassives(p.passives));
   _xpSkipFlush = true;
   renderXPLevels();
   _xpSkipFlush = false;
@@ -12083,6 +12172,7 @@ function addPartyToEncounter(idx) {
     () => {
       pc.party.forEach((p,i) => {
         cbs.push({
+          passives: _cleanPassives(p.passives),
           id:++uid, name:p.name, type:'player',
           initiative:0, ac:p.ac||10, maxHP:p.maxHP||10, currentHP:p.maxHP||10,
           tempHP:0, conditions:[], concentrating:false, note:'', dead:false,
@@ -13238,7 +13328,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.97</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.99</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -13335,6 +13425,15 @@ function closeGuidePanel() {
     <p><b>Resizing the side panel:</b> drag the handle on its left edge to make it wider or narrower — this works with a mouse, a finger or a stylus. Double-tap or double-click the handle to return it to the default width. Your chosen width is remembered, and is automatically adjusted if you rotate a tablet or shrink the window so that both the panel and your cards always stay usable.</p>
     <p><b>Moving the pop-ups <span style="color:var(--gold)">(v1.87)</span>:</b> drag a pop-up by its title bar to park it wherever suits you — with a mouse, a finger or a stylus. This works for both the stat-block pop-up and the spell pop-up. Double-click or double-tap the title bar to send it back to where it started. The stat block remembers where you put it; the spell pop-up doesn't, because it deliberately opens next to whichever spell link you tapped. Dragging is switched off on phone-sized screens, where there is nowhere useful to move a pop-up anyway.</p>
     <p>The combatant cards now measure the space they actually have rather than the size of the screen, so they rearrange themselves neatly however wide or narrow the stat block is — on a squeezed layout the row of buttons simply moves onto its own line.</p>
+    <h3>Passive Scores <span style="color:var(--gold)">(v1.98)</span></h3>
+    <p>Passive Perception, Investigation and Insight are the numbers a DM reaches for most often between rolls — who notices the ambush, who spots the lie, who sees through the disguise. You can record them per player in <b>Party &amp; XP</b>, beside each name, and they then appear on that player's combatant card for reference during play.</p>
+    <ul>
+      <li><b>Entirely optional.</b> Leave them blank and nothing changes — the card looks exactly as it did before.</li>
+      <li><b>Fill in only what you want.</b> If you only care about Passive Perception, set that and leave the other two empty; the card shows just the ones you've entered.</li>
+      <li><b>Saved with your party</b>, so they come back whenever you load that party or add it to an encounter, and they travel in a Full Backup.</li>
+      <li><b>Older parties still work.</b> Party configurations saved before this feature simply show blank boxes, ready to fill in if you want them.</li>
+    </ul>
+    <p>This is deliberately a reference field and nothing more — the tracker isn't trying to manage character sheets, and most DMs will have those open in another tool anyway. It's here purely so the number is in front of you when a player asks "do I notice anything?".</p>
     <h3>Finding a Combatant Quickly <span style="color:var(--gold)">(v1.94)</span></h3>
     <p>In a big fight — five players and seventeen monsters, say — the list runs to several screens, and hunting for "Skeleton 2" to apply damage means a lot of scrolling. The <b>☰ button</b> beside Next Turn opens a compact list of everyone in the encounter, in initiative order, on a single screen.</p>
     <ul>
