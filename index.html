@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="theme-color" content="#1E1B16">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>MitzNSimz D&D Encounter Tracker v1.99</title>
+<title>MitzNSimz D&D Encounter Tracker v1.104</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2032%2032%27%3E%3Crect%20width%3D%2732%27%20height%3D%2732%27%20rx%3D%277%27%20fill%3D%27%231E1B16%27%2F%3E%3Cpolygon%20points%3D%2716%2C3%2028%2C10%2028%2C22%2016%2C29%204%2C22%204%2C10%27%20fill%3D%27%23C9A227%27%20stroke%3D%27%238a6818%27%20stroke-width%3D%270.8%27%20stroke-linejoin%3D%27round%27%2F%3E%3Cg%20fill%3D%27%231E1B16%27%3E%3Cellipse%20cx%3D%2716%27%20cy%3D%2719.6%27%20rx%3D%276.1%27%20ry%3D%274.7%27%2F%3E%3Ccircle%20cx%3D%279.8%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2713.8%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2718.2%27%20cy%3D%2710.3%27%20r%3D%272.25%27%2F%3E%3Ccircle%20cx%3D%2722.2%27%20cy%3D%2713.8%27%20r%3D%272.25%27%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
   <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABO0lEQVR4nNVXuw2DMBA9W+mjNGkiZZA0mYCSLViACbJAtkiZCWgYBImGBrFAkooA5nwfG4LySmPfe/d8wncGEJxPxze2Houqboy7NllYi5gSYn9N7nLZWPIssfwmQsQulvh62QNABwAA9+dLHcdos58ST1GUeiFiByjiHsO3TixCJCBLLEmMC5G5QQrAsk7zlgz4uB2cM7QQtAZ8dnPkrogxfPUxc0BrtxS++hDVgDRzdz/mhAv2L6Il154lHfAF8GWG7U/zlnQi6E8Y44oL8gokd8iBi8HWQIyIRYowVIT0jEhAyJ1Lz4Q95gviPwRsXgNrYvPXkGzJtEI0xCIBnBAORcm3ZqK3YAjSiURomlMDoJsLluyKq7ox6tdw7EYvJKQd7/Gd0UKnoyyxQcT9fLj5cDobl9cUgo3nH5RtoHn/QqQ8AAAAAElFTkSuQmCC">
   <link rel="apple-touch-icon" href="data:image/png;base64,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">
@@ -229,7 +229,12 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 .turn-banner strong{color:var(--gold2);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif}
 .turn-name{color:var(--text);font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:19px;font-weight:600}
 
-.list-area{flex:1;overflow-y:auto;padding:12px 20px 100px 20px;display:flex;flex-direction:column;gap:7px;touch-action:pan-y;overscroll-behavior:contain;container-type:inline-size;container-name:cblist}
+/* Scroll anchoring OFF (v1.100). render() rebuilds every card's innerHTML, so
+   each card briefly collapses and re-expands; the browser's anchoring then
+   nudges scrollTop repeatedly to compensate, which is what made the list drift
+   and appear to "scroll back down from the top" after each turn. Measured
+   climbing 251 -> 800 over a single render before this. */
+.list-area{overflow-anchor:none;flex:1;overflow-y:auto;padding:12px 20px 100px 20px;display:flex;flex-direction:column;gap:7px;touch-action:pan-y;overscroll-behavior:contain}
 .list-area::-webkit-scrollbar{width:6px}
 .list-area::-webkit-scrollbar-track{background:var(--bg)}
 .list-area::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px}
@@ -375,6 +380,40 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 .cond-rule-ed.ns{color:var(--text3)}
 .cond-rule-ed[role="button"]:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
 .cond-rule-text{font-size:12.5px;line-height:1.45;color:var(--text)}
+/* Expiry flash (v1.101): a condition that has just ended lingers for a couple of
+   seconds, struck through and fading, then clears itself. */
+/* Repeat-save badge (v1.100): calm until it is that creature's turn — a badge
+   that pulses permanently becomes wallpaper. No JS needed; the active card
+   already carries .active. */
+.cond-save{display:inline-flex;align-items:center;font-size:9.5px;letter-spacing:.04em;
+  margin-left:4px;padding:1px 5px;border-radius:3px;background:var(--bg2);
+  border:1px solid var(--border2);color:var(--text3);white-space:nowrap;
+  font-variant-numeric:tabular-nums;vertical-align:middle}
+/* Flashes when the turn arrives, then settles to a steady amber (v1.104).
+   The first version only faded opacity, which was easy to miss mid-fight. This
+   inverts the badge to a filled amber chip and swells it slightly, four times
+   over about three seconds, then stops. Loud enough to catch the eye across the
+   table; finite, so it never becomes wallpaper. */
+.cb.active .cond-save{color:var(--amber2);border-color:var(--amber);
+  animation:savePulse .78s ease-in-out 4 alternate}
+@keyframes savePulse{
+  from{ background:var(--bg2); color:var(--amber2); transform:scale(1);
+        box-shadow:0 0 0 0 rgba(0,0,0,0) }
+  to  { background:var(--amber); color:var(--bg); transform:scale(1.14);
+        box-shadow:0 0 0 3px rgba(200,150,60,.28) }
+}
+/* Reduced motion: no movement, but still clearly marked rather than subtle. */
+@media (prefers-reduced-motion: reduce){
+  .cb.active .cond-save{animation:none;background:var(--amber);color:var(--bg);opacity:1}
+}
+.cond-ghost{opacity:.85;text-decoration:line-through;background:var(--bg4);
+  border:1px dashed var(--border2);color:var(--text3);animation:condFade 2.6s ease-out forwards;pointer-events:none}
+.cond-ghost-mark{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;margin-left:5px;
+  text-decoration:none;color:var(--amber2)}
+@keyframes condFade{0%{opacity:0;transform:scale(.94)}12%{opacity:1;transform:scale(1)}
+  70%{opacity:.9}100%{opacity:0}}
+@media (prefers-reduced-motion: reduce){.cond-ghost{animation:none;opacity:.8}}
+.cond-when{font-size:8px;opacity:.75;margin-left:1px;vertical-align:super;line-height:0}
 .cond-dur{font-size:11px;opacity:.85;font-weight:600;padding:4px 2px;margin:-4px -2px}/* WCAG 2.5.8 inline-exception: nested within clickable cond-tag */
 .cond-dur.warning{color:#ffdd44;animation:pulse .8s ease-in-out infinite alternate}
 @keyframes pulse{from{opacity:.6}to{opacity:1}}
@@ -383,6 +422,21 @@ html[data-theme="light"] .btn-next:hover{background:var(--gold2);color:var(--bg)
 .dur-picker.on{display:block}
 .dur-picker h4{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:12px;color:var(--gold);letter-spacing:.05em;margin-bottom:8px}
 .dur-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+/* Condition timing (v1.100): 5e distinguishes "until the end of your next turn"
+   from "until the start of your next turn"; the tracker only ever did the former. */
+/* Repeat-save reminder (v1.100): ability + DC recorded against a condition, so
+   the card can remind the DM to call for the save on that creature's turn. */
+.dur-save{display:flex;align-items:center;gap:6px;margin:8px 0 2px;font-size:12.5px;color:var(--text2);flex-wrap:wrap}
+.dur-save select,.dur-save input{background:var(--bg4);border:1px solid var(--border2);border-radius:4px;
+  color:var(--text);font-size:12.5px;padding:3px 6px;outline:none;font-family:inherit}
+.dur-save select:focus,.dur-save input:focus{border-color:var(--gold)}
+.dur-save input{width:56px;text-align:center;font-variant-numeric:tabular-nums}
+@media (pointer: coarse){.dur-save select,.dur-save input{min-height:38px}}
+.dur-when{display:flex;flex-direction:column;gap:5px;margin:8px 0 4px}
+.dur-when label{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--text2);cursor:pointer}
+.dur-when input{accent-color:var(--gold);flex:0 0 auto}
+.dur-when b{color:var(--text);font-weight:600}
+@media (pointer: coarse){.dur-when label{min-height:38px}}
 .dur-input{width:60px;height:28px;background:var(--bg4);border:1px solid var(--border2);border-radius:4px;color:var(--text);font-size:14px;text-align:center;font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif}
 .dur-label{font-size:13px;color:var(--text2)}
 .dur-btn{font-family:'Cinzel','Palatino Linotype',Palatino,'Times New Roman',serif;font-size:11px;cursor:pointer;border-radius:4px;padding:4px 10px;border:1px solid var(--border2);background:transparent;color:var(--text2);transition:all .15s}
@@ -469,20 +523,20 @@ html[data-theme="light"] .cb-sb{border-top-color:var(--border2)}
    crushed to nothing and the buttons spilled out. It now measures its own
    container, so it adapts to the panel, to a dragged panel width, and to
    whatever width the browser reports — no thresholds to guess. */
-@container cblist (max-width: 760px){
-  .cb{grid-template-columns:16px 24px 20px 36px 1fr}
-  .cb-acts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;
+/* Width classes instead of container queries (v1.103): `container-type` on a
+   scrolling list is a known trigger for Safari failing to paint scrolled
+   content, which is what caused the blank combatant list. The same adaptive
+   behaviour is driven from a class set by a ResizeObserver — no containment. */
+.list-area.lw-narrow .cb{grid-template-columns:16px 24px 20px 36px 1fr}
+.list-area.lw-narrow .cb-acts{grid-column:1/-1;flex-direction:row;flex-wrap:wrap;align-items:center;
            justify-content:flex-start;margin-top:7px}
-  .cb-acts .dmg-row{flex-wrap:wrap}
-}
-@container cblist (max-width: 420px){
-  .cb{padding:10px 12px}
-  .cb-acts{gap:4px}
-  /* The action row is a single non-wrapping strip by default; at this width it
-     must be allowed to flow onto extra lines or it overhangs the card. */
-  .act-row{flex-wrap:wrap;justify-content:flex-start;row-gap:5px}
-  .hp-row,.dmg-row{flex-wrap:wrap;row-gap:5px}
-}
+.list-area.lw-narrow .cb-acts .dmg-row{flex-wrap:wrap}
+.list-area.lw-tiny .cb{padding:10px 12px}
+.list-area.lw-tiny .cb-acts{gap:4px}
+/* The action row is a single non-wrapping strip by default; at this width it
+   must be allowed to flow onto extra lines or it overhangs the card. */
+.list-area.lw-tiny .act-row{flex-wrap:wrap;justify-content:flex-start;row-gap:5px}
+.list-area.lw-tiny .hp-row,.list-area.lw-tiny .dmg-row{flex-wrap:wrap;row-gap:5px}
 /* ── Stat-block display preference (v1.84) ─────────────────────────────
    'auto' keeps the historic behaviour (side panel on wide screens, inline
    below the card otherwise). The explicit modes let a DM choose, which is
@@ -1657,7 +1711,8 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 .cbp-cell{display:inline-flex;align-items:baseline;gap:3px}
 .cbp-lbl{font-size:9.5px;letter-spacing:.06em;color:var(--text3)}
 .cbp-val{font-size:14px;color:var(--text2);font-variant-numeric:tabular-nums}
-@container cblist (max-width: 760px){ .cbp-lbl{font-size:9px} .cbp-val{font-size:13px} }
+.list-area.lw-narrow .cbp-lbl{font-size:9px}
+.list-area.lw-narrow .cbp-val{font-size:13px}
 .xp-name-input{background:var(--bg4);border:1px solid var(--border2);border-radius:4px;color:var(--text);font-size:13px;padding:3px 7px;flex:1;min-width:80px;outline:none}
 .xp-name-input:focus{border-color:var(--gold)}
 
@@ -1829,7 +1884,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
 <header id="appHeader">
   <div class="header-row">
     <span class="header-title">⚔ Encounter Tracker</span>
-    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.99</span>
+    <span style="font-family:'Cinzel',serif;font-size:10px;color:var(--text3);opacity:.55;letter-spacing:.04em;flex-shrink:0">v1.104</span>
     <div class="hstats" id="hstats" style="flex:1"></div>
     <div class="db-status-compact" id="dbStatus">
       <div class="db-dot loading" id="dbDot"></div>
@@ -2045,7 +2100,22 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
   <h2 id="durPickerTitle">Set Duration</h2>
   <div class="dur-row">
     <input class="dur-input" type="number" inputmode="numeric" id="durInput" min="1" max="99" placeholder="—" aria-label="Condition duration in rounds">
-    <span class="dur-label">rounds (end of turn)</span>
+    <span class="dur-label">rounds</span>
+  </div>
+  <div class="dur-save">
+    <label for="durSaveAb">Repeat save</label>
+    <select id="durSaveAb" aria-label="Saving throw ability">
+      <option value="">— none —</option>
+      <option value="STR">STR</option><option value="DEX">DEX</option>
+      <option value="CON">CON</option><option value="INT">INT</option>
+      <option value="WIS">WIS</option><option value="CHA">CHA</option>
+    </select>
+    <span>DC</span>
+    <input type="number" inputmode="numeric" id="durSaveDC" min="1" max="40" placeholder="—" aria-label="Save DC">
+  </div>
+  <div class="dur-when">
+    <label><input type="radio" name="durWhen" id="durWhenEnd" value="end" checked> Expires at the <b>end</b> of their turn</label>
+    <label><input type="radio" name="durWhen" id="durWhenStart" value="start"> Expires at the <b>start</b> of their turn</label>
   </div>
   <div style="font-size:12px;color:var(--text3);margin-bottom:10px">Leave blank for no auto-remove</div>
   <div style="display:flex;gap:6px;flex-wrap:wrap">
@@ -2199,7 +2269,7 @@ textarea:focus-visible, .init-b:focus-visible, .ds-pip:focus-visible,
     </div>
     <img src="" class="js-logo" data-logo-loading="1" alt="MitzNSimz logo" style="height:48px;width:auto;margin:6px 0 4px;display:block">
     <h2>Help & About</h2>
-    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.99</p>
+    <p style="font-size:13px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.104</p>
   </div>
   <div class="help-body">
 
@@ -4186,6 +4256,46 @@ function quickDmg(id, heal) {
   inp.focus();
 }
 
+// Tick and expire a combatant's conditions for one timing phase (v1.100).
+// phase 'end'   — conditions with no when, or when:'end'  (the default)
+// phase 'start' — conditions explicitly marked when:'start'
+let _condGhosts = [];      // [{id, n, phase, at}] — session only, never saved
+let _ghostTimer = null;
+
+function _flashExpired(c, names, phase) {
+  if (!names.length) return;
+  names.forEach(n => _condGhosts.push({ id: c.id, n, phase, at: Date.now() }));
+  clearTimeout(_ghostTimer);
+  _ghostTimer = setTimeout(() => { _condGhosts = []; render(); }, 2600);
+}
+
+function condGhostsFor(id) { return _condGhosts.filter(g => g.id === id); }
+
+function _tickConditions(c, phase) {
+  if (!c || !Array.isArray(c.conditions)) return;
+  const expired = [];
+  const matches = (cond) => {
+    const w = (typeof cond === 'object' && cond.when) ? cond.when : 'end';
+    return w === phase;
+  };
+  c.conditions = c.conditions
+    .map(cond => {
+      if (typeof cond === 'string') return cond;                 // legacy bare name
+      if (cond.dur === null || cond.dur === undefined) return cond;
+      if (cond.n === 'Exhausted') return cond;                   // dur stores level 1-5
+      if (!matches(cond)) return cond;
+      return { ...cond, dur: cond.dur - 1 };
+    })
+    .filter(cond => {
+      if (typeof cond === 'object' && cond.n === 'Exhausted') return true;
+      const dur = typeof cond === 'object' ? cond.dur : null;
+      const keep = dur === null || dur === undefined || dur > 0;
+      if (!keep) expired.push(typeof cond === 'object' ? cond.n : cond);
+      return keep;
+    });
+  _flashExpired(c, expired, phase);
+}
+
 function nextTurn() {
   if (!cbs.length) {
  return; }
@@ -4228,23 +4338,17 @@ function nextTurn() {
     }
     const ni = (effectiveCi + 1) % alive.length;
 
-    // ── Tick down condition durations on END of this combatant's turn
-    const current = cbs[active];
-    if (current) {
-      current.conditions = current.conditions
-        .map(cond => {
-          if (typeof cond === 'string') return cond;
-          if (cond.dur === null || cond.dur === undefined) return cond;
-          // Exhausted: dur stores level (1-5), never auto-decrement
-          if ((typeof cond === 'object' ? cond.n : cond) === 'Exhausted') return cond;
-          return {...cond, dur: cond.dur - 1};
-        })
-        .filter(cond => {
-          if (typeof cond === 'object' && cond.n === 'Exhausted') return true;
-          const dur = typeof cond === 'object' ? cond.dur : null;
-          return dur === null || dur === undefined || dur > 0;
-        });
-    }
+    // ── Condition durations (v1.100) ──────────────────────────────
+    // 5e distinguishes effects lasting "until the end of your next turn" from
+    // those lasting "until the start of your next turn". Conditions carry an
+    // optional when:'start'; anything without it ticks at end of turn, which is
+    // the historic behaviour and stays the default.
+    //
+    // Order matters: the outgoing combatant's end-of-turn conditions tick first,
+    // then the incoming combatant's start-of-turn ones, so a condition set to
+    // expire at the start of a creature's turn is gone before they act.
+    _tickConditions(cbs[active], 'end');
+    _tickConditions(alive[ni], 'start');
 
     // ── Increment round when wrapping ─────────────────────────────
     if (ni === 0) { round++; logEvent('round', '━━ Round ' + round + ' begins ━━'); cbs.forEach(x => { if (x.lairMax) x.lairUsed = 0; }); }
@@ -4287,10 +4391,7 @@ function nextTurn() {
   cbs.forEach(c => { if (c._dmgTurn) delete c._dmgTurn; });
   if (timerEnabled) startTurnTimer();
   render(); save();
-  setTimeout(()=>{
-    const el=document.querySelector('.cb.active');
-    if(el) el.scrollIntoView({block:'nearest',behavior:'smooth'});
-  },50);
+  requestAnimationFrame(scrollActiveIntoView);
 }
 
 function sortInit(resetActive=false) {
@@ -5016,9 +5117,10 @@ function applySbWidth() {
   const panel = document.getElementById('cbSBPanel');
   if (!panel) return;
   if (sbDisplayMode !== 'popup') resetPopPos(panel, null);   // side/below: drop any dragged offset (v1.87)
-  if (sbDisplayMode === 'popup' || !sbPanelWidth) { panel.style.width = ''; return; }
+  if (sbDisplayMode === 'popup' || !sbPanelWidth) { panel.style.width = ''; applyListWidthClasses(); return; }
   const max = Math.max(SB_MIN_W, Math.round(window.innerWidth * SB_MAX_FRAC));
   panel.style.width = Math.min(Math.max(sbPanelWidth, SB_MIN_W), max) + 'px';
+  applyListWidthClasses();
 }
 
 // A chooser rather than a cycling menu item (v1.85): with four options,
@@ -5065,6 +5167,62 @@ function resetSbWidth() {
 
 // Pointer events cover mouse, touch and stylus in one path. The visible grip
 // is thin but the hit area is deliberately wide — a 1px divider is untappable.
+// Keep the list's scroll position valid at all times (v1.100).
+//
+// A scroll position can become out of range without any scroll happening: the
+// content simply gets shorter. Expired-condition ghosts fade out, a group is
+// collapsed, defeated combatants are hidden, a stat block closes — and the list
+// is left scrolled past the end, showing blank space. Chromium re-clamps
+// eagerly; Safari left it stranded until the user nudged the scroll, which is
+// exactly the reported symptom: blank at the end of the order, fine again after
+// a small manual scroll.
+//
+// A ResizeObserver on the list's own content catches every case, whatever the
+// cause, without guessing at which of them applies.
+// Drive the adaptive card layout from the list's measured width (v1.103).
+//
+// This replaces `container-type: inline-size` + `@container` queries. Those were
+// the right tool on paper, but containment on a scrolling element is a known
+// trigger for Safari failing to paint scrolled content — the blank combatant
+// list. A ResizeObserver setting two classes achieves the same adaptation with
+// no containment involved, and works identically in every engine.
+const LIST_NARROW = 760, LIST_TINY = 420;
+
+function applyListWidthClasses() {
+  const la = document.getElementById('listArea');
+  if (!la) return;
+  const w = la.clientWidth || la.getBoundingClientRect().width;
+  if (!w) return;
+  la.classList.toggle('lw-narrow', w <= LIST_NARROW);
+  la.classList.toggle('lw-tiny',   w <= LIST_TINY);
+}
+
+function initListWidthWatcher() {
+  const la = document.getElementById('listArea');
+  if (!la) return;
+  applyListWidthClasses();
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(() => applyListWidthClasses()).observe(la);
+  }
+  window.addEventListener('resize', applyListWidthClasses);
+}
+
+function initListScrollGuard() {
+  const la = document.getElementById('listArea');
+  if (!la || typeof ResizeObserver === 'undefined') return;
+  const clamp = () => {
+    const max = Math.max(0, la.scrollHeight - la.clientHeight);
+    if (la.scrollTop > max + 1) la.scrollTo({ top: max, behavior: 'auto' });
+  };
+  const ro = new ResizeObserver(() => requestAnimationFrame(clamp));
+  ro.observe(la);
+  // Also watch the cards themselves, since the list's own box does not change
+  // when its contents shrink.
+  const mo = new MutationObserver(() => requestAnimationFrame(clamp));
+  mo.observe(la, { childList: true, subtree: true, attributes: true, attributeFilter: ['class', 'style'] });
+  window.addEventListener('resize', clamp);
+}
+
 function initSbResize() {
   const panel = document.getElementById('cbSBPanel');
   const grip  = document.getElementById('sbResizeGrip');
@@ -5096,6 +5254,16 @@ function initSbResize() {
 
 window.addEventListener('resize', applySbWidth);
 window.addEventListener('resize', _clampMoreMenu);
+// Keep the duration picker on screen if the window resizes or a tablet rotates
+// while it is open (v1.100).
+window.addEventListener('resize', () => {
+  const dp = document.getElementById('durPicker');
+  if (!dp || !dp.classList.contains('on')) return;
+  const pr = dp.getBoundingClientRect(), M = 10;
+  const vh = (typeof usableHeight === 'function') ? usableHeight() : window.innerHeight;
+  dp.style.left = Math.max(M, Math.min(pr.left, window.innerWidth - pr.width - M)) + 'px';
+  dp.style.top  = Math.max(M, Math.min(pr.top, vh - pr.height - M)) + 'px';
+});
 
 function renderCbSBPanel() {
   const panel = document.getElementById('cbSBPanel');
@@ -5311,10 +5479,9 @@ function openHP(id,event) {
   _hpValDirty = false;
   document.getElementById('tmpVal').value=c.tempHP||'';
   const pop=document.getElementById('hppop');
-  const r=event.target.getBoundingClientRect();
-  pop.style.top=(r.top-pop.offsetHeight-8)+'px';
-  pop.style.left=Math.min(r.left,window.innerWidth-220)+'px';
-  pop.classList.add('on');
+  // Anchored to the HP control that opened it, measured and clamped like the
+  // other small popups (v1.100) — it previously used a hardcoded 220px width.
+  placePopupNear(pop, event.target, { align: 'left' });
   document.getElementById('hpVal').focus();
 }
 
@@ -5597,22 +5764,70 @@ function toggleCond(id,cd,btn) {
   }
 }
 
+// Place a small popup beside the element that opened it, measuring the popup's
+// real size rather than assuming one (v1.100). The previous code hardcoded a
+// 220px width and 160px height; when the duration picker grew a start/end
+// timing choice it could render past the bottom of the screen with its buttons
+// unreachable. Flips to the other side or above when there isn't room, then
+// clamps into the viewport as a last resort.
+function placePopupNear(pop, nearEl, opts) {
+  if (!pop) return;
+  const o = opts || {};
+  pop.style.left = '-9999px'; pop.style.top = '0px';
+  pop.classList.add('on');
+  const r  = (nearEl && nearEl.getBoundingClientRect) ? nearEl.getBoundingClientRect()
+           : { left: 200, right: 200, top: 200, bottom: 200 };
+  const pr = pop.getBoundingClientRect();
+  const M  = 10;
+  const vw = window.innerWidth;
+  const vh = (typeof usableHeight === 'function') ? usableHeight() : window.innerHeight;
+
+  let left = (o.align === 'left' ? r.left : r.right + 6);
+  if (left + pr.width > vw - M) left = r.left - pr.width - 6;
+  left = Math.max(M, Math.min(left, vw - pr.width - M));
+
+  let top = r.bottom + 4;
+  if (top + pr.height > vh - M) top = r.top - pr.height - 4;
+  top = Math.max(M, Math.min(top, vh - pr.height - M));
+
+  pop.style.left = Math.round(left) + 'px';
+  pop.style.top  = Math.round(top) + 'px';
+}
+
 function openDurPickerBulk(condName, nearEl) {
   // Duration picker for bulk — saves to all selected combatants
   _durTarget = {id: null, condName, bulk: true};
   document.getElementById('durInput').value = '';
   document.getElementById('durPickerTitle').textContent = `Duration: ${condName} (all selected)`;
   const dp = document.getElementById('durPicker');
-  const r = nearEl ? nearEl.getBoundingClientRect() : {right:200,top:200};
-  dp.style.left = Math.min(r.right, window.innerWidth-220) + 'px';
-  dp.style.top  = Math.min(r.bottom+4, usableHeight()-160) + 'px';
-  dp.classList.add('on');
+  placePopupNear(dp, nearEl);
   document.getElementById('durInput').focus();
 }
 
 let _durTarget = null; // {id, condName}
 
 function openDurPicker(id, condName, nearEl) {
+  // Preselect the condition's current timing (v1.100)
+  setTimeout(() => {
+    let cur = 'end';
+    try {
+      const c = cbs.find(x => x.id === (_durTarget && _durTarget.id));
+      const cd = c && c.conditions.find(x => (typeof x==='string'?x:x.n) === (_durTarget && _durTarget.condName));
+      if (cd && typeof cd === 'object' && cd.when === 'start') cur = 'start';
+    } catch (err) {}
+    const s = document.getElementById('durWhenStart'), en = document.getElementById('durWhenEnd');
+    if (s && en) { s.checked = (cur === 'start'); en.checked = (cur !== 'start'); }
+    // Repeat save, if one is already recorded
+    let sAb = '', sDc = '';
+    try {
+      const c2 = cbs.find(x => x.id === (_durTarget && _durTarget.id));
+      const cd2 = c2 && c2.conditions.find(x => (typeof x==='string'?x:x.n) === (_durTarget && _durTarget.condName));
+      if (cd2 && typeof cd2 === 'object' && cd2.save) { sAb = cd2.save.ab || ''; sDc = cd2.save.dc || ''; }
+    } catch (err) {}
+    const abEl = document.getElementById('durSaveAb'), dcEl = document.getElementById('durSaveDC');
+    if (abEl) abEl.value = sAb;
+    if (dcEl) dcEl.value = sDc;
+  }, 0);
   _durTarget = {id, condName};
   const c = cbs.find(x=>x.id===id);
   const cond = c?.conditions.find(x=>(typeof x==='string'?x:x.n)===condName);
@@ -5620,10 +5835,7 @@ function openDurPicker(id, condName, nearEl) {
   document.getElementById('durInput').value = curDur || '';
   document.getElementById('durPickerTitle').textContent = condName === 'Exhausted' ? `Exhaustion level (1-5):` : `Duration: ${condName}`;
   const dp = document.getElementById('durPicker');
-  const r = nearEl ? nearEl.getBoundingClientRect() : {right:200,top:200};
-  dp.style.left = Math.min(r.right, window.innerWidth-220) + 'px';
-  dp.style.top  = Math.min(r.bottom+4, usableHeight()-160) + 'px';
-  dp.classList.add('on');
+  placePopupNear(dp, nearEl);
   document.getElementById('durInput').focus();
 }
 
@@ -5656,17 +5868,34 @@ function saveDur() {
   if (!_durTarget) return;
   const val = parseInt(document.getElementById('durInput').value);
   const dur = isNaN(val) || val < 1 ? null : val;
+  // 'end' matches the historic behaviour and stays the default; only store the
+  // flag when it differs, so existing saves and exports are unchanged (v1.100).
+  const whenEl = document.getElementById('durWhenStart');
+  const when = (whenEl && whenEl.checked) ? 'start' : 'end';
+  // Repeat save is optional and only stored when BOTH ability and DC are given,
+  // so conditions without one serialise exactly as before (v1.100).
+  const abEl = document.getElementById('durSaveAb');
+  const dcEl = document.getElementById('durSaveDC');
+  const ab = abEl ? abEl.value : '';
+  const dcN = dcEl ? parseInt(dcEl.value, 10) : NaN;
+  const sv = (ab && Number.isFinite(dcN) && dcN > 0) ? { ab, dc: dcN } : null;
+  const mk = (n) => {
+    const o = { n, dur };
+    if (when === 'start') o.when = 'start';
+    if (sv) o.save = sv;
+    return o;
+  };
   if (_durTarget.bulk) {
     // Apply duration to all selected combatants
     getSelected().forEach(sel => {
       const i = sel.conditions.findIndex(x=>(typeof x==='string'?x:x.n)===_durTarget.condName);
-      if (i !== -1) sel.conditions[i] = {n: _durTarget.condName, dur};
+      if (i !== -1) sel.conditions[i] = mk(_durTarget.condName);
     });
   } else {
     const c = cbs.find(x=>x.id===_durTarget.id);
     if (!c) return;
     const i = c.conditions.findIndex(x=>(typeof x==='string'?x:x.n)===_durTarget.condName);
-    if (i !== -1) c.conditions[i] = {n: _durTarget.condName, dur};
+    if (i !== -1) c.conditions[i] = mk(_durTarget.condName);
   }
   pushHistory();
   // Log the duration change
@@ -6237,7 +6466,7 @@ document.addEventListener('DOMContentLoaded', () => {
   wireDispatcher(document.getElementById('cmModal'), CM_ACTIONS);
   // UI wiring belongs with the DOM, not the database load (v1.87): the DB path
   // runs on only one of two routes, which previously left these uninitialised.
-  applySbMode(); initSbResize(); initPopupDragging();
+  applySbMode(); initSbResize(); initPopupDragging(); initListScrollGuard(); initListWidthWatcher();
   // Dev-only diagnostic button lives in About; reveal it as soon as the DOM is
   // wired. (v1.86: it was previously revealed from the database-load path, which
   // is unrelated and only ran on one of the two load routes, so it stayed hidden.)
@@ -6416,7 +6645,15 @@ function saveFocus() {
 function restoreFocus(f) {
   if (!f.id) return;
   const el = document.getElementById(f.id);
-  if (el) { el.value = f.val; el.focus(); }
+  // `focus()` scrolls the element into view by default. After a re-render that
+  // yanked the list to wherever the previously-focused input happened to be,
+  // and the turn-advance scroll then moved it again — the "jumps to the top and
+  // scrolls back down" people were seeing. preventScroll keeps focus without
+  // moving anything (v1.100).
+  if (el) {
+    el.value = f.val;
+    try { el.focus({ preventScroll: true }); } catch (e) { el.focus(); }
+  }
 }
 
 function renderBanner(ac) {
@@ -6751,7 +6988,12 @@ function cardDmgTurnPillHTML(c) {
             return `<span class="${cls}" title="${escapeHtml(tip)}" aria-label="${escapeHtml(tips[0] + (massive ? ' (massive damage)' : hitThresh ? ' (threshold reached)' : '') + (bigHit ? ' (big hit)' : ''))}">${marker}${dt}</span>`;
           }
 function cardCondTagsHTML(c) {
-  return c.conditions.map(cond => {
+  // Conditions that expired a moment ago linger briefly, struck through, so the
+  // DM sees WHY something vanished rather than it silently disappearing (v1.101).
+  const ghosts = condGhostsFor(c.id).map(g =>
+    '<span class="cond-tag cond-ghost" title="' + escapeHtml(g.n) + ' expired at the ' + g.phase + ' of this turn">' +
+      escapeHtml(g.n) + '<span class="cond-ghost-mark">expired</span></span>').join('');
+  return ghosts + c.conditions.map(cond => {
     const n   = typeof cond==='string' ? cond : cond.n;
     const dur = typeof cond==='object' ? cond.dur : null;
     const cd  = getConditions().find(x => x.n === n);
@@ -6760,8 +7002,15 @@ function cardCondTagsHTML(c) {
       ? (n === 'Exhausted'
           ? `<span class="cond-dur" title="Exhaustion level — click to change"
                  role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">Lv${dur}</span>`
-          : `<span class="cond-dur${dur<=1?' warning':''}" title="Rounds remaining — click to adjust"
-                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">${dur}r</span>`)
+          : `<span class="cond-dur${dur<=1?' warning':''}" title="Rounds remaining, expires at the ${(typeof cond==='object'&&cond.when==='start')?'start':'end'} of their turn — click to adjust"
+                 role="button" tabindex="0" data-action="editCondDur" data-id="${c.id}" data-cond="${escapeHtml(n)}">${dur}r${(typeof cond==='object'&&cond.when==='start')?'<sup class="cond-when">s</sup>':''}</span>`)
+      : '';
+    // Repeat-save reminder (v1.100). Calm by default; the CSS makes it pulse only
+    // on the ACTIVE combatant's card, so it asks for attention exactly when the
+    // save is due and stays quiet otherwise.
+    const _sv = (typeof cond === 'object' && cond.save) ? cond.save : null;
+    const _saveHtml = _sv
+      ? '<span class="cond-save" title="Repeat ' + escapeHtml(_sv.ab) + ' saving throw, DC ' + _sv.dc + ', on this creature\'s turn">' + escapeHtml(_sv.ab) + '&nbsp;' + _sv.dc + '</span>'
       : '';
     const _ci = getCondIcon(n);
     // Other: show the user's label on the pill instead of the bare name.
@@ -6769,7 +7018,7 @@ function cardCondTagsHTML(c) {
     // Exhausted: show level on badge, skip durHtml (level not a round count)
     const _isExh = n === 'Exhausted';
     const _exhLevel = _isExh && typeof cond === 'object' && cond.dur ? ' Lv' + cond.dur : '';
-    const _durDisplay = _isExh ? '' : durHtml;
+    const _durDisplay = (_isExh ? '' : durHtml) + _saveHtml;
     // Rule-reminder expand toggle (ⓘ). Has its own data-action so the card
     // dispatcher routes it to toggleCondRule, not the pill's openConds.
     const _isOpen = _openCondRule[c.id] === n;
@@ -6990,6 +7239,11 @@ function reconcileList(la, order, es) {
 
 function render() {
   const f = saveFocus();
+  // Rebuilding every card's innerHTML briefly changes the list's height, which
+  // can let the browser clamp scrollTop. Capture and restore it so a re-render
+  // never moves the view on its own (v1.100).
+  const _la0 = document.getElementById('listArea');
+  const _keepScroll = _la0 ? _la0.scrollTop : 0;
 
   const la  = document.getElementById('listArea');
   const es  = document.getElementById('emptyState');
@@ -7061,6 +7315,32 @@ function render() {
   updateHeader();
   renderCbSBPanel();
   restoreFocus(f);
+  // Restoring the list's scroll position after a full re-render, correctly:
+  //
+  //  * Layout must be FLUSHED first. Rebuilding every card's innerHTML leaves
+  //    the browser with stale geometry, so maxScroll reads as 0 and any
+  //    assignment clamps to the top — measured dropping 800 -> 0, which is the
+  //    "jumps to the top then scrolls back down" people reported.
+  //  * A global `* { scroll-behavior: smooth }` rule means a plain assignment
+  //    ANIMATES, so the restore itself becomes visible drift. Ask for 'auto'.
+  //  * A second pass on the next frame catches any late layout settling.
+  // Runs AFTER restoreFocus: focusing an element can itself scroll the list,
+  // so the restore has to be the last word.
+  if (_la0 && _keepScroll > 0) {
+    const _restore = () => {
+      // Clamp here too: the list may be SHORTER after the re-render (a group
+      // collapsed, defeated hidden), making the saved position out of range.
+      const _max = Math.max(0, _la0.scrollHeight - _la0.clientHeight);
+      const _want = Math.min(_keepScroll, _max);
+      if (Math.abs(_la0.scrollTop - _want) > 1) {
+        _la0.scrollTo({ top: _want, behavior: 'auto' });
+      }
+    };
+    void _la0.scrollHeight;      // force layout so maxScroll is real
+    _restore();
+    requestAnimationFrame(_restore);
+  }
+
   setTimeout(updateGroupHeaders, 0);  // must run after DOM insertion
 }
 
@@ -7319,6 +7599,8 @@ function initHeaderAutoCollapse() {
       lastY = y;
       // Desktop / wide tablets: never collapse from scroll.
       if (window.innerWidth > 900) return;
+      // Ignore scrolling the tracker itself caused (v1.100).
+      if (Date.now() < _autoScrollUntil) { lastY = y; return; }
       // Collapse-only: scrolling DOWN hides the header/footer to give the list
       // more room. Scrolling back UP does NOT bring them back — the user
       // restores manually with the chevron. This avoids the header flickering
@@ -10549,10 +10831,10 @@ function loadSampleEncounter() {
   // real error; success leaves a version-stamped console breadcrumb.
   try {
     _loadSampleEncounterInner();
-    console.info('[MitzNSimz v1.99] sample encounter loaded:', cbs.length, 'combatants');
+    console.info('[MitzNSimz v1.104] sample encounter loaded:', cbs.length, 'combatants');
   } catch (err) {
-    try { mtzAlert('Sample Load Failed (v1.99)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
-    console.error('[MitzNSimz v1.99] sample load failed:', err);
+    try { mtzAlert('Sample Load Failed (v1.104)', 'The sample encounter hit an error: ' + (err && err.message ? err.message : String(err)) + ' — please screenshot this message.'); } catch(_) { alert('Sample load failed (v1.69): ' + err); }
+    console.error('[MitzNSimz v1.104] sample load failed:', err);
   }
 }
 function _loadSampleEncounterInner() {
@@ -10710,6 +10992,100 @@ function detectLegendaryMax(m) {
 // Shared by "jump to the active turn" and the new jump list, so both behave
 // identically: expand a collapsed group if needed, un-hide a hidden defeated
 // combatant, then centre the card.
+// Scroll the combatant list only (v1.100).
+//
+// `scrollIntoView` walks up and scrolls EVERY scrollable ancestor, including the
+// document, which is why advancing a turn made the whole page appear to jump.
+// This moves the list and nothing else, and deliberately does nothing when the
+// target is already comfortably in view, so clicking through turns near the top
+// of the order no longer scrolls at all.
+// Force a repaint of the combatant list (v1.101).
+//
+// Safari can leave a scrolled container unpainted: the cards are present in the
+// DOM at a perfectly valid scroll position, but the area shows blank until
+// something invalidates the paint. Nudging the scroll, resizing the window, or
+// opening Web Inspector all fix it — which is why the fault vanished whenever
+// the console was open, and why nothing ever appeared in that console. The list
+// carries `container-type: inline-size` for the adaptive cards, and containment
+// on a scroll container is a known trigger for this class of bug.
+//
+// This is a repaint nudge, not a layout change: opacity is set to a value that
+// is visually identical and cleared on the next frame.
+function _nudgeRepaint(el) {
+  if (!el) return;
+  el.style.opacity = '0.999';
+  requestAnimationFrame(() => {
+    el.style.opacity = '';
+    // Reading a layout property forces the style change to be flushed rather
+    // than coalesced away, which is the point of the exercise.
+    void el.offsetHeight;
+  });
+}
+
+let _autoScrollUntil = 0;   // timestamp: ignore collapse-on-scroll until then
+
+function _scrollListTo(el, opts) {
+  const la = document.getElementById('listArea');
+  if (!la || !el) return;
+  const o = opts || {};
+  const lr = la.getBoundingClientRect();
+  const er = el.getBoundingClientRect();
+  const margin = 28;
+  const fullyVisible = er.top >= lr.top + margin && er.bottom <= lr.bottom - margin;
+  if (fullyVisible && !o.force) return;                 // already there: leave it alone
+  // Rest the card about a quarter down the list, so there is context above and
+  // below it rather than the card being jammed against an edge.
+  const offset = o.centre ? Math.max(0, (la.clientHeight - er.height) / 2)
+                          : Math.max(margin, la.clientHeight * 0.25);
+  const target = la.scrollTop + (er.top - lr.top) - offset;
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // Flag this as OUR scroll. The header collapses when the user scrolls down,
+  // which is right for a deliberate swipe but wrong for the tracker moving the
+  // list itself: on a tablet, advancing a turn scrolled the list, collapsed the
+  // header, and shifted the whole layout — the jumpiness reported from play.
+  _autoScrollUntil = Date.now() + (reduce ? 120 : 900);
+  // Clamp to the real scrollable range. Near the end of the order the computed
+  // target exceeds it, and while Chromium silently clamps, Safari honoured the
+  // out-of-range value and scrolled past every card, leaving the list blank
+  // until the user nudged it back (v1.100). Never rely on the browser to clamp.
+  const maxScroll = Math.max(0, la.scrollHeight - la.clientHeight);
+  const top = Math.min(Math.max(0, target), maxScroll);
+  // INSTANT, never animated (v1.100). Three things can set this list's scroll
+  // position — the turn advance, the re-render restore, and the recovery check —
+  // and a global `* { scroll-behavior: smooth }` rule turned each into a ~400ms
+  // animation. Those animations raced: a long jump (reaching the end of the
+  // order, or wrapping back to the top) could be interrupted part-way and left
+  // stranded in blank space. A discrete jump between turns does not need
+  // animating, and not animating removes the race entirely.
+  la.scrollTo({ top, behavior: 'auto' });
+  _nudgeRepaint(la);
+}
+
+function scrollActiveIntoView() {
+  const el = document.querySelector('#listArea .cb.active');
+  _scrollListTo(el);
+  // Safety net (v1.100). On iOS the app's height resolves against the LAYOUT
+  // viewport, which is taller than the visible area while Safari's toolbars are
+  // showing, so geometry read during a scroll can be wrong — and a turn advance
+  // could leave the list showing empty space with no cards in view. After the
+  // scroll settles, check that something is actually on screen and recover if
+  // not. Cheap, and it cannot make a correct state worse.
+  setTimeout(() => {
+    const la = document.getElementById('listArea');
+    if (!la) return;
+    const lr = la.getBoundingClientRect();
+    const cards = [...la.querySelectorAll('.cb')];
+    if (!cards.length) return;
+    const anyVisible = cards.some(c => {
+      const q = c.getBoundingClientRect();
+      return q.bottom > lr.top + 2 && q.top < lr.bottom - 2;
+    });
+    if (anyVisible) return;
+    const target = document.querySelector('#listArea .cb.active') || cards[0];
+    _scrollListTo(target, { centre: true, force: true });
+  }, 700);
+}
+
 function scrollToCombatant(id) {
   const c = cbs.find(x => x.id === id);
   if (!c) return false;
@@ -10723,8 +11099,7 @@ function scrollToCombatant(id) {
     el = document.querySelector('#listArea .cb[data-id="' + id + '"]');
   }
   if (!el) return false;
-  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  el.scrollIntoView({ block: 'center', behavior: reduce ? 'auto' : 'smooth' });
+  _scrollListTo(el, { centre: true, force: true });
   // Brief highlight so the eye lands on the right card after the scroll.
   el.classList.remove('jump-flash'); void el.offsetWidth; el.classList.add('jump-flash');
   setTimeout(() => el && el.classList.remove('jump-flash'), 1400);
@@ -10875,7 +11250,7 @@ function ensureCbDefaults(c) {
   if (c._transformSlug === undefined) c._transformSlug = null;
   if (c._transformName === undefined) c._transformName = null;
   if (c._original === undefined) c._original = null;
-  if (c.passives === undefined) c.passives = null;   // v1.99: absent in older saves
+  if (c.passives === undefined) c.passives = null;   // v1.104: absent in older saves
   if (c.absent === undefined) c.absent = false;
   if (c.deathSavesEnabled === undefined) c.deathSavesEnabled = (c.type === 'player'); // other defaults off like monsters
   if (c.order === undefined) c.order = 0;
@@ -12153,7 +12528,7 @@ function loadPartyConfig(idx) {
   xpLevels = pc.party.map(p => p.level);
   xpNames  = pc.party.map(p => p.name || '');
   xpAvatars = pc.party.map(p => p.avatar || null);
-  // Parties saved before v1.99 have no passives; they simply come back blank.
+  // Parties saved before v1.104 have no passives; they simply come back blank.
   xpPassives = pc.party.map(p => _cleanPassives(p.passives));
   _xpSkipFlush = true;
   renderXPLevels();
@@ -13328,7 +13703,7 @@ function closeGuidePanel() {
   <div class="sb-header">
     <button class="sb-close" data-action="closeGuidePanel">✕ Close</button>
     <h2>📖 User Guide</h2>
-    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.99</p>
+    <p style="font-size:12px;color:var(--text3);margin-top:4px">MitzNSimz Encounter Tracker · v1.104</p>
   </div>
   <div class="guide-body" id="guideBody">
 
@@ -13425,6 +13800,17 @@ function closeGuidePanel() {
     <p><b>Resizing the side panel:</b> drag the handle on its left edge to make it wider or narrower — this works with a mouse, a finger or a stylus. Double-tap or double-click the handle to return it to the default width. Your chosen width is remembered, and is automatically adjusted if you rotate a tablet or shrink the window so that both the panel and your cards always stay usable.</p>
     <p><b>Moving the pop-ups <span style="color:var(--gold)">(v1.87)</span>:</b> drag a pop-up by its title bar to park it wherever suits you — with a mouse, a finger or a stylus. This works for both the stat-block pop-up and the spell pop-up. Double-click or double-tap the title bar to send it back to where it started. The stat block remembers where you put it; the spell pop-up doesn't, because it deliberately opens next to whichever spell link you tapped. Dragging is switched off on phone-sized screens, where there is nowhere useful to move a pop-up anyway.</p>
     <p>The combatant cards now measure the space they actually have rather than the size of the screen, so they rearrange themselves neatly however wide or narrow the stat block is — on a squeezed layout the row of buttons simply moves onto its own line.</p>
+    <h3>When a Condition Ends <span style="color:var(--gold)">(v1.100)</span></h3>
+    <p>Fifth edition distinguishes two very similar-sounding durations, and which one applies changes whether a creature gets to act under the effect:</p>
+    <ul>
+      <li><b>Until the end of their next turn</b> — the creature takes its whole turn still affected, and the condition drops as the turn finishes. This is the common case, and the default.</li>
+      <li><b>Until the start of their next turn</b> — the condition falls away as the creature's turn begins, so they act free of it.</li>
+    </ul>
+    <p>When you set a duration, choose which applies. The tracker then counts down at the right moment: end-of-turn conditions expire as that creature finishes, start-of-turn conditions expire before they act. Conditions set to the start of a turn are marked with a small <b>s</b> beside the round count, and hovering the count tells you which it is.</p>
+    <p><b>Repeat saving throws.</b> Many conditions let a creature try to shake the effect off on its own turn. When you set a duration you can record the save alongside it — pick the ability (STR, DEX, CON, INT, WIS or CHA) and type the DC. The condition then carries a small <b>CON 13</b> style badge, and that badge <b>lights up and pulses when it is that creature's turn</b>, so you are reminded to call for the roll at the right moment. The rest of the time it sits quietly out of the way.</p>
+    <p>The tracker deliberately doesn't resolve the save for you: you roll, and then remove, shorten or leave the condition as the result and the spell demand. Leave the ability blank if a condition has no repeat save.</p>
+    <p>When a condition runs out it doesn't simply vanish. It lingers for a couple of seconds, struck through and marked <b>expired</b>, then clears itself — so you can see <i>what</i> just ended and <i>when</i>, rather than noticing later that something is missing. This applies to both timings.</p>
+    <p>Existing conditions and older saved encounters are unaffected — anything without a choice recorded behaves as end-of-turn, exactly as before.</p>
     <h3>Passive Scores <span style="color:var(--gold)">(v1.98)</span></h3>
     <p>Passive Perception, Investigation and Insight are the numbers a DM reaches for most often between rolls — who notices the ambush, who spots the lie, who sees through the disguise. You can record them per player in <b>Party &amp; XP</b>, beside each name, and they then appear on that player's combatant card for reference during play.</p>
     <ul>
@@ -13550,10 +13936,19 @@ function closeGuidePanel() {
 
     <h2 id="g-other">Other Combatant Type</h2>
     <p>For lair actions, hazards, traps, ritual timers, reinforcements — anything needing a turn slot that isn't a creature. Teal styling. Excluded from XP and Alive counts.</p>
+    <p>An <b>Other</b> combatant is a full card, not a cut-down one: it has AC, hit points, damage and healing, conditions and notes, exactly like a monster. That means it covers three quite different jobs:</p>
+    <ul>
+      <li><b>Something to destroy</b> <span style="color:var(--gold)">(v1.100)</span> — a barred door, a barricade, a siege engine, a crystal the villain is channelling through. Give it an AC and hit points and the party can attack it like anything else: damage applies normally, the HP bar drains, and when it reaches 0 the card greys out as destroyed rather than disappearing, so you can still see what was there. Because it is an Other, smashing it awards no XP and doesn't count as a casualty.</li>
+      <li><b>An environmental effect</b> — an avalanche, a collapsing ceiling, rising water, a spreading fire. Leave the hit points at zero; the card exists purely to claim a place in the turn order so the effect happens at the right moment each round. Put the save DC and damage in the notes field and read it straight off the card.</li>
+      <li><b>A timer</b> — a ritual completing in three rounds, reinforcements arriving on round four, a portal closing. Set the initiative where you want it to fire and use the notes to say what happens.</li>
+    </ul>
+    <p><b>One important difference:</b> Other combatants are the only type <b>Roll Init leaves alone</b>. Whatever count you give them, they keep it — so an avalanche pinned to initiative 20 stays on 20 every round instead of being re-rolled. That is what makes them reliable for anything that should happen at a fixed point in the round.</p>
+    <p>If an object is genuinely a creature in disguise — an animated armour, say, or a swarm — add it as a <b>Monster</b> instead, so it rolls initiative and counts toward the encounter's XP.</p>
     <table><tr><th>Type</th><th>Initiative</th><th>Notes field</th></tr>
     <tr><td>Lair Action</td><td>20</td><td>Dragon exhales fumes — DC 13 CON save or Poisoned.</td></tr>
     <tr><td>Avalanche</td><td>20 and 10</td><td>DC 15 DEX save. Fail: 4d10+prone. Success: half.</td></tr>
     <tr><td>Trap</td><td>15</td><td>Swinging blade: DC 14 DEX or 2d10 slashing.</td></tr>
+    <tr><td>Barred Door</td><td>0</td><td>AC 15, 27 HP. Destructible — damage it like a creature.</td></tr>
     <tr><td>Reinforcements</td><td>12</td><td>Goblin patrol arrives Round 4. Add 6 goblins.</td></tr>
     </table>
 
