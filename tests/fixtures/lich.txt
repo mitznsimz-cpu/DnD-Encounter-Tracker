@@ -1,0 +1,16 @@
+Lich
+Medium Undead, Neutral Evil
+AC 20
+HP 315 (42d8 + 126)
+Speed 30 ft.
+STR 11 (+0) DEX 16 (+3) CON 16 (+3) INT 21 (+5) WIS 14 (+2) CHA 16 (+3)
+Saving Throws Con +10, Int +12, Wis +9
+Skills Arcana +19, History +12, Insight +9, Perception +9
+Damage Resistances Cold, Lightning, Necrotic
+Damage Immunities Necrotic, Poison
+Condition Immunities Charmed, Exhaustion, Frightened, Paralyzed, Poisoned
+Senses Truesight 120 ft., Passive Perception 19
+Languages All; telepathy 120 ft.
+CR 21 (XP 33,000; PB +7)
+Actions
+Multiattack. The lich makes three Eldritch Burst attacks.

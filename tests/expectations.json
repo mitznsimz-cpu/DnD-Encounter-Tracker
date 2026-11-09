@@ -1,0 +1,128 @@
+{
+  "rimebone_sentinel.txt": {
+    "name": "Rimebone Sentinel",
+    "damage_vulnerabilities": "Bludgeoning",
+    "damage_immunities": "Cold, Poison",
+    "languages": "understands Giant but can't speak",
+    "challenge_rating": "6",
+    "actions_min": 3,
+    "traits_min": 1
+  },
+  "beyond_flat_goblin.txt": {
+    "name": "Goblin Boss",
+    "languages": "Common, Goblin",
+    "challenge_rating": "1",
+    "actions_min": 2,
+    "bonus_actions_min": 1,
+    "skills_contains": "Stealth"
+  },
+  "zombie.txt": {
+    "name": "Zombie",
+    "languages": "Understands the languages it knew in life but can't speak",
+    "damage_immunities": "Poison",
+    "condition_immunities": "Poisoned",
+    "challenge_rating": "1/4",
+    "actions_min": 1
+  },
+  "archmage.txt": {
+    "name": "Archmage",
+    "languages": "Common plus any six languages",
+    "challenge_rating": "12",
+    "actions_min": 2,
+    "traits_min": 2,
+    "reactions_min": 1,
+    "damage_resistances_contains": "Cold"
+  },
+  "vampire.txt": {
+    "name": "Vampire",
+    "languages": "Common plus two other languages",
+    "challenge_rating": "13",
+    "actions_min": 2,
+    "traits_min": 1,
+    "legendary_min": 1
+  },
+  "lich.txt": {
+    "name": "Lich",
+    "languages": "All; telepathy 120 ft.",
+    "condition_immunities_contains": "Paralyzed",
+    "challenge_rating": "21",
+    "actions_min": 1
+  },
+  "telepathy_only.txt": {
+    "name": "Test Aberration",
+    "languages": "telepathy 120 ft.",
+    "senses_contains": "Blindsight 30 ft.",
+    "senses_not_contains": "Languages",
+    "challenge_rating": "8",
+    "actions_min": 1
+  },
+  "knight_gear.txt": {
+    "name": "Knight",
+    "languages": "Common plus one other language",
+    "languages_not_contains": "Gear",
+    "challenge_rating": "3",
+    "actions_min": 1
+  },
+  "swarm_of_rats.txt": {
+    "name": "Swarm of Rats",
+    "languages": "None",
+    "damage_resistances": "Bludgeoning, Piercing, Slashing",
+    "condition_immunities_contains": "Stunned",
+    "challenge_rating": "1/4",
+    "actions_min": 1
+  },
+  "ancient_red_dragon.txt": {
+    "name": "Ancient Red Dragon",
+    "languages": "Common, Draconic",
+    "damage_immunities": "Fire",
+    "challenge_rating": "24",
+    "actions_min": 3,
+    "traits_min": 1,
+    "legendary_min": 1
+  },
+  "commoner.txt": {
+    "name": "Commoner",
+    "languages": "Common",
+    "challenge_rating": "0",
+    "actions_min": 1
+  },
+  "guard.txt": {
+    "name": "Guard",
+    "languages": "Common",
+    "languages_not_contains": "Gear",
+    "challenge_rating": "1/8",
+    "actions_min": 1
+  },
+  "cairn_thane.txt": {
+    "name": "Cairn Thane",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_immunities": "poison",
+    "condition_immunities": "charmed, exhaustion, poisoned",
+    "languages": "Giant, understands Common but can't speak",
+    "senses": "darkvision 120 ft., passive Perception 16",
+    "challenge_rating": "11",
+    "actions_min": 4,
+    "reactions_min": 1,
+    "legendary_min": 2,
+    "traits_min": 7,
+    "legendary_desc_contains": "can take 2 legendary actions"
+  },
+  "homebrew_exclamation_names.txt": {
+    "name": "Captain Ysolde Brinemark, Drowned Corsair",
+    "challenge_rating": "4",
+    "damage_vulnerabilities": "Bludgeoning, Fire",
+    "damage_immunities": "Cold, Poison",
+    "traits_min": 3,
+    "actions_min": 5,
+    "bonus_actions_min": 1,
+    "reactions_min": 1
+  },
+  "homebrew_mixed_delimiters.txt": {
+    "name": "Delimiter Test Beast",
+    "challenge_rating": "4",
+    "traits_min": 1,
+    "actions_min": 2,
+    "bonus_actions_min": 2,
+    "reactions_min": 1
+  }
+}

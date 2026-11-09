@@ -1,0 +1,11 @@
+Commoner
+Medium Humanoid, Any Alignment
+AC 10
+HP 4 (1d8)
+Speed 30 ft.
+STR 10 (+0) DEX 10 (+0) CON 10 (+0) INT 10 (+0) WIS 10 (+0) CHA 10 (+0)
+Senses Passive Perception 10
+Languages Common
+CR 0 (XP 10; PB +2)
+Actions
+Club. Melee Attack Roll: +2, reach 5 ft. Hit: 2 (1d4) Bludgeoning damage.

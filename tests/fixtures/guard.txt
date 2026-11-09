@@ -1,0 +1,12 @@
+Guard
+Medium Humanoid, Any Alignment
+AC 16
+HP 11 (2d8 + 2)
+Speed 30 ft.
+STR 13 (+1) DEX 12 (+1) CON 12 (+1) INT 10 (+0) WIS 11 (+0) CHA 10 (+0)
+Senses Passive Perception 12
+Languages Common
+Gear Chain Shirt, Spear
+CR 1/8 (XP 25; PB +2)
+Actions
+Spear. Melee or Ranged Attack Roll: +3. Hit: 4 (1d6 + 1) Piercing damage.

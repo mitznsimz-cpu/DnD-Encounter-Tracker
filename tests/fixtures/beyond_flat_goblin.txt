@@ -1,0 +1,11 @@
+Goblin Boss
+Small Fey (Goblinoid), Chaotic Neutral
+AC 17 Initiative +2 (12)
+HP 21 (6d6) Speed 30 ft.
+STR 10 (+0) DEX 14 (+2) CON 10 (+0) INT 10 (+0) WIS 8 (-1) CHA 10 (+0)
+Skills Stealth +6 Senses Darkvision 60 ft., Passive Perception 9 Languages Common, Goblin CR 1 (XP 200; PB +2)
+Actions
+Multiattack. The goblin makes two attacks with its Scimitar.
+Scimitar. Melee Attack Roll: +4, reach 5 ft. Hit: 5 (1d6 + 2) Slashing damage.
+Bonus Actions
+Nimble Escape. The goblin takes the Disengage or Hide action.

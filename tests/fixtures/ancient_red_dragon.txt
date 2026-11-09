@@ -1,0 +1,20 @@
+Ancient Red Dragon
+Gargantuan Dragon, Chaotic Evil
+AC 22
+HP 507 (26d20 + 234)
+Speed 40 ft., Climb 40 ft., Fly 80 ft.
+STR 30 (+10) DEX 10 (+0) CON 29 (+9) INT 18 (+4) WIS 15 (+2) CHA 23 (+6)
+Saving Throws Dex +7, Con +16, Wis +9, Cha +13
+Skills Perception +16, Stealth +7
+Damage Immunities Fire
+Senses Blindsight 60 ft., Darkvision 120 ft., Passive Perception 26
+Languages Common, Draconic
+CR 24 (XP 62,000; PB +7)
+Traits
+Legendary Resistance (4/Day). If the dragon fails a saving throw, it can choose to succeed instead.
+Actions
+Multiattack. The dragon makes three Rend attacks.
+Rend. Melee Attack Roll: +17, reach 15 ft. Hit: 19 (2d8 + 10) Slashing damage.
+Fire Breath (Recharge 5-6). Dexterity Saving Throw: DC 24.
+Legendary Actions
+Commanding Presence. The dragon uses Frightful Presence.

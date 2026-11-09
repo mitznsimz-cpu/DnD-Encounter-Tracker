@@ -1,0 +1,14 @@
+Zombie
+Medium Undead, Neutral Evil
+AC 8
+HP 22 (3d8 + 9)
+Speed 20 ft.
+STR 13 (+1) DEX 6 (-2) CON 16 (+3) INT 3 (-4) WIS 6 (-2) CHA 5 (-3)
+Saving Throws Wis +0
+Damage Immunities Poison
+Condition Immunities Poisoned
+Senses Darkvision 60 ft., Passive Perception 8
+Languages Understands the languages it knew in life but can't speak
+CR 1/4 (XP 50; PB +2)
+Actions
+Slam. Melee Attack Roll: +3, reach 5 ft. Hit: 4 (1d6 + 1) Bludgeoning damage.
