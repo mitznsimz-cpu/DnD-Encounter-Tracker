@@ -1,0 +1,13 @@
+Swarm of Rats
+Medium Swarm of Tiny Beasts, Unaligned
+AC 10
+HP 14 (4d8 - 4)
+Speed 30 ft., Climb 30 ft.
+STR 9 (-1) DEX 11 (+0) CON 9 (-1) INT 2 (-4) WIS 10 (+0) CHA 3 (-4)
+Damage Resistances Bludgeoning, Piercing, Slashing
+Condition Immunities Charmed, Frightened, Grappled, Paralyzed, Petrified, Prone, Restrained, Stunned
+Senses Darkvision 30 ft., Passive Perception 10
+Languages None
+CR 1/4 (XP 50; PB +2)
+Actions
+Bites. Melee Attack Roll: +2, reach 0 ft. Hit: 7 (2d6) Piercing damage.

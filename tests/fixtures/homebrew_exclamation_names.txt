@@ -1,0 +1,35 @@
+Captain Ysolde Brinemark, Drowned Corsair
+Medium Undead, Chaotic Evil
+Armor Class 17 (barnacled greatcoat, sea-ice)
+Hit Points 85 (10d8 + 40)
+Speed 30 ft.
+STR 14 (+2)
+DEX 16 (+3)
+CON 18 (+4)
+INT 10 (+0)
+WIS 11 (+0)
+CHA 14 (+2)
+Saving Throws Dex +5, Con +6
+Skills Athletics +4, Intimidation +4, Perception +2, Stealth +5
+Damage Vulnerabilities Bludgeoning, Fire
+Damage Resistances Lightning
+Damage Immunities Cold, Poison
+Condition Immunities Exhaustion, Poisoned
+Senses Darkvision 60 ft., Passive Perception 12
+Languages Understands Common and Aquan but can't speak
+Challenge 4 (1,100 XP)
+Proficiency Bonus +2
+Traits
+Undead Fortitude. If damage reduces Brinemark to 0 hit points, she must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is fire or from a critical hit. On a success, she drops to 1 hit point instead.
+Brittle Rime. The sea-ice crusting Brinemark's bones cracks when struck. The first time each turn a creature hits Brinemark with a bludgeoning attack, her AC is reduced by 2 until the end of her next turn.
+Captain of the Drowned. Undead crew within 30 feet of Brinemark that can see her have advantage on saving throws against effects that turn undead.
+Actions
+Multiattack. Brinemark makes two Rimed Sabre attacks, or one Rimed Sabre attack and one Brine Pistol attack.
+Rimed Sabre. Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage plus 4 (1d8) cold damage.
+Brine Pistol. Ranged Weapon Attack: +5 to hit, range 30/90 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 4 (1d8) cold damage.
+Grapeshot of Ice (Recharge 5-6). Brinemark fires a blast of splintering ice in a 30-foot cone. Each creature in that area must make a DC 14 Dexterity saving throw, taking 18 (4d8) cold damage on a failed save, or half as much on a success.
+Raise the Drowned (Recharge 6). Brinemark calls her fallen crew back to their feet. Up to two destroyed undead crew within 30 feet of her return to life with half their hit points.
+Bonus Actions
+All Hands, Make Ready! Brinemark chooses one undead crew member within 30 feet that can see or hear her. That creature can immediately use its reaction to move up to its speed.
+Reactions
+Is That All, Landlubber? When Brinemark fails her Undead Fortitude saving throw, she can add +4 to the roll, potentially turning the failure into a success.

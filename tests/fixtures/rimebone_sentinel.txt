@@ -1,0 +1,30 @@
+[Rimebone Sentinel](https://example.com/monsters/rimebone-sentinel)
+Huge Undead, Lawful Evil
+Armor Class 14 (rusted plate)
+Hit Points 102 (12d12 + 24)
+Speed 40 ft.
+STR
+23 (+6)
+DEX
+9 (-1)
+CON
+15 (+2)
+INT
+6 (-2)
+WIS
+8 (-1)
+CHA
+5 (-3)
+Damage Vulnerabilities Bludgeoning
+Damage Immunities Cold, Poison
+Condition Immunities [Exhaustion](https://www.dndbeyond.com/sources/dnd/free-rules/rules-glossary#ExhaustionCondition), [Poisoned](https://www.dndbeyond.com/sources/dnd/free-rules/rules-glossary#PoisonedCondition)
+Senses [Darkvision](https://www.dndbeyond.com/sources/dnd/free-rules/rules-glossary#Darkvision) 60 ft., Passive Perception 9
+Languages understands Giant but can't speak
+Challenge 6 (2,300 XP)
+Proficiency Bonus +3
+Traits
+Hollow Vigil. The sentinel doesn't require air, food, drink, or sleep.
+Actions
+Multiattack. The sentinel makes two Glaive of Rime attacks.
+Glaive of Rime. Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 24 (3d12 + 5) slashing damage.
+Chilling Gaze. The sentinel fixes its gaze on one creature it can see within 60 feet of it. The target must succeed on a DC 13 Constitution saving throw or take 35 (10d6) cold damage and be stunned until the end of its next turn.

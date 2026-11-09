@@ -1,0 +1,19 @@
+Vampire
+Medium Undead, Lawful Evil
+AC 16
+HP 195 (23d8 + 92)
+Speed 30 ft., Climb 30 ft.
+STR 18 (+4) DEX 18 (+4) CON 18 (+4) INT 17 (+3) WIS 15 (+2) CHA 18 (+4)
+Saving Throws Dex +9, Wis +7, Cha +9
+Skills Perception +7, Stealth +9
+Damage Resistances Necrotic
+Senses Darkvision 120 ft., Passive Perception 17
+Languages Common plus two other languages
+CR 13 (XP 10,000; PB +5)
+Traits
+Misty Escape. When the vampire drops to 0 Hit Points, it transforms into mist.
+Actions
+Multiattack. The vampire makes two Grave Strike attacks.
+Grave Strike. Melee Attack Roll: +9, reach 5 ft. Hit: 8 (1d8 + 4) Bludgeoning damage.
+Legendary Actions
+Move. The vampire moves up to its Speed without provoking Opportunity Attacks.
